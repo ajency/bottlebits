@@ -1,21 +1,49 @@
-.text{
-    &-white{
+.text {
+    &-white {
         color: #fff;
     }
-    &-green{
+    &-green {
         color: #008F4F;
     }
-    &-blue{
+    &-blue {
         color: #234361;
     }
-    &-grey{
+    &-grey {
         color: #919EAB;
     }
-    &-red{
+    &-red {
         color: #9C0800;
     }
 }
 
-.text-decoration-line{
+.font {
+    &-bold {
+        font-weight: bold;
+    }
+}
+
+.font-36 {
+    font-size: 36px;
+}
+
+.font {
+    &-18 {
+        font-size: 18px;
+    }
+}
+
+.text-decoration-line {
     text-decoration: line-through;
+}
+
+.text-theme {
+    color: $theme-color;
+}
+
+.font-family {
+    font-family: $font-family;
+}
+
+.bg-black{
+    background-color: #000;
 }
