@@ -1,6 +1,7 @@
 $theme-color:#C1803B;
 $font-family: "Abril Fatface";
 
+
 header{
     position: absolute;
     top: 0;
@@ -13,7 +14,7 @@ header{
     left: 10px;
 }
 
-h1 {
+.heading {
     color: $theme-color;
     font-size: 80px;
     letter-spacing: -0.8px;
@@ -60,7 +61,10 @@ h1 {
         left: -20px;
     }
 
-
+.about{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
     
 .item-text {
     opacity: 0.75;
@@ -83,4 +87,7 @@ h1 {
       margin-bottom: 60px;
     }
    }
+}
+.pt-60{
+    padding-top: 80px;
 }

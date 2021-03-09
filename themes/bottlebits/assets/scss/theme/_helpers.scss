@@ -32,6 +32,12 @@
     }
 }
 
+.w {
+    &-95 {
+        width: 95%;
+    }
+}
+
 .text-decoration-line {
     text-decoration: line-through;
 }
@@ -44,6 +50,6 @@
     font-family: $font-family;
 }
 
-.bg-black{
+.bg-black {
     background-color: #000;
 }
