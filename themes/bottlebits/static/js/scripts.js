@@ -7,7 +7,7 @@ $(document).ready(function () {
     	let last_name = $("#last_name").val();
     	let email = $("#email").val();
     	let gender = $("#gender").val();
-    	let age_group = $("#age_group").val();
+    	let age_group = $("input[type='radio'][name='age_group']:checked").val();
     	let country = $("#country").val();
     	
     	$('.input-txt').removeClass('text-error')
@@ -23,7 +23,7 @@ $(document).ready(function () {
     	}
 
     	if(validateEmail(email) != ""){
-    		$("#last_name").addClass('text-error')
+    		$("#email").addClass('text-error')
     		error++;
     	}
 
@@ -42,7 +42,12 @@ $(document).ready(function () {
     		error++;
     	}
 
-    	if(error > 0){
+    	if(grecaptcha.getResponse() == ""){
+    		$(".g-recaptcha").addClass('text-error')
+    		error++;
+    	}
+
+    	if(error == 0){
     		let requestValues = {
     			'first_name':first_name,
 				'last_name':last_name,
@@ -157,7 +162,6 @@ $(document).ready(function () {
         else if(textInput !== undefined && (textInput).trim().replace(/ /g, "") ==""){
             errors= 'Please enter required value'
         }
-        console.log("errors-->",errors)
         return errors;
 
     }
@@ -176,7 +180,6 @@ $(document).ready(function () {
             errors= 'Please enter valid email'
         }
 
-        console.log("errors-->",errors)
         return errors;
     }
 });

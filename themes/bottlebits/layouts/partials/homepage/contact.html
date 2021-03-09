@@ -11,36 +11,35 @@
                 <form>
                     <div class="row my-3">
                         <div class="col-md-6">
-                            <input type="text" name="Firstname" class="w-100" placeholder="First Name" id="">
+                            <input type="text" name="Firstname" class="w-100 input-txt" placeholder="First Name" id="first_name">
                         </div>
                         <div class="col-md-6">
-                            <input type="text" name="Lastname" class="w-100" placeholder="Last Name" id="">
+                            <input type="text" name="Lastname" class="w-100 input-txt" placeholder="Last Name" id="last_name">
                         </div>
                     </div>
                     <div class="row my-3 align-items-center">
                       <div class="col-md-3">
-                        <select class="w-100">
+                        <select class="w-100 input-txt" id="gender">
                           <option selected>Gender</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>
                         </select>
                       </div>
                       <div class="col-md-9">
                         <div class="radio">
                           <ul>
                             <li class="h-auto font-14">Age Group</li>
-                            <li><label for="Radio1">41-42</label><input type="radio" name="Radio" value=""/> </li>
-                            <li><label for="Radio2">42-43</label><input type="radio" name="Radio" value=""/> </li>
-                            <li><label for="Radio3">44-56</label><input type="radio" name="Radio" value=""/> </li>
-                            <li><label for="Radio4">58-59</label><input type="radio" name="Radio" value=""/> </li>
+                            <li><label for="Radio1">41-42</label><input type="radio" name="age_group" value="41-42"/> </li>
+                            <li><label for="Radio2">42-43</label><input type="radio" name="age_group" value="42-43"/> </li>
+                            <li><label for="Radio3">44-56</label><input type="radio" name="age_group" value="44-56"/> </li>
+                            <li><label for="Radio4">58-59</label><input type="radio" name="age_group" value="58-59"/> </li>
                           </ul>
                         </div>
                       </div>
                     </div>
                     <div class="row my-3">
-                      <div class="col-md-9"><input type="email" name="Email" placeholder="Email" class="w-100" id=""></div>
-                      <div class="col-md-3">  <select class="w-100">
+                      <div class="col-md-9"><input type="email" name="email" placeholder="Email" class="w-100 input-txt" id="email"></div>
+                      <div class="col-md-3">  <select class="w-100 input-txt">
                         <option selected>Gender</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -52,7 +51,7 @@
                     <p class="text-grey-1 mt-3">
                       By Signing up you agree to recieve Mailer and Newsletters from Bottlebits
                     </p>
-                    <button class="submit">
+                    <button class="submit sign-up-btn" type="button">
                       Sign up
                     </button>
                 </form>
