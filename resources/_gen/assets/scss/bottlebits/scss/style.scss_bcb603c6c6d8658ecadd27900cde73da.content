@@ -7319,6 +7319,11 @@ form {
   color: #E3CAB6;
   font-family: "NewYork"; }
 
+.text-error {
+  outline: 1px solid red;
+  width: max-content;
+  padding: 2px; }
+
 .custom-row {
   box-shadow: 0 5px 43px 0 rgba(0, 0, 0, 0.66); }
 
@@ -7347,13 +7352,18 @@ header {
   position: absolute;
   top: 10px;
   left: 10px; }
-
+  @media screen and (max-width: 900px) {
+    .logo {
+      height: 23px;
+      width: 115px; } }
 .heading {
   color: #C1803B;
-  font-size: 80px;
+  font-size: clamp(40px, 5vw, 10em);
   font-family: "Abril Fatface";
-  line-height: 115px; }
-
+  line-height: 55px; }
+  @media screen and (min-width: 992px) {
+    .heading {
+      line-height: 115px; } }
 .form-heading {
   color: #C7C7C6;
   font-size: 33px;
@@ -7399,14 +7409,17 @@ header {
     max-width: 304px;
     margin: auto;
     color: #ffffff;
-    font-size: 20px;
     font-weight: bold;
     line-height: 30px;
     text-align: center;
-    margin-top: -60px;
-    margin-bottom: 60px;
+    margin-top: -30px;
+    margin-bottom: 30px;
     font-family: "New York"; }
-
+    @media screen and (min-width: 992px) {
+      .grid-section .item .item-text {
+        font-size: 20px;
+        margin-top: -60px;
+        margin-bottom: 60px; } }
 .grid-section .seal {
   position: absolute;
   height: 77px;
@@ -7415,8 +7428,9 @@ header {
   top: -15px;
   left: -20px; }
 
-.pt-60 {
-  padding-top: 80px; }
+@media screen and (min-width: 992px) {
+  .pt-60 {
+    padding-top: 80px; } }
 
 body {
   background-image: url("https://i.ibb.co/b2cR7ws/rsz-1tex-wood.png");
@@ -7453,11 +7467,15 @@ body {
   font-size: 30px; }
 
 .font-14 {
-  font-size: 14px; }
-
+  font-size: 12px; }
+  @media screen and (min-width: 992px) {
+    .font-14 {
+      font-size: 14px; } }
 .font-18 {
-  font-size: 18px; }
-
+  font-size: 12px; }
+  @media screen and (min-width: 992px) {
+    .font-18 {
+      font-size: 18px; } }
 .w-95 {
   width: 95%; }
 
@@ -7483,25 +7501,29 @@ body {
   line-height: 30px; }
 
 .lineht-36 {
-  line-height: 36px; }
-
+  line-height: 24px; }
+  @media screen and (min-width: 992px) {
+    .lineht-36 {
+      line-height: 36px; } }
 .subheading {
   color: #C1803B;
   font-family: "New York";
-  font-size: 36px;
+  font-size: clamp(26px, 4vh, 36px);
   font-weight: bold;
   letter-spacing: 0;
-  line-height: 55px;
   text-align: center; }
-
+  @media screen and (min-width: 992px) {
+    .subheading {
+      line-height: 55px; } }
 .inner-text {
   color: #FFFFFF;
   font-family: "New York";
-  font-size: 18px;
   font-weight: bold;
-  letter-spacing: 1px;
-  line-height: 36px; }
-
+  letter-spacing: 1px; }
+  @media screen and (min-width: 992px) {
+    .inner-text {
+      line-height: 36px;
+      font-size: 18px; } }
 .text-grey-1 {
   color: #E3CAB6; }
 

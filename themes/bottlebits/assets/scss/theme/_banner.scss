@@ -9,13 +9,20 @@ header {
     position: absolute;
     top: 10px;
     left: 10px;
+    @media screen and (max-width: 900px) {
+        height: 23px;
+        width: 115px
+    }
 }
 
 .heading {
     color: $theme-color;
-    font-size: 80px;
+    font-size: clamp(40px, 5vw, 10em);
     font-family: $fontabril;
-    line-height: 115px;
+    line-height: 55px;
+    @media screen and (min-width: 992px) {
+        line-height: 115px;
+    }
 }
 
 .form-heading {
@@ -71,13 +78,17 @@ header {
             max-width: 304px;
             margin: auto;
             color: #ffffff;
-            font-size: 20px;
             font-weight: bold;
             line-height: 30px;
             text-align: center;
-            margin-top: -60px;
-            margin-bottom: 60px;
+            margin-top: -30px;
+            margin-bottom: 30px;
             font-family: "New York";
+            @media screen and (min-width: 992px) {
+                font-size: 20px;
+                margin-top: -60px;
+                margin-bottom: 60px;
+                }
         }
     }
     .seal {
@@ -91,5 +102,7 @@ header {
 }
 
 .pt-60 {
+    @media screen and (min-width: 992px) {
     padding-top: 80px;
+    }
 }
