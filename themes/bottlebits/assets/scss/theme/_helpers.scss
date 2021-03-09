@@ -9,13 +9,22 @@
         color: #234361;
     }
     &-grey{
-        color: #919EAB;
+        color: $text-grey;
     }
     &-red{
         color: #9C0800;
+    }
+    &-off-white{
+        color: $text-offwhite;
     }
 }
 
 .text-decoration-line{
     text-decoration: line-through;
+}
+
+.border{
+    &-gold{
+        border: 1px solid #986B3C;
+    }
 }
