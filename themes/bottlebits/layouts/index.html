@@ -4,7 +4,11 @@
     <body>
         {{- partial "header.html" . -}}
         <div id="content">
-        {{- block "main" . }}{{- end }}
+            {{- block "main" . }}{{- end }}
+            {{- partial "homepage/banner.html" . -}}
+            {{- partial "homepage/about.html" . -}}
+            {{- partial "homepage/grid-section.html" . -}}
+            {{- partial "homepage/contact.html" . -}}
         </div>
         {{- partial "footer.html" . -}}
     </body>
