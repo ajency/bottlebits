@@ -7251,7 +7251,7 @@ header {
   top: 10px;
   left: 10px; }
 
-h1 {
+.heading {
   color: #C1803B;
   font-size: 80px;
   letter-spacing: -0.8px;
@@ -7289,6 +7289,10 @@ h1 {
   top: -15px;
   left: -20px; }
 
+.about {
+  padding-top: 100px;
+  padding-bottom: 50px; }
+
 .item-text {
   opacity: 0.75;
   max-width: 304px;
@@ -7306,6 +7310,9 @@ h1 {
   .grid-section .item .item-text {
     margin-top: -60px;
     margin-bottom: 60px; }
+
+.pt-60 {
+  padding-top: 80px; }
 
 .text-white {
   color: #fff; }
@@ -7336,6 +7343,9 @@ h1 {
 
 .font-18 {
   font-size: 18px; }
+
+.w-95 {
+  width: 95%; }
 
 .text-decoration-line {
   text-decoration: line-through; }
