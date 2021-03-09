@@ -1,10 +1,11 @@
-header{
+header {
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 1;
 }
-.logo{
+
+.logo {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -13,30 +14,26 @@ header{
 .heading {
     color: $theme-color;
     font-size: 80px;
-    letter-spacing: -0.8px;
+    font-family: $fontabril;
     line-height: 115px;
-    font-family: $font-family;
-    font-weight: bold;
 }
-.form-heading{
+
+.form-heading {
     color: #C7C7C6;
-    font-family: "Abril Fatface";
     font-size: 33px;
-    letter-spacing: -0.33px;
     line-height: 45px;
 }
-.form-desc{
+
+.form-desc {
     opacity: 0.75;
     color: #000000;
-    font-family: "New York";
     font-size: 20px;
-    letter-spacing: 0;
     line-height: 30px;
 }
 
 .banner {
-    &_img {}
     &_text {
+        padding-top: 100px;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -74,14 +71,13 @@ header{
             max-width: 304px;
             margin: auto;
             color: #ffffff;
-            font-family: "New York";
             font-size: 20px;
             font-weight: bold;
-            letter-spacing: 0;
             line-height: 30px;
             text-align: center;
             margin-top: -60px;
             margin-bottom: 60px;
+            font-family: "New York";
         }
     }
     .seal {

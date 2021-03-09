@@ -7224,13 +7224,99 @@ a.text-error:hover, a.text-error:focus {
     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
       color: #fff; }
 
+.submit {
+  height: 45px;
+  width: 150px;
+  border-radius: 2.4px;
+  background-color: #856C32;
+  color: #FFFFFF;
+  border: none;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 27px;
+  font-family: 'Nunito Sans', sans-serif;
+  text-transform: capitalize; }
+
 .form-title {
+  color: #C7C7C6;
+  font-family: "Abril Fatface";
   font-size: 33px;
+  letter-spacing: -0.33px;
   line-height: 45px; }
 
 .form-subtitle {
+  opacity: 0.75;
+  color: #FFFFFF;
+  font-family: "New York";
   font-size: 20px;
-  line-height: 30px;
+  letter-spacing: 0;
+  line-height: 30px; }
+
+form {
+  font-family: "NewYork"; }
+  form select,
+  form input {
+    border: 0;
+    height: 40px;
+    background-color: #000;
+    color: #E3CAB6;
+    font-family: "New York";
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 16px; }
+    form select::placeholder,
+    form input::placeholder {
+      color: #E3CAB6; }
+  form input {
+    padding-left: 15px; }
+  form select {
+    padding-left: 10px; }
+
+.radio ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0; }
+  .radio ul li {
+    list-style-type: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 36px;
+    color: #E3CAB6;
+    font-size: 12px; }
+
+.radio input[type=radio] {
+  position: relative;
+  border: 1px solid #656565;
+  padding: 0.5em;
+  -webkit-appearance: none;
+  height: 36px;
+  width: 63px;
+  border-radius: 4px;
+  background: transparent; }
+
+.radio input[type=radio]:checked {
+  background: #31313150;
+  background-size: 100%; }
+
+.radio input[type=radio]:focus {
+  outline-color: transparent;
+  outline: none; }
+
+.radio label {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 36px;
+  color: #E3CAB6;
   font-family: "NewYork"; }
 
 .custom-row {
@@ -7251,30 +7337,36 @@ header {
   top: 10px;
   left: 10px; }
 
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px; }
+
 .heading {
   color: #C1803B;
   font-size: 80px;
-  letter-spacing: -0.8px;
-  line-height: 115px;
   font-family: "Abril Fatface";
-  font-weight: bold; }
+  line-height: 115px; }
 
 .form-heading {
   color: #C7C7C6;
-  font-family: "Abril Fatface";
   font-size: 33px;
-  letter-spacing: -0.33px;
   line-height: 45px; }
 
 .form-desc {
   opacity: 0.75;
   color: #000000;
-  font-family: "New York";
   font-size: 20px;
-  letter-spacing: 0;
   line-height: 30px; }
 
 .banner_text {
+  padding-top: 100px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -7307,14 +7399,13 @@ header {
     max-width: 304px;
     margin: auto;
     color: #ffffff;
-    font-family: "New York";
     font-size: 20px;
     font-weight: bold;
-    letter-spacing: 0;
     line-height: 30px;
     text-align: center;
     margin-top: -60px;
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    font-family: "New York"; }
 
 .grid-section .seal {
   position: absolute;
@@ -7326,6 +7417,10 @@ header {
 
 .pt-60 {
   padding-top: 80px; }
+
+body {
+  background-image: url("https://i.ibb.co/b2cR7ws/rsz-1tex-wood.png");
+  background-position: center; }
 
 .text-white {
   color: #fff; }
@@ -7340,19 +7435,25 @@ header {
   color: #C7C7C6; }
 
 .text-grey {
-  color: #919EAB; }
+  color: #C7C7C6; }
 
 .text-red {
   color: #9C0800; }
 
 .text-off-white {
-  color: rgba(255, 255, 255, 0.7); }
+  color: #ffffffb3; }
 
 .font-bold {
   font-weight: bold; }
 
+.letter-spac-2 {
+  letter-spacing: 2px; }
+
 .font-36 {
-  font-size: 36px; }
+  font-size: 30px; }
+
+.font-14 {
+  font-size: 14px; }
 
 .font-18 {
   font-size: 18px; }
@@ -7369,13 +7470,39 @@ header {
 .text-theme {
   color: #C1803B; }
 
-.font-family {
+.fontabril {
   font-family: "Abril Fatface"; }
+
+.fontnewyork {
+  font-family: "NewYork"; }
 
 .bg-black {
   background-color: #000; }
 
-body {
-  font-family: 'Heebo', sans-serif; }
+.lineht-30 {
+  line-height: 30px; }
+
+.lineht-36 {
+  line-height: 36px; }
+
+.subheading {
+  color: #C1803B;
+  font-family: "New York";
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 55px;
+  text-align: center; }
+
+.inner-text {
+  color: #FFFFFF;
+  font-family: "New York";
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 36px; }
+
+.text-grey-1 {
+  color: #E3CAB6; }
 
 /*# sourceMappingURL=style.css.map */
