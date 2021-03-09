@@ -1,0 +1,21 @@
+.text{
+    &-white{
+        color: #fff;
+    }
+    &-green{
+        color: #008F4F;
+    }
+    &-blue{
+        color: #234361;
+    }
+    &-grey{
+        color: #919EAB;
+    }
+    &-red{
+        color: #9C0800;
+    }
+}
+
+.text-decoration-line{
+    text-decoration: line-through;
+}
