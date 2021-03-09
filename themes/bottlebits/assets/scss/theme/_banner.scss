@@ -1,0 +1,95 @@
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.heading {
+    color: $theme-color;
+    font-size: 80px;
+    font-family: $fontabril;
+    line-height: 115px;
+}
+
+.form-heading {
+    color: #C7C7C6;
+    font-size: 33px;
+    line-height: 45px;
+}
+
+.form-desc {
+    opacity: 0.75;
+    color: #000000;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.banner {
+    &_text {
+        padding-top: 100px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: max-content;
+        text-align: center;
+        width: 80%;
+    }
+    &_btn {
+        display: inline-block;
+        height: 45px;
+        width: 150px;
+        border-radius: 2.4px;
+        background-color: #D29300;
+        line-height: 45px;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+    }
+}
+
+/////////////// about section
+.about {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.grid-section {
+    .item {
+        position: relative;
+        .item-text {
+            opacity: 0.75;
+            max-width: 304px;
+            margin: auto;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 30px;
+            text-align: center;
+            margin-top: -60px;
+            margin-bottom: 60px;
+            font-family: "New York";
+        }
+    }
+    .seal {
+        position: absolute;
+        height: 77px;
+        width: 67px;
+        z-index: 1;
+        top: -15px;
+        left: -20px;
+    }
+}
+
+.pt-60 {
+    padding-top: 80px;
+}

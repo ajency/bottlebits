@@ -1,3 +1,11 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'NewYork';
+  src: url("../fonts/NewYork.eot");
+  src: local("☺"), url("../fonts/NewYork.woff") format("woff"), url("../fonts/NewYork.ttf") format("truetype"), url("../fonts/NewYork.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 *,
 *::before,
 *::after {
@@ -7216,6 +7224,204 @@ a.text-error:hover, a.text-error:focus {
     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
       color: #fff; }
 
+.submit {
+  height: 45px;
+  width: 150px;
+  border-radius: 2.4px;
+  background-color: #856C32;
+  color: #FFFFFF;
+  border: none;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 27px;
+  font-family: 'Nunito Sans', sans-serif;
+  text-transform: capitalize; }
+
+.form-title {
+  color: #C7C7C6;
+  font-family: "Abril Fatface";
+  font-size: 33px;
+  letter-spacing: -0.33px;
+  line-height: 45px; }
+
+.form-subtitle {
+  opacity: 0.75;
+  color: #FFFFFF;
+  font-family: "New York";
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 30px; }
+
+form {
+  font-family: "NewYork"; }
+  form select,
+  form input {
+    border: 0;
+    height: 40px;
+    background-color: #000;
+    color: #E3CAB6;
+    font-family: "New York";
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 16px; }
+    form select::placeholder,
+    form input::placeholder {
+      color: #E3CAB6; }
+  form input {
+    padding-left: 15px; }
+  form select {
+    padding-left: 10px; }
+
+.radio ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0; }
+  .radio ul li {
+    list-style-type: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 36px;
+    color: #E3CAB6;
+    font-size: 12px; }
+
+.radio input[type=radio] {
+  position: relative;
+  border: 1px solid #656565;
+  padding: 0.5em;
+  -webkit-appearance: none;
+  height: 36px;
+  width: 63px;
+  border-radius: 4px;
+  background: transparent; }
+
+.radio input[type=radio]:checked {
+  background: #31313150;
+  background-size: 100%; }
+
+.radio input[type=radio]:focus {
+  outline-color: transparent;
+  outline: none; }
+
+.radio label {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 36px;
+  color: #E3CAB6;
+  font-family: "NewYork"; }
+
+.custom-row {
+  box-shadow: 0 5px 43px 0 rgba(0, 0, 0, 0.66); }
+
+@media (min-width: 768px) {
+  .custom-col-50 {
+    width: 50%; } }
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px; }
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px; }
+
+.heading {
+  color: #C1803B;
+  font-size: 80px;
+  font-family: "Abril Fatface";
+  line-height: 115px; }
+
+.form-heading {
+  color: #C7C7C6;
+  font-size: 33px;
+  line-height: 45px; }
+
+.form-desc {
+  opacity: 0.75;
+  color: #000000;
+  font-size: 20px;
+  line-height: 30px; }
+
+.banner_text {
+  padding-top: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: max-content;
+  text-align: center;
+  width: 80%; }
+
+.banner_btn {
+  display: inline-block;
+  height: 45px;
+  width: 150px;
+  border-radius: 2.4px;
+  background-color: #D29300;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold; }
+
+.about {
+  padding-top: 100px;
+  padding-bottom: 50px; }
+
+.grid-section .item {
+  position: relative; }
+  .grid-section .item .item-text {
+    opacity: 0.75;
+    max-width: 304px;
+    margin: auto;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    margin-top: -60px;
+    margin-bottom: 60px;
+    font-family: "New York"; }
+
+.grid-section .seal {
+  position: absolute;
+  height: 77px;
+  width: 67px;
+  z-index: 1;
+  top: -15px;
+  left: -20px; }
+
+.pt-60 {
+  padding-top: 80px; }
+
+body {
+  background-image: url("https://i.ibb.co/b2cR7ws/rsz-1tex-wood.png");
+  background-position: center; }
+
 .text-white {
   color: #fff; }
 
@@ -7225,16 +7431,78 @@ a.text-error:hover, a.text-error:focus {
 .text-blue {
   color: #234361; }
 
+.text-grey-1 {
+  color: #C7C7C6; }
+
 .text-grey {
-  color: #919EAB; }
+  color: #C7C7C6; }
 
 .text-red {
   color: #9C0800; }
 
+.text-off-white {
+  color: #ffffffb3; }
+
+.font-bold {
+  font-weight: bold; }
+
+.letter-spac-2 {
+  letter-spacing: 2px; }
+
+.font-36 {
+  font-size: 30px; }
+
+.font-14 {
+  font-size: 14px; }
+
+.font-18 {
+  font-size: 18px; }
+
+.w-95 {
+  width: 95%; }
+
 .text-decoration-line {
   text-decoration: line-through; }
 
-body {
-  font-family: 'Heebo', sans-serif; }
+.border-gold {
+  border: 1px solid #986B3C; }
+
+.text-theme {
+  color: #C1803B; }
+
+.fontabril {
+  font-family: "Abril Fatface"; }
+
+.fontnewyork {
+  font-family: "NewYork"; }
+
+.bg-black {
+  background-color: #000; }
+
+.lineht-30 {
+  line-height: 30px; }
+
+.lineht-36 {
+  line-height: 36px; }
+
+.subheading {
+  color: #C1803B;
+  font-family: "New York";
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 55px;
+  text-align: center; }
+
+.inner-text {
+  color: #FFFFFF;
+  font-family: "New York";
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 36px; }
+
+.text-grey-1 {
+  color: #E3CAB6; }
 
 /*# sourceMappingURL=style.css.map */

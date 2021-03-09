@@ -1,21 +1,110 @@
-.text{
-    &-white{
+body {
+    background-image: url('https://i.ibb.co/b2cR7ws/rsz-1tex-wood.png');
+    background-position: center;
+    // background-image: url('../../../static/images/tex-wood.png');
+}
+
+.text {
+    &-white {
         color: #fff;
     }
-    &-green{
+    &-green {
         color: #008F4F;
     }
-    &-blue{
+    &-blue {
         color: #234361;
     }
-    &-grey{
-        color: #919EAB;
+    &-grey-1 {
+        color: $text-grey;
     }
-    &-red{
+    &-grey {
+        color: #C7C7C6;
+    }
+    &-red {
         color: #9C0800;
+    }
+    &-off-white {
+        color: $text-offwhite;
     }
 }
 
-.text-decoration-line{
+.font {
+    &-bold {
+        font-weight: bold;
+    }
+}
+
+.letter-spac-2 {
+    letter-spacing: 2px;
+}
+
+.font-36 {
+    font-size: 30px;
+}
+
+.font {
+    &-14{
+        font-size: 14px;
+    }
+    &-18 {
+        font-size: 18px;
+    }
+}
+
+.w {
+    &-95 {
+        width: 95%;
+    }
+}
+
+.text-decoration-line {
     text-decoration: line-through;
+}
+
+.border {
+    &-gold {
+        border: 1px solid #986B3C;
+    }
+}
+
+.text-theme {
+    color: $theme-color;
+}
+
+.fontabril {
+    font-family: $fontabril;
+}
+
+.fontnewyork {
+    font-family: $fontNewYork;
+}
+
+.bg-black {
+    background-color: #000;
+}
+.lineht-30{
+    line-height: 30px;
+}
+.lineht-36{
+    line-height: 36px;
+}
+.subheading{
+    color: #C1803B;
+    font-family: "New York";
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 55px;
+    text-align: center; 
+}
+.inner-text{
+    color: #FFFFFF;
+    font-family: "New York";
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 36px;
+}
+.text-grey-1{
+    color: #E3CAB6;
 }
