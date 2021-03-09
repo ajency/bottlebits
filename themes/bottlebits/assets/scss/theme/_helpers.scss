@@ -9,11 +9,17 @@
     &-blue {
         color: #234361;
     }
+    &-grey-1{
+        color: $text-grey;
+    }
     &-grey {
         color: #919EAB;
     }
     &-red {
         color: #9C0800;
+    }
+    &-off-white{
+        color: $text-offwhite;
     }
 }
 
@@ -41,6 +47,12 @@
 
 .text-decoration-line {
     text-decoration: line-through;
+}
+
+.border{
+    &-gold{
+        border: 1px solid #986B3C;
+    }
 }
 
 .text-theme {

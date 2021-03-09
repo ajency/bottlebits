@@ -7224,6 +7224,22 @@ a.text-error:hover, a.text-error:focus {
     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
       color: #fff; }
 
+.form-title {
+  font-size: 33px;
+  line-height: 45px; }
+
+.form-subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "NewYork"; }
+
+.custom-row {
+  box-shadow: 0 5px 43px 0 rgba(0, 0, 0, 0.66); }
+
+@media (min-width: 768px) {
+  .custom-col-50 {
+    width: 50%; } }
+
 header {
   position: absolute;
   top: 0;
@@ -7320,11 +7336,17 @@ header {
 .text-blue {
   color: #234361; }
 
+.text-grey-1 {
+  color: #C7C7C6; }
+
 .text-grey {
   color: #919EAB; }
 
 .text-red {
   color: #9C0800; }
+
+.text-off-white {
+  color: rgba(255, 255, 255, 0.7); }
 
 .font-bold {
   font-weight: bold; }
@@ -7340,6 +7362,9 @@ header {
 
 .text-decoration-line {
   text-decoration: line-through; }
+
+.border-gold {
+  border: 1px solid #986B3C; }
 
 .text-theme {
   color: #C1803B; }
