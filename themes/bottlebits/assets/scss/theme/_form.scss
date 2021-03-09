@@ -89,3 +89,8 @@ form {
         font-family: $fontNewYork;
     }
 }
+.text-error{
+    outline: 1px solid red;
+    width: max-content;
+    padding: 2px;
+}
