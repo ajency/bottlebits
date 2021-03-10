@@ -12,3 +12,24 @@
     font-family: 'Nunito Sans', sans-serif;
     text-transform: capitalize;
 }
+
+.commonbtn {
+    display: block;
+    height: 45px;
+    width: 150px;
+    border-radius: 2.4px;
+    background-color: #D29300;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.modal-button{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: max-content;
+    left: 0;
+    right: 0;
+}

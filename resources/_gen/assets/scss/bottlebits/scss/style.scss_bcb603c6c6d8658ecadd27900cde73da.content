@@ -7238,6 +7238,26 @@ a.text-error:hover, a.text-error:focus {
   font-family: 'Nunito Sans', sans-serif;
   text-transform: capitalize; }
 
+.commonbtn {
+  display: block;
+  height: 45px;
+  width: 150px;
+  border-radius: 2.4px;
+  background-color: #D29300;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold; }
+
+.modal-button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: max-content;
+  left: 0;
+  right: 0; }
+
 .form-title {
   color: #C7C7C6;
   font-family: "Abril Fatface";
@@ -7540,9 +7560,11 @@ body {
 .text-grey-1 {
   color: #E3CAB6; }
 
-.popup {
+.popup-fixed {
   height: 680px;
-  width: 1095px;
+  width: 1095px; }
+
+.popup {
   border-radius: 10px;
   background: url(https://i.ibb.co/9pJgxqV/tex-Paper.png);
   display: flex;
@@ -7563,11 +7585,9 @@ body {
     line-height: 30px; }
   .popup .line-1 {
     margin-top: 10px;
-    width: 1037px;
     border-bottom: 3px solid #9B785C; }
   .popup .line-2 {
     margin-top: 4px;
-    width: 1039px;
     border-bottom: 1px solid #9B785C; }
   .popup .question {
     color: #262525;
@@ -7631,6 +7651,9 @@ body {
     content: '';
     display: inline-block;
     visibility: visible; }
+
+.range-slider {
+  margin-bottom: 80px; }
 
 .range {
   position: relative;
@@ -7750,8 +7773,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-left: 50.8px;
-  margin-top: 50px; }
+  padding-left: 50.8px; }
   .previous .icon {
     height: 45px;
     width: 45px;
@@ -7781,5 +7803,43 @@ body {
   max-width: 100%;
   width: max-content;
   margin: 1.75rem auto; }
+
+.desc {
+  font-family: "New York";
+  font-size: 23px;
+  letter-spacing: 0;
+  line-height: 36px; }
+
+.social-popup {
+  width: 476px; }
+
+.social-links {
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.copy-link {
+  background: chocolate;
+  width: max-content;
+  margin: auto;
+  color: #FFFFFF;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 22px; }
+  .copy-link img {
+    height: 22px;
+    width: 19px; }
+  .copy-link a {
+    padding: 9px 16px; }
+    .copy-link a span {
+      margin-left: 5px; }
+
+.blur {
+  filter: blur(20px); }
+
+.outer {
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */
