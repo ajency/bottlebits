@@ -148,12 +148,18 @@ $(document).ready(function () {
 
 	$(document).on("click",".survey-qn-2",function(e){
     	
-    	let bottlebits_help_me = $("#bottlebits_help_me").val();
-    	
-		let requestValues = {
-			'bottlebits_help_me':bottlebits_help_me,
-			'step_2' : true
-		}
+    	// let bottlebits_help_me = $("#bottlebits_help_me").val();
+        let bottlebits_help_me = '';
+        $('.bottlebits_help_me').find('li').each(function(idx, li) {
+            if(bottlebits_help_me!=''){
+                bottlebits_help_me += ', ';
+            }
+            bottlebits_help_me += $(this).text();
+        });
+        let requestValues = {
+            'bottlebits_help_me':bottlebits_help_me,
+            'step_2' : true
+        }
 
     	$.ajax({
 	        url: SITE_URL+"api/server.php",
