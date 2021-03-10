@@ -33,7 +33,7 @@ $(document).ready(function () {
     	}
 
     	if(validateInput(age_group) != ""){
-    		$("#age_group").addClass('text-error')
+    		$(".age-input").addClass('text-error')
     		error++;
     	}
 
