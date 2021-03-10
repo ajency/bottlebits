@@ -5,16 +5,6 @@
     <link>https://ajency.github.io/bottlebits/</link>
     <description>Recent content on Bottlebits</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2020 17:20:13 +0530</lastBuildDate><atom:link href="https://ajency.github.io/bottlebits/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Homepage</title>
-      <link>https://ajency.github.io/bottlebits/screens/homepage/</link>
-      <pubDate>Tue, 21 Apr 2020 17:20:13 +0530</pubDate>
-      
-      <guid>https://ajency.github.io/bottlebits/screens/homepage/</guid>
-      <description></description>
-    </item>
-    
+    <language>en-us</language><atom:link href="https://ajency.github.io/bottlebits/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
