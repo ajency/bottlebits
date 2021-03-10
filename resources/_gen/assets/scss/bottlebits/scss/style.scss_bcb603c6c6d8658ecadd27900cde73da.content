@@ -7527,4 +7527,50 @@ body {
 .text-grey-1 {
   color: #E3CAB6; }
 
+.popup {
+  background: url("https://i.ibb.co/9pJgxqV/tex-Paper.png");
+  padding: 50px; }
+  .popup-heading {
+    color: #986B3C;
+    font-family: "Abril Fatface";
+    font-size: 30px;
+    letter-spacing: -0.3px;
+    line-height: 41px; }
+  .popup-subheading {
+    opacity: 0.75;
+    color: #222222;
+    font-family: "New York";
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 30px; }
+  .popup .line-1 {
+    margin-top: 10px;
+    width: 1037px;
+    border-bottom: 3px solid #9B785C; }
+  .popup .line-2 {
+    margin-top: 4px;
+    width: 1039px;
+    border-bottom: 1px solid #9B785C; }
+  .popup .question {
+    color: #262525;
+    font-family: "New York";
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 30px;
+    position: relative; }
+  .popup .qnumb {
+    margin-right: 10px;
+    height: 40.8px;
+    width: 40.8px;
+    border: 0.8px solid #9B785C;
+    border-radius: 50%;
+    color: #986B3C;
+    font-family: "Abril Fatface";
+    font-size: 24px;
+    letter-spacing: -0.24px;
+    line-height: 32px;
+    text-align: center;
+    line-height: 40.8px; }
+
 /*# sourceMappingURL=style.css.map */
