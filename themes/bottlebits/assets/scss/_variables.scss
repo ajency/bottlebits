@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'NewYork';
+	src: url('../fonts/NewYork.eot');
+	src: local('☺'), url('../fonts/NewYork.woff') format('woff'), url('../fonts/NewYork.ttf') format('truetype'), url('../fonts/NewYork.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$fontNewYork: 'NewYork';
+$fontabril: "Abril Fatface";
+
+
+
+$theme-color:#C1803B;
+$text-grey: #C7C7C6;
+$text-white:#fff;
+$text-offwhite: #ffffffb3;

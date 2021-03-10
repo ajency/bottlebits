@@ -1,3 +1,11 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'NewYork';
+  src: url("../fonts/NewYork.eot");
+  src: local("☺"), url("../fonts/NewYork.woff") format("woff"), url("../fonts/NewYork.ttf") format("truetype"), url("../fonts/NewYork.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 *,
 *::before,
 *::after {
@@ -7216,6 +7224,231 @@ a.text-error:hover, a.text-error:focus {
     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
       color: #fff; }
 
+.submit {
+  height: 45px;
+  width: 150px;
+  border-radius: 2.4px;
+  background-color: #856C32;
+  color: #FFFFFF;
+  border: none;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 27px;
+  font-family: 'Nunito Sans', sans-serif;
+  text-transform: capitalize; }
+
+.form-title {
+  color: #C7C7C6;
+  font-family: "Abril Fatface";
+  font-size: 33px;
+  letter-spacing: -0.33px;
+  line-height: 45px; }
+
+.form-subtitle {
+  opacity: 0.75;
+  color: #FFFFFF;
+  font-family: "New York";
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 30px; }
+
+form {
+  font-family: "NewYork"; }
+  form select,
+  form input {
+    border: 0;
+    height: 40px;
+    background-color: #000;
+    color: #E3CAB6;
+    font-family: "New York";
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 16px; }
+    form select::placeholder,
+    form input::placeholder {
+      color: #E3CAB6; }
+  form input {
+    padding-left: 15px; }
+  form select {
+    padding-left: 10px; }
+
+.radio ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0; }
+  .radio ul li {
+    list-style-type: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 36px;
+    color: #E3CAB6;
+    font-size: 12px; }
+
+.radio input[type=radio] {
+  position: relative;
+  border: 1px solid #656565;
+  padding: 0.5em;
+  -webkit-appearance: none;
+  height: 36px;
+  width: 63px;
+  border-radius: 4px;
+  background: transparent; }
+
+.radio input[type=radio]:checked {
+  background: #31313150;
+  background-size: 100%; }
+
+.radio input[type=radio]:focus {
+  outline-color: transparent;
+  outline: none; }
+
+.radio label {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 36px;
+  color: #E3CAB6;
+  font-family: "NewYork"; }
+
+.text-error {
+  outline: 1px solid red;
+  width: max-content;
+  padding: 2px; }
+
+.custom-row {
+  box-shadow: 0 5px 43px 0 rgba(0, 0, 0, 0.66); }
+
+@media (min-width: 768px) {
+  .custom-col-50 {
+    width: 50%; } }
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px; }
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px; }
+  @media screen and (max-width: 900px) {
+    .logo {
+      height: 23px;
+      width: 115px; } }
+.heading {
+  color: #C1803B;
+  font-size: clamp(40px, 5vw, 10em);
+  font-family: "Abril Fatface";
+  line-height: 55px; }
+  @media screen and (min-width: 992px) {
+    .heading {
+      line-height: 115px; } }
+.form-heading {
+  color: #C7C7C6;
+  font-size: 33px;
+  line-height: 45px; }
+
+.form-desc {
+  opacity: 0.75;
+  color: #000000;
+  font-size: 20px;
+  line-height: 30px; }
+
+.banner_text {
+  padding-top: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: max-content;
+  text-align: center;
+  width: 80%; }
+
+.banner_btn {
+  display: inline-block;
+  height: 45px;
+  width: 150px;
+  border-radius: 2.4px;
+  background-color: #D29300;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold; }
+
+.about {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background: url(https://i.ibb.co/QQxjG0d/graph.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain; }
+
+.grid-section .item {
+  position: relative; }
+  .grid-section .item .item-text {
+    opacity: 0.75;
+    max-width: 304px;
+    margin: auto;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    font-family: "New York"; }
+    @media screen and (min-width: 992px) {
+      .grid-section .item .item-text {
+        font-size: 20px;
+        margin-top: -60px;
+        margin-bottom: 60px; } }
+.grid-section .seal {
+  position: absolute;
+  height: 77px;
+  width: 67px;
+  z-index: 1;
+  top: -15px;
+  left: -20px; }
+
+@media screen and (min-width: 992px) {
+  .pt-60 {
+    padding-top: 80px; } }
+
+@media (max-width: 767px) {
+  .footer-logo {
+    width: 115px; } }
+
+@media (max-width: 767px) {
+  .footer-text {
+    font-size: 12px; } }
+
+body {
+  background-image: url("https://i.ibb.co/b2cR7ws/rsz-1tex-wood.png");
+  background-position: center;
+  padding: 0 !important; }
+
 .text-white {
   color: #fff; }
 
@@ -7225,16 +7458,328 @@ a.text-error:hover, a.text-error:focus {
 .text-blue {
   color: #234361; }
 
+.text-grey-1 {
+  color: #C7C7C6; }
+
 .text-grey {
-  color: #919EAB; }
+  color: #C7C7C6; }
 
 .text-red {
   color: #9C0800; }
 
+.text-off-white {
+  color: #ffffffb3; }
+
+.font-bold {
+  font-weight: bold; }
+
+.letter-spac-2 {
+  letter-spacing: 2px; }
+
+.font-36 {
+  font-size: 30px; }
+
+.font-14 {
+  font-size: 12px; }
+  @media screen and (min-width: 992px) {
+    .font-14 {
+      font-size: 14px; } }
+.font-18 {
+  font-size: 12px; }
+  @media screen and (min-width: 992px) {
+    .font-18 {
+      font-size: 18px; } }
+.w-95 {
+  width: 95%; }
+
 .text-decoration-line {
   text-decoration: line-through; }
 
-body {
-  font-family: 'Heebo', sans-serif; }
+.border-gold {
+  border: 1px solid #986B3C; }
+
+.text-theme {
+  color: #C1803B; }
+
+.fontabril {
+  font-family: "Abril Fatface"; }
+
+.fontnewyork {
+  font-family: "NewYork"; }
+
+.bg-black {
+  background-color: #000; }
+
+.lineht-30 {
+  line-height: 30px; }
+
+.lineht-36 {
+  line-height: 24px; }
+  @media screen and (min-width: 992px) {
+    .lineht-36 {
+      line-height: 36px; } }
+.subheading {
+  color: #C1803B;
+  font-family: "New York";
+  font-size: clamp(26px, 4vh, 36px);
+  font-weight: bold;
+  letter-spacing: 0;
+  text-align: center; }
+  @media screen and (min-width: 992px) {
+    .subheading {
+      line-height: 55px; } }
+.inner-text {
+  color: #FFFFFF;
+  font-family: "New York";
+  font-weight: bold;
+  letter-spacing: 1px; }
+  @media screen and (min-width: 992px) {
+    .inner-text {
+      line-height: 36px;
+      font-size: 18px; } }
+.text-grey-1 {
+  color: #E3CAB6; }
+
+.popup {
+  height: 680px;
+  width: 1095px;
+  border-radius: 10px;
+  background: url(https://i.ibb.co/9pJgxqV/tex-Paper.png);
+  display: flex;
+  justify-content: center;
+  padding: 28px; }
+  .popup-heading {
+    color: #986B3C;
+    font-family: "Abril Fatface";
+    font-size: 30px;
+    letter-spacing: -0.3px;
+    line-height: 41px; }
+  .popup-subheading {
+    opacity: 0.75;
+    color: #222222;
+    font-family: "New York";
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 30px; }
+  .popup .line-1 {
+    margin-top: 10px;
+    width: 1037px;
+    border-bottom: 3px solid #9B785C; }
+  .popup .line-2 {
+    margin-top: 4px;
+    width: 1039px;
+    border-bottom: 1px solid #9B785C; }
+  .popup .question {
+    color: #262525;
+    font-family: "New York";
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 30px;
+    position: relative; }
+  .popup .qnumb {
+    margin-right: 10px;
+    height: 40.8px;
+    width: 40.8px;
+    border: 0.8px solid #9B785C;
+    border-radius: 50%;
+    color: #986B3C;
+    font-family: "Abril Fatface";
+    font-size: 24px;
+    letter-spacing: -0.24px;
+    line-height: 32px;
+    text-align: center;
+    line-height: 40.8px; }
+  .popup .qdesc {
+    opacity: 0.75;
+    color: #222222;
+    font-family: "New York";
+    font-size: 14px;
+    font-style: italic;
+    letter-spacing: 0;
+    line-height: 16px;
+    padding-left: 50.8px; }
+
+.radiosbtn {
+  padding-left: 50.8px; }
+  .radiosbtn li {
+    list-style: none;
+    margin: 20px 0;
+    color: #262525;
+    font-family: "New York";
+    letter-spacing: 0; }
+  .radiosbtn input[type='radio']:after {
+    height: 24px;
+    width: 24px;
+    border-radius: 15px;
+    top: -5px;
+    left: -0px;
+    position: relative;
+    background-color: #F1EDDB;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #262525; }
+  .radiosbtn input[type='radio']:checked:after {
+    height: 24px;
+    width: 24px;
+    border-radius: 15px;
+    top: -5px;
+    left: 0px;
+    position: relative;
+    background-color: #C1803B;
+    content: '';
+    display: inline-block;
+    visibility: visible; }
+
+.range {
+  position: relative;
+  width: 550px;
+  height: 5px; }
+
+.range input {
+  width: 100%;
+  position: absolute;
+  top: 2px;
+  height: 0;
+  -webkit-appearance: none; }
+  .range input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    margin: -8px 0 0;
+    border-radius: 50%;
+    background: #e7661b;
+    cursor: pointer;
+    border: 0 !important; }
+  .range input::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    margin: -8px 0 0;
+    border-radius: 50%;
+    background: #e7661b;
+    cursor: pointer;
+    border: 0 !important; }
+  .range input::-ms-thumb {
+    width: 18px;
+    height: 18px;
+    margin: -8px 0 0;
+    border-radius: 50%;
+    background: #e7661b;
+    cursor: pointer;
+    border: 0 !important; }
+  .range input::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: #9B785C; }
+  .range input::-moz-range-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: #9B785C; }
+  .range input::-ms-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: #9B785C; }
+  .range input:focus {
+    background: none;
+    outline: none; }
+  .range input::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent; }
+
+.range-labels {
+  margin: 18px -41px 0;
+  padding: 0;
+  list-style: none; }
+  .range-labels li {
+    position: relative;
+    float: left;
+    width: 90.25px;
+    text-align: center;
+    color: #b2b2b2;
+    font-size: 14px;
+    cursor: pointer; }
+    .range-labels li::before {
+      position: absolute;
+      top: -25px;
+      right: 0;
+      left: 0;
+      content: "";
+      margin: 0 auto;
+      width: 9px;
+      height: 9px;
+      background: #b2b2b2;
+      border-radius: 50%; }
+  .range-labels .active {
+    color: #37adbf; }
+  .range-labels .selected::before {
+    background: #37adbf; }
+  .range-labels .active.selected::before {
+    display: none; }
+
+#sortable {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 50.8px;
+  width: 60%; }
+
+#sortable li {
+  height: 38px;
+  width: 640px;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  color: #262525;
+  font-family: "New York";
+  letter-spacing: 0;
+  line-height: 38px;
+  padding-left: 50px; }
+
+#sortable li span {
+  position: absolute;
+  margin-left: -1.3em; }
+
+.previous {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 50.8px;
+  margin-top: 50px; }
+  .previous .icon {
+    height: 45px;
+    width: 45px;
+    border: thin solid #b0b0b0;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    background: white;
+    margin-right: 10px;
+    color: #262525; }
+  .previous .text {
+    color: #986B3C;
+    font-family: "New York";
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 16px;
+    text-align: center;
+    text-transform: capitalize; }
+
+.modal {
+  backdrop-filter: blur(100px); }
+
+.modal-content {
+  background: transparent; }
+
+.modal-dialog {
+  max-width: 100%;
+  width: max-content;
+  margin: 1.75rem auto; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,10 @@
+.custom{
+    &-row{
+        box-shadow: 0 5px 43px 0 rgba(0,0,0,0.66)
+    }
+    &-col-50{
+        @media (min-width: 768px) {
+            width: 50%;
+        }        
+    }
+}
