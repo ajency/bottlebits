@@ -57,8 +57,10 @@ if(isset($postRequest['step_1'])){
 	            ('".$userId."', '".$whiskyKnowledge."')";
 	}
 	else{
-		$sql = "UPDATE survey SET whisky_industry_knowledge='".$whiskyKnowledge."' WHERE id= '".$userId."'";
+		$sql = "UPDATE survey SET whisky_industry_knowledge='".$whiskyKnowledge."' WHERE user_id= '".$userId."'";
 	}
+
+	echo $sql;
 
 	if ($conn->query($sql) === TRUE) {;
 	  	$response = ['success'=>true,'code'=> 'step_1','message'=>'Answer successfully saved.'];
@@ -88,7 +90,7 @@ if(isset($postRequest['step_2'])){
 	            ('".$userId."', '".$bottlebitsHelpMe."')";
 	}
 	else{
-		$sql = "UPDATE survey SET bottlebits_help_me='".$bottlebitsHelpMe."' WHERE id= '".$userId."'";
+		$sql = "UPDATE survey SET bottlebits_help_me='".$bottlebitsHelpMe."' WHERE user_id= '".$userId."'";
 		print_r($row);
 	}
 
@@ -118,7 +120,7 @@ if(isset($postRequest['step_3'])){
 	            ('".$userId."', '".$initialInvestmentIntention."')";
 	}
 	else{
-		$sql = "UPDATE survey SET initial_investment_intention='".$initialInvestmentIntention."' WHERE id= '".$userId."'";
+		$sql = "UPDATE survey SET initial_investment_intention='".$initialInvestmentIntention."' WHERE user_id= '".$userId."'";
 	}
 
 	if ($conn->query($sql) === TRUE) {;
@@ -137,8 +139,27 @@ if(isset($postRequest['step_3'])){
 
 if(isset($postRequest['session_exits'])){
 	
-	if (isset($_SESSION['user_id']) && $_SESSION['user_id']!="") {;
-	  	$response = ['success'=>true,'code'=> 'session_exits'];
+	if (isset($_SESSION['user_id']) && $_SESSION['user_id']!="") {
+		$userId = $_SESSION['user_id'];
+		$start_survey_step = 'survey-step-1';
+
+		$sql = "SELECT * FROM survey where user_id = '".$userId."'";
+		$result = $conn->query($sql);
+		if ($result->num_rows > 0) {
+			$row = $result->fetch_assoc(); 
+			if($row['whisky_industry_knowledge'] == null || $row['whisky_industry_knowledge'] == ''){
+				$start_survey_step = 'survey-step-1';
+			}
+			elseif($row['bottlebits_help_me'] == null || $row['bottlebits_help_me'] == ''){
+				$start_survey_step = 'survey-step-2';
+			}
+			elseif($row['initial_investment_intention'] == null || $row['initial_investment_intention'] == ''){
+				$start_survey_step = 'survey-step-3';
+			}
+
+		}
+
+	  	$response = ['success'=>true,'code'=> 'session_exits','start_survey_step'=>$start_survey_step];
 	  	echo json_encode($response);
 	  	exit;
 	} else {

@@ -4,18 +4,24 @@ $(document).ready(function () {
     let requestValues = {
 		'session_exits' : true
 	}
-
+    $('.survey-steps').addClass('d-none')
 	$.ajax({
         url: SITE_URL+"api/server.php",
         type: "post",
         data: requestValues ,
         success: function (response) {
-
+            response = JSON.parse(response)
             if(response.success == true){
-                $(".survey-btn").removeClass('d-none')
                 $(".user-signup-form").addClass('blur')
+
+                if(response.start_survey_step != 'survey-step-3'){
+                    $("."+response.start_survey_step).removeClass('d-none')
+                    $(".survey-btn").removeClass('d-none')
+                }
             }
             else{
+                
+                $(".survey-step-thankyou").removeClass('d-none')
                 $(".survey-btn").addClass('d-none')
                 $(".user-signup-form").removeClass('blur')
             }
@@ -89,9 +95,13 @@ $(document).ready(function () {
 		        type: "post",
 		        data: requestValues ,
 		        success: function (response) {
-                    $(".survey-btn").removeClass('d-none')
-                    $(".user-signup-form").addClass('blur')
-		        	$("#exampleModal").modal('show');
+                    response = JSON.parse(response)
+                    if(response.success == true){
+                        $(".survey-btn").removeClass('d-none')
+                        $(".user-signup-form").addClass('blur')
+                        $("#exampleModal").modal('show');
+                    }
+                    
 		           // You will get response from your PHP page (what you echo or print)
 		        },
 		        error: function(jqXHR, textStatus, errorThrown) {
@@ -117,6 +127,13 @@ $(document).ready(function () {
 	        type: "post",
 	        data: requestValues ,
 	        success: function (response) {
+                
+                response = JSON.parse(response)
+                if(response.success == true){
+                    $('.survey-steps').addClass('d-none')
+                    $(".survey-step-2").removeClass('d-none')
+                }
+
 	        	
 	           // You will get response from your PHP page (what you echo or print)
 	        },
@@ -143,7 +160,11 @@ $(document).ready(function () {
 	        type: "post",
 	        data: requestValues ,
 	        success: function (response) {
-	        	
+	        	response = JSON.parse(response)
+                if(response.success == true){
+                    $('.survey-steps').addClass('d-none')
+                    $(".survey-step-3").removeClass('d-none')
+                }
 	           // You will get response from your PHP page (what you echo or print)
 	        },
 	        error: function(jqXHR, textStatus, errorThrown) {
@@ -169,7 +190,11 @@ $(document).ready(function () {
 	        type: "post",
 	        data: requestValues ,
 	        success: function (response) {
-	        	
+	        	response = JSON.parse(response)
+                if(response.success == true){
+                    $('.survey-steps').addClass('d-none')
+                    $(".survey-step-thankyou").removeClass('d-none')
+                }
 	           // You will get response from your PHP page (what you echo or print)
 	        },
 	        error: function(jqXHR, textStatus, errorThrown) {
