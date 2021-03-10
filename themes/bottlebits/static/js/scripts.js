@@ -98,6 +98,8 @@ $(document).ready(function () {
                     response = JSON.parse(response)
                     if(response.success == true){
                         $(".survey-btn").removeClass('d-none')
+                        $('.survey-steps').addClass('d-none')
+                        $('.survey-step-welcome').addClass('d-none')
                         $(".user-signup-form").addClass('blur')
                         $("#exampleModal").modal('show');
                     }
@@ -112,6 +114,11 @@ $(document).ready(function () {
 	
 
 	});
+
+    $(document).on("click",".survey-welcome",function(e){
+        $('.survey-steps').addClass('d-none')
+        $(".survey-step-1").removeClass('d-none')
+    });
 
 	$(document).on("click",".survey-qn-1",function(e){
     	
