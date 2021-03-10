@@ -60,8 +60,6 @@ if(isset($postRequest['step_1'])){
 		$sql = "UPDATE survey SET whisky_industry_knowledge='".$whiskyKnowledge."' WHERE user_id= '".$userId."'";
 	}
 
-	echo $sql;
-
 	if ($conn->query($sql) === TRUE) {;
 	  	$response = ['success'=>true,'code'=> 'step_1','message'=>'Answer successfully saved.'];
 	  	echo json_encode($response);
@@ -141,7 +139,7 @@ if(isset($postRequest['session_exits'])){
 	
 	if (isset($_SESSION['user_id']) && $_SESSION['user_id']!="") {
 		$userId = $_SESSION['user_id'];
-		$start_survey_step = 'survey-step-1';
+		$start_survey_step = 'survey-step-welcome';
 
 		$sql = "SELECT * FROM survey where user_id = '".$userId."'";
 		$result = $conn->query($sql);

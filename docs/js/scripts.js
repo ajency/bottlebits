@@ -1,6 +1,38 @@
 $(document).ready(function () {
     let SITE_URL = 'http://localhost:8888/bottlebits/docs/';
 
+    let requestValues = {
+		'session_exits' : true
+	}
+    $('.survey-steps').addClass('d-none')
+	$.ajax({
+        url: SITE_URL+"api/server.php",
+        type: "post",
+        data: requestValues ,
+        success: function (response) {
+            response = JSON.parse(response)
+            if(response.success == true){
+                $(".user-signup-form").addClass('blur')
+
+                if(response.start_survey_step != 'survey-step-3'){
+                    $("."+response.start_survey_step).removeClass('d-none')
+                    $(".survey-btn").removeClass('d-none')
+                }
+            }
+            else{
+                
+                $(".survey-step-thankyou").removeClass('d-none')
+                $(".survey-btn").addClass('d-none')
+                $(".user-signup-form").removeClass('blur')
+            }
+        	
+           // You will get response from your PHP page (what you echo or print)
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+           console.log(textStatus, errorThrown);
+        }
+    });
+
     $(document).on("click",".sign-up-btn",function(e){
     	
     	let first_name = $("#first_name").val();
@@ -63,7 +95,15 @@ $(document).ready(function () {
 		        type: "post",
 		        data: requestValues ,
 		        success: function (response) {
-		        	$("#exampleModal").modal('show');
+                    response = JSON.parse(response)
+                    if(response.success == true){
+                        $(".survey-btn").removeClass('d-none')
+                        $('.survey-steps').addClass('d-none')
+                        $('.survey-step-welcome').removeClass('d-none')
+                        $(".user-signup-form").addClass('blur')
+                        $("#exampleModal").modal('show');
+                    }
+                    
 		           // You will get response from your PHP page (what you echo or print)
 		        },
 		        error: function(jqXHR, textStatus, errorThrown) {
@@ -75,12 +115,19 @@ $(document).ready(function () {
 
 	});
 
+    $(document).on("click",".survey-welcome",function(e){
+        $('.survey-steps').addClass('d-none')
+        $(".survey-step-1").removeClass('d-none')
+    });
+
 	$(document).on("click",".survey-qn-1",function(e){
     	
     	let whisky_knowledge = $("#whisky_knowledge").val();
+        let whisky_knowledge_list = whiskyKnowledgeList()
+        
 
 		let requestValues = {
-			'whisky_knowledge':whisky_knowledge,
+			'whisky_knowledge':whisky_knowledge_list[whisky_knowledge],
 			'step_1' : true
 		}
 
@@ -89,6 +136,13 @@ $(document).ready(function () {
 	        type: "post",
 	        data: requestValues ,
 	        success: function (response) {
+                
+                response = JSON.parse(response)
+                if(response.success == true){
+                    $('.survey-steps').addClass('d-none')
+                    $(".survey-step-2").removeClass('d-none')
+                }
+
 	        	
 	           // You will get response from your PHP page (what you echo or print)
 	        },
@@ -103,19 +157,29 @@ $(document).ready(function () {
 
 	$(document).on("click",".survey-qn-2",function(e){
     	
-    	let bottlebits_help_me = $("#bottlebits_help_me").val();
-    	
-		let requestValues = {
-			'bottlebits_help_me':bottlebits_help_me,
-			'step_2' : true
-		}
+    	// let bottlebits_help_me = $("#bottlebits_help_me").val();
+        let bottlebits_help_me = '';
+        $('.bottlebits_help_me').find('li').each(function(idx, li) {
+            if(bottlebits_help_me!=''){
+                bottlebits_help_me += ', ';
+            }
+            bottlebits_help_me += $(this).text();
+        });
+        let requestValues = {
+            'bottlebits_help_me':bottlebits_help_me,
+            'step_2' : true
+        }
 
     	$.ajax({
 	        url: SITE_URL+"api/server.php",
 	        type: "post",
 	        data: requestValues ,
 	        success: function (response) {
-	        	
+	        	response = JSON.parse(response)
+                if(response.success == true){
+                    $('.survey-steps').addClass('d-none')
+                    $(".survey-step-3").removeClass('d-none')
+                }
 	           // You will get response from your PHP page (what you echo or print)
 	        },
 	        error: function(jqXHR, textStatus, errorThrown) {
@@ -141,7 +205,11 @@ $(document).ready(function () {
 	        type: "post",
 	        data: requestValues ,
 	        success: function (response) {
-	        	
+	        	response = JSON.parse(response)
+                if(response.success == true){
+                    $('.survey-steps').addClass('d-none')
+                    $(".survey-step-thankyou").removeClass('d-none')
+                }
 	           // You will get response from your PHP page (what you echo or print)
 	        },
 	        error: function(jqXHR, textStatus, errorThrown) {
@@ -152,6 +220,17 @@ $(document).ready(function () {
 	
 
 	});
+
+    function whiskyKnowledgeList(){
+        let whisky_knowledge_list = {
+            1:'Newbie',
+            2:'Astute',
+            3:'Dilettante',
+            4:'Connoisseur'
+            }
+
+        return whisky_knowledge_list;
+    }
 
 
 	function validateInput(textInput){

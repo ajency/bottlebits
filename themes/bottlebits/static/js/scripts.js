@@ -98,6 +98,8 @@ $(document).ready(function () {
                     response = JSON.parse(response)
                     if(response.success == true){
                         $(".survey-btn").removeClass('d-none')
+                        $('.survey-steps').addClass('d-none')
+                        $('.survey-step-welcome').removeClass('d-none')
                         $(".user-signup-form").addClass('blur')
                         $("#exampleModal").modal('show');
                     }
@@ -113,12 +115,19 @@ $(document).ready(function () {
 
 	});
 
+    $(document).on("click",".survey-welcome",function(e){
+        $('.survey-steps').addClass('d-none')
+        $(".survey-step-1").removeClass('d-none')
+    });
+
 	$(document).on("click",".survey-qn-1",function(e){
     	
     	let whisky_knowledge = $("#whisky_knowledge").val();
+        let whisky_knowledge_list = whiskyKnowledgeList()
+        
 
 		let requestValues = {
-			'whisky_knowledge':whisky_knowledge,
+			'whisky_knowledge':whisky_knowledge_list[whisky_knowledge],
 			'step_1' : true
 		}
 
@@ -211,6 +220,17 @@ $(document).ready(function () {
 	
 
 	});
+
+    function whiskyKnowledgeList(){
+        let whisky_knowledge_list = {
+            1:'Newbie',
+            2:'Astute',
+            3:'Dilettante',
+            4:'Connoisseur'
+            }
+
+        return whisky_knowledge_list;
+    }
 
 
 	function validateInput(textInput){
