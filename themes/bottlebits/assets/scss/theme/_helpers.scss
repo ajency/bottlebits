@@ -237,9 +237,10 @@ body {
 }
 
 //////////////@at-root
-.range-slider{
+.range-slider {
     margin-bottom: 80px;
 }
+
 @mixin rangeThumb {
     width: 18px;
     height: 18px;
@@ -441,16 +442,44 @@ body {
         height: 22px;
         width: 19px;
     }
-    a{
-    padding: 9px 16px;
-    span{
-        margin-left: 5px;
-    }
+    a {
+        padding: 9px 16px;
+        span {
+            margin-left: 5px;
+        }
     }
 }
-.blur{
+
+.blur {
     filter: blur(20px);
 }
-.outer{
+
+.outer {
     position: relative;
+}
+
+.steps-dots {
+    position: absolute;
+    right: 50px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 99;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .dot {
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        background: $theme-color;
+        opacity: .8;
+        margin: 5px 0;
+        &.active {
+            transform: scale(2);
+            opacity: 1;
+        }
+    }
 }
