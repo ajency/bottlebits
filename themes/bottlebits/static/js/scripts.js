@@ -99,7 +99,7 @@ $(document).ready(function () {
                     if(response.success == true){
                         $(".survey-btn").removeClass('d-none')
                         $('.survey-steps').addClass('d-none')
-                        $('.survey-step-welcome').addClass('d-none')
+                        $('.survey-step-welcome').removeClass('d-none')
                         $(".user-signup-form").addClass('blur')
                         $("#exampleModal").modal('show');
                     }
@@ -224,8 +224,8 @@ $(document).ready(function () {
     function whiskyKnowledgeList(){
         let whisky_knowledge_list = {
             1:'Newbie',
-            2:'Astute'
-            3:'Dilettante'
+            2:'Astute',
+            3:'Dilettante',
             4:'Connoisseur'
             }
 
