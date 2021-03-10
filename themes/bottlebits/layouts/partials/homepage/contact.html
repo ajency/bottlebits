@@ -9,12 +9,12 @@
                     Register your interest & learn of exclusive pre-launching access
                 </p>
                 <form>
-                    <div class="row my-3">
+                    <div class="row my-md-3">
                         <div class="col-md-6">
                             <input type="text" name="Firstname" class="w-100 input-txt" placeholder="First Name" id="first_name">
                         </div>
-                        <div class="col-md-6">
-                            <input type="text" name="Lastname" class="w-100 input-txt" placeholder="Last Name" id="last_name">
+                        <div class="col-md-6 my-2 my-md-0">
+                            <input type="text" name="Lastname " class="w-100" placeholder="Last Name" id="">
                         </div>
 
                     </div>
@@ -36,13 +36,23 @@
                             <li><label for="Radio4">58-59</label><input type="radio" name="age_group" value="58-59"/> </li>
                           </ul>
                         </div>
-                      </div>
+                        <div class="col-md-9 my-2 my-md-0">
+                            <div class="radio">
+                                <ul>
+                                    <li class="h-auto font-14">Age Group</li>
+                                    <li><label for="Radio1">41-42</label><input type="radio" name="Radio" value="" /> </li>
+                                    <li><label for="Radio2">42-43</label><input type="radio" name="Radio" value="" /> </li>
+                                    <li><label for="Radio3">44-56</label><input type="radio" name="Radio" value="" /> </li>
+                                    <li><label for="Radio4">58-59</label><input type="radio" name="Radio" value="" /> </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row my-3">
-                      <div class="col-md-9"><input type="email" name="email" placeholder="Email" class="w-100  text-txt" id="email"></div>
-                      <div class="col-md-3">  
-                        <select class="w-100  input-txt" id="country">
-                        <option selected value="">Country</option>
+                    <div class="row my-md-3">
+                        <div class="col-md-9"><input type="email" name="email" placeholder="Email" class="w-100 text-txt mb-2 mb-md-0 " id="email"></div>
+                        <div class="col-md-3">
+                            <select class="w-100 " id="country">
+                        <option selected>Country</option>
                         <option value="Afghanistan">Afghanistan</option>
                         <option value="Aland Islands">Aland Islands</option>
                         <option value="Albania">Albania</option>
@@ -296,10 +306,9 @@
                         <option value="Zimbabwe">Zimbabwe</option>
                       </select></div>
                     </div>
-                    <div class="g-recaptcha  input-txt"
-                    data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
+                    <div class="g-recaptcha input-txt mt-2 mt-md-0" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
                     <p class="text-grey-1 mt-3">
-                      By Signing up you agree to recieve Mailer and Newsletters from Bottlebits
+                        By Signing up you agree to recieve Mailer and Newsletters from Bottlebits
                     </p>
                     <button class="submit sign-up-btn" type="button">
                       Sign up
@@ -308,6 +317,254 @@
             </div>
             <div class="custom-col-50">
                 <img src="{{"images/ImmersiveExperience.png" | relURL}}" class="img-fluid w-100">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 
+<div class="popup">
+    <div class="container">
+        <div class="popup-heading">Thank you Mark, for your interest in Bottlebits.</div>
+        <div class="popup-subheading">
+            To understand your preferences, take a short survey
+        </div>
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+
+        <div class="d-flex align-items-center mt-2">
+            <div class="qnumb">
+                1
+            </div>
+            <div class="question">
+                How would you rate your knowledge about the whisky industry?
+            </div>
+        </div>
+
+        <div class="range-slider mt-5">
+            <div class="range">
+                <input type="range" min="1" max="7" steps="1" value="1">
+            </div>
+
+            <ul class="range-labels">
+                <li class="active selected">Today</li>
+                <li>2 days</li>
+                <li>3 days</li>
+                <li>4 days</li>
+                <li>5 days</li>
+                <li>6 days</li>
+                <li>7 days</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<div class="popup">
+    <div class="container">
+        <div class="popup-heading">Thank you Mark, for your interest in Bottlebits.</div>
+        <div class="popup-subheading">
+            To understand your preferences, take a short survey
+        </div>
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+
+        <div class="d-flex align-items-center mt-2">
+            <div class="qnumb">
+                2
+            </div>
+            <div class="question">
+                I’m expecting that Bottlebits will help me
+            </div>
+        </div>
+
+        <p class="qdesc">(arrange them in order of importance, from top – most important to bottom – least important)</p>
+        <ul id="sortable">
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Pursue and engage with my passion for the industry</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Make attractive returns </li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Diversify my investments</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Increase my knowledge of the industry</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Connect with other members that share my passion</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Access to exclusive material and experiences </li>
+        </ul>
+
+        <div class="previous">
+            <span class="icon">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          </span>
+            <span class="text">
+            previous
+          </span>
+        </div>
+    </div>
+
+</div>
+<div class="popup">
+    <div class="container">
+        <div class="popup-heading">Thank you Mark, for your interest in Bottlebits.</div>
+        <div class="popup-subheading">
+            To understand your preferences, take a short survey
+        </div>
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+
+        <div class="d-flex align-items-center mt-2">
+            <div class="qnumb">
+                3
+            </div>
+            <div class="question">
+                My initial investment intention is around
+            </div>
+            <i class="qdesc pl-1">(£ per year)</i>
+        </div>
+
+
+        <ul class="radiosbtn">
+            <li><input type='radio' name="gender" class="mr-2" />100</li>
+            <li><input type='radio' name="gender" class="mr-2" />250</li>
+            <li><input type='radio' name="gender" class="mr-2" />500</li>
+            <li><input type='radio' name="gender" class="mr-2" />1,000</li>
+            <li><input type='radio' name="gender" class="mr-2" />2,500</li>
+            <li><input type='radio' name="gender" class="mr-2" />5,000</li>
+            <li><input type='radio' name="gender" class="mr-2" />10,000</li>
+            <li><input type='radio' name="gender" class="mr-2" />15,000 or ></li>
+        </ul>
+        <div class="previous">
+            <span class="icon">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+      </span>
+            <span class="text">
+        previous
+      </span>
+        </div>
+    </div>
+
+</div> -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="container">
+                <div class="popup">
+                    <div class="container">
+                        <div class="popup-heading">Thank you Mark, for your interest in Bottlebits.</div>
+                        <div class="popup-subheading">
+                            To understand your preferences, take a short survey
+                        </div>
+                        <div class="line-1"></div>
+                        <div class="line-2"></div>
+
+                        <div class="d-flex align-items-center mt-2">
+                            <div class="qnumb">
+                                1
+                            </div>
+                            <div class="question">
+                                How would you rate your knowledge about the whisky industry?
+                            </div>
+                        </div>
+
+                        <div class="range-slider mt-5">
+                            <div class="range">
+                                <input type="range" min="1" max="7" steps="1" value="1">
+                            </div>
+
+                            <ul class="range-labels">
+                                <li class="active selected">Today</li>
+                                <li>2 days</li>
+                                <li>3 days</li>
+                                <li>4 days</li>
+                                <li>5 days</li>
+                                <li>6 days</li>
+                                <li>7 days</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="popup align-items-center">
+                    <div class="container">
+                        <div class="popup-heading">Thank you Mark, for your interest in Bottlebits.</div>
+                        <div class="popup-subheading">
+                            To understand your preferences, take a short survey
+                        </div>
+                        <div class="line-1"></div>
+                        <div class="line-2"></div>
+
+                        <div class="d-flex align-items-center mt-2">
+                            <div class="qnumb">
+                                2
+                            </div>
+                            <div class="question">
+                                I’m expecting that Bottlebits will help me
+                            </div>
+                        </div>
+
+                        <p class="qdesc">(arrange them in order of importance, from top – most important to bottom – least important)</p>
+                        <ul id="sortable">
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Pursue and engage with my passion for the industry</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Make attractive returns </li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Diversify my investments</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Increase my knowledge of the industry</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Connect with other members that share my passion</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Access to exclusive material and experiences </li>
+                        </ul>
+
+                        <div class="previous">
+                            <span class="icon">
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                      </span>
+                            <span class="text">
+                        previous
+                      </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="popup align-items-center">
+                    <div class="container">
+                        <div class="popup-heading">Thank you Mark, for your interest in Bottlebits.</div>
+                        <div class="popup-subheading">
+                            To understand your preferences, take a short survey
+                        </div>
+                        <div class="line-1"></div>
+                        <div class="line-2"></div>
+
+                        <div class="d-flex align-items-center mt-2">
+                            <div class="qnumb">
+                                3
+                            </div>
+                            <div class="question">
+                                My initial investment intention is around
+                            </div>
+                            <i class="qdesc pl-1">(£ per year)</i>
+                        </div>
+
+
+                        <ul class="radiosbtn">
+                            <li><input type='radio' name="gender" class="mr-2" />100</li>
+                            <li><input type='radio' name="gender" class="mr-2" />250</li>
+                            <li><input type='radio' name="gender" class="mr-2" />500</li>
+                            <li><input type='radio' name="gender" class="mr-2" />1,000</li>
+                            <li><input type='radio' name="gender" class="mr-2" />2,500</li>
+                            <li><input type='radio' name="gender" class="mr-2" />5,000</li>
+                            <li><input type='radio' name="gender" class="mr-2" />10,000</li>
+                            <li><input type='radio' name="gender" class="mr-2" />15,000 or ></li>
+                        </ul>
+                        <div class="previous">
+                            <span class="icon">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                  </span>
+                            <span class="text">
+                    previous
+                  </span>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
