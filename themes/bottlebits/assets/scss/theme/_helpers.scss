@@ -127,10 +127,16 @@ body {
 .text-grey-1 {
     color: #E3CAB6;
 }
+
 ///////////////@at-root
 .popup {
-    background: url('https://i.ibb.co/9pJgxqV/tex-Paper.png');
-    padding: 50px;
+    height: 680px;
+    width: 1095px;
+    border-radius: 10px;
+    background: url(https://i.ibb.co/9pJgxqV/tex-Paper.png);
+    display: flex;
+    justify-content: center;
+    padding: 28px;
     &-heading {
         color: #986B3C;
         font-family: "Abril Fatface";
@@ -181,10 +187,55 @@ body {
         text-align: center;
         line-height: 40.8px;
     }
+    .qdesc {
+        opacity: 0.75;
+        color: #222222;
+        font-family: "New York";
+        font-size: 14px;
+        font-style: italic;
+        letter-spacing: 0;
+        line-height: 16px;
+        padding-left: 50.8px;
+    }
+}
+
+.radiosbtn {
+    padding-left: 50.8px;
+    li {
+        list-style: none;
+        margin: 20px 0;
+        color: #262525;
+        font-family: "New York";
+        letter-spacing: 0;
+    }
+    input[type='radio']:after {
+        height: 24px;
+        width: 24px;
+        border-radius: 15px;
+        top: -5px;
+        left: -0px;
+        position: relative;
+        background-color: #F1EDDB;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid #262525;
+    }
+    input[type='radio']:checked:after {
+        height: 24px;
+        width: 24px;
+        border-radius: 15px;
+        top: -5px;
+        left: 0px;
+        position: relative;
+        background-color: $theme-color;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+    }
 }
 
 //////////////@at-root
-
 @mixin rangeThumb {
     width: 18px;
     height: 18px;
@@ -194,18 +245,20 @@ body {
     cursor: pointer;
     border: 0 !important;
 }
+
 @mixin rangeTrack {
     width: 100%;
     height: 2px;
     cursor: pointer;
     background: #9B785C;
 }
+
 .range {
     position: relative;
     width: 550px;
     height: 5px;
-    
 }
+
 .range input {
     width: 100%;
     position: absolute;
@@ -247,6 +300,7 @@ body {
         color: transparent;
     }
 }
+
 // Labels below slider
 .range-labels {
     margin: 18px -41px 0;
@@ -281,5 +335,72 @@ body {
     }
     .active.selected::before {
         display: none;
+    }
+}
+
+#sortable {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 50.8px;
+    width: 60%;
+}
+
+#sortable li {
+    height: 38px;
+    width: 640px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    color: #262525;
+    font-family: "New York";
+    letter-spacing: 0;
+    line-height: 38px;
+    padding-left: 50px;
+}
+
+#sortable li span {
+    position: absolute;
+    margin-left: -1.3em;
+}
+
+.previous {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50.8px;
+    margin-top: 50px;
+    .icon {
+        height: 45px;
+        width: 45px;
+        border: thin solid #b0b0b0;
+        line-height: 45px;
+        border-radius: 50%;
+        text-align: center;
+        background: white;
+        margin-right: 10px;
+        color: #262525;
+    }
+    .text {
+        color: #986B3C;
+        font-family: "New York";
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 16px;
+        text-align: center;
+        text-transform: capitalize;
+    }
+}
+.modal{
+    backdrop-filter: blur(100px);
+}
+.modal-content{
+    background: transparent;
+}
+.modal-dialog {
+    max-width: 100%;
+    width: max-content;
+    margin: 1.75rem auto;
+    .popup{
     }
 }
