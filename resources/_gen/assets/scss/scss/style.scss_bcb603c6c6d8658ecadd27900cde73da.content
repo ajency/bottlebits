@@ -7235,8 +7235,7 @@ a.text-error:hover, a.text-error:focus {
   font-weight: 800;
   letter-spacing: 0;
   line-height: 27px;
-  font-family: 'Nunito Sans', sans-serif;
-  text-transform: capitalize; }
+  font-family: 'Nunito Sans', sans-serif; }
 
 .commonbtn {
   display: block;
@@ -7296,8 +7295,8 @@ form {
 .radio ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin: 0;
+  flex-wrap: wrap;
   padding: 0; }
   .radio ul li {
     list-style-type: none;
@@ -7306,7 +7305,8 @@ form {
     padding: 0;
     height: 36px;
     color: #E3CAB6;
-    font-size: 12px; }
+    font-size: 12px;
+    margin: 2px; }
 
 .radio input[type=radio] {
   position: relative;
@@ -7345,7 +7345,9 @@ form {
   padding: 2px; }
 
 .custom-row {
-  box-shadow: 0 5px 43px 0 rgba(0, 0, 0, 0.66); }
+  box-shadow: 0 5px 43px 0 rgba(0, 0, 0, 0.66);
+  background-image: url(https://i.ibb.co/b2cR7ws/rsz-1tex-wood.png);
+  background-position: center; }
 
 @media (min-width: 768px) {
   .custom-col-50 {
@@ -7378,9 +7380,8 @@ header {
       width: 115px; } }
 .heading {
   color: #C1803B;
-  font-size: clamp(40px, 5vw, 10em);
-  font-family: "Abril Fatface";
-  line-height: 55px; }
+  font-size: clamp(26px, 5vw, 10em);
+  font-family: "Abril Fatface"; }
   @media screen and (min-width: 992px) {
     .heading {
       line-height: 115px; } }
@@ -7420,6 +7421,11 @@ header {
   font-family: "Nunito Sans";
   font-weight: bold; }
 
+.banner .banner-heading {
+  font-size: 36px; }
+  @media screen and (min-width: 992px) {
+    .banner .banner-heading {
+      font-size: 80px; } }
 .about {
   padding-top: 100px;
   padding-bottom: 50px;
@@ -7436,27 +7442,32 @@ header {
     margin: auto;
     color: #ffffff;
     font-weight: bold;
-    line-height: 30px;
     text-align: center;
     margin-top: -30px;
+    line-height: 18px;
     margin-bottom: 30px;
-    font-family: "New York"; }
+    font-family: "New York";
+    font-size: 13px; }
     @media screen and (min-width: 992px) {
       .grid-section .item .item-text {
         font-size: 20px;
         margin-top: -60px;
-        margin-bottom: 60px; } }
+        margin-bottom: 60px;
+        line-height: 30px; } }
 .grid-section .seal {
   position: absolute;
-  height: 77px;
-  width: 67px;
+  height: 47px;
+  width: 37px;
   z-index: 1;
   top: -15px;
   left: -20px; }
-
+  @media screen and (min-width: 992px) {
+    .grid-section .seal {
+      height: 77px;
+      width: 67px; } }
 @media screen and (min-width: 992px) {
   .pt-60 {
-    padding-top: 80px; } }
+    padding-top: 30px; } }
 
 @media (max-width: 767px) {
   .footer-logo {
@@ -7495,11 +7506,18 @@ body {
 .font-bold {
   font-weight: bold; }
 
+.font-light {
+  font-weight: light !important; }
+
 .letter-spac-2 {
   letter-spacing: 2px; }
 
-.font-36 {
-  font-size: 30px; }
+@media screen and (min-width: 992px) {
+  .font-36 {
+    font-size: 36px !important; } }
+
+.grid-container {
+  box-shadow: 0px 30px 62px 50px #000; }
 
 .font-14 {
   font-size: 12px; }
@@ -7553,7 +7571,6 @@ body {
 .inner-text {
   color: #FFFFFF;
   font-family: "New York";
-  font-weight: bold;
   letter-spacing: 1px; }
   @media screen and (min-width: 992px) {
     .inner-text {
@@ -7561,7 +7578,7 @@ body {
       font-size: 18px; } }
 .scroll {
   position: absolute;
-  bottom: 0;
+  bottom: 40px;
   left: 0;
   right: 0;
   margin: auto;
@@ -7586,15 +7603,19 @@ body {
     color: #986B3C;
     font-family: "Abril Fatface";
     font-size: 30px;
-    letter-spacing: -0.3px;
-    line-height: 41px; }
+    letter-spacing: -0.3px; }
+    @media screen and (min-width: 992px) {
+      .popup-heading {
+        line-height: 41px; } }
   .popup-subheading {
     opacity: 0.75;
     color: #222222;
     font-family: "New York";
     font-size: 25px;
-    letter-spacing: 0;
-    line-height: 30px; }
+    letter-spacing: 0; }
+    @media screen and (min-width: 992px) {
+      .popup-subheading {
+        line-height: 30px; } }
   .popup .line-1 {
     margin-top: 10px;
     border-bottom: 3px solid #9B785C; }
@@ -7791,25 +7812,58 @@ body {
       transform: scale(2);
       opacity: 1; }
 
+@media screen and (min-width: 992px) {
+  .pr-lg-10 {
+    padding-right: 100px; } }
+
+.mt--100 {
+  margin-top: -100px; }
+
+.resp-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  z-index: 0; }
+
+@media screen and (max-width: 600px) {
+  .mb-bg {
+    padding: 10px;
+    background: url("https://i.ibb.co/T29Ypv3/Group-4.png");
+    background-repeat: no-repeat;
+    background-size: cover; } }
+
 .range-slider {
   margin-top: 45px;
-  max-width: 430px; }
+  max-width: 430px;
+  position: relative; }
   .range-slider .ui-slider {
     height: 8px;
     background-color: #9b785c;
     border-radius: 0;
-    cursor: pointer; }
+    cursor: pointer;
+    border: 1px solid #eee6e0; }
+    @media (max-width: 767px) {
+      .range-slider .ui-slider {
+        height: 300px;
+        width: 8px; } }
   .range-slider .ui-slider-handle {
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    top: -12px;
     cursor: pointer;
     border: 1px solid rgba(122, 95, 73, 0.42);
     background-color: #9b785c;
     box-shadow: 0 2px 10px 0 #7b5f49; }
     .range-slider .ui-slider-handle:focus {
       outline: 0; }
+    @media (min-width: 768px) {
+      .range-slider .ui-slider-handle {
+        top: -12px; } }
+    @media (max-width: 767px) {
+      .range-slider .ui-slider-handle {
+        left: -11px; } }
   .range-slider .ui-state-active {
     border: 0; }
   .range-slider .ui-widget-header {
@@ -7830,5 +7884,34 @@ body {
       color: #262525; }
       .range-slider-labels li:last-child {
         text-align: right; }
+    @media (max-width: 767px) {
+      .range-slider-labels {
+        position: absolute;
+        top: 0;
+        margin-top: 0;
+        flex-direction: column;
+        height: 300px;
+        padding-left: 30px; } }
+  .range-slider-indicators {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    pointer-events: none; }
+    .range-slider-indicators span {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border: 1px solid rgba(122, 95, 73, 0.42);
+      opacity: 0.2;
+      background-color: #000000;
+      box-shadow: 0 2px 10px 0 #7b5f49;
+      border-radius: 50%; }
+    @media (max-width: 767px) {
+      .range-slider-indicators {
+        height: 300px;
+        flex-direction: column; } }
 
 /*# sourceMappingURL=style.css.map */
