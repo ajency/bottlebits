@@ -156,7 +156,9 @@ if(isset($postRequest['session_exits'])){
 			elseif($row['initial_investment_intention'] == null || $row['initial_investment_intention'] == ''){
 				$start_survey_step = 'survey-step-3';
 			}
-
+			else{
+				$start_survey_step = 'survey-step-3';
+			}
 		}
 
 	  	$response = ['success'=>true,'code'=> 'session_exits','start_survey_step'=>$start_survey_step];
