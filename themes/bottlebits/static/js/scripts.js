@@ -116,9 +116,11 @@ $(document).ready(function () {
 	$(document).on("click",".survey-qn-1",function(e){
     	
     	let whisky_knowledge = $("#whisky_knowledge").val();
+        let whisky_knowledge_list = whiskyKnowledgeList()
+        
 
 		let requestValues = {
-			'whisky_knowledge':whisky_knowledge,
+			'whisky_knowledge':whisky_knowledge_list[whisky_knowledge],
 			'step_1' : true
 		}
 
@@ -211,6 +213,17 @@ $(document).ready(function () {
 	
 
 	});
+
+    function whiskyKnowledgeList(){
+        let whisky_knowledge_list = {
+            1:'Newbie',
+            2:'Astute'
+            3:'Dilettante'
+            4:'Connoisseur'
+            }
+
+        return whisky_knowledge_list;
+    }
 
 
 	function validateInput(textInput){
