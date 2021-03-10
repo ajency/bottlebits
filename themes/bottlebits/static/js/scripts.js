@@ -63,7 +63,7 @@ $(document).ready(function () {
 		        type: "post",
 		        data: requestValues ,
 		        success: function (response) {
-
+		        	$("#exampleModal").modal('show');
 		           // You will get response from your PHP page (what you echo or print)
 		        },
 		        error: function(jqXHR, textStatus, errorThrown) {
@@ -129,7 +129,7 @@ $(document).ready(function () {
 
 	$(document).on("click",".survey-qn-3",function(e){
     	
-    	let initial_investment_intention = $("#initial_investment_intention").val();
+    	let initial_investment_intention = $("input[type='radio'][name='initial_investment_intention']:checked").val(); //$("#initial_investment_intention").val();
     
 		let requestValues = {
 			'initial_investment_intention':initial_investment_intention,
