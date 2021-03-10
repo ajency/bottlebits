@@ -10,6 +10,15 @@ $(document).ready(function () {
         type: "post",
         data: requestValues ,
         success: function (response) {
+
+            if(response.success == true){
+                $(".survey-btn").removeClass('d-none')
+                $(".user-signup-form").addClass('blur')
+            }
+            else{
+                $(".survey-btn").addClass('d-none')
+                $(".user-signup-form").removeClass('blur')
+            }
         	
            // You will get response from your PHP page (what you echo or print)
         },
@@ -80,6 +89,8 @@ $(document).ready(function () {
 		        type: "post",
 		        data: requestValues ,
 		        success: function (response) {
+                    $(".survey-btn").removeClass('d-none')
+                    $(".user-signup-form").addClass('blur')
 		        	$("#exampleModal").modal('show');
 		           // You will get response from your PHP page (what you echo or print)
 		        },
