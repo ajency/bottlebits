@@ -45,3 +45,8 @@ $('.range-labels li').on('click', function () {
   $rangeInput.val(index + 1).trigger('input');
   
 });
+
+$( function() {
+  $( "#sortable" ).sortable();
+  $( "#sortable" ).disableSelection();
+} );
