@@ -14,9 +14,27 @@ $(document).ready(function () {
             if(response.success == true){
                 $(".user-signup-form").addClass('blur')
 
-                if(response.start_survey_step != 'survey-step-3'){
+                if(response.start_survey_step != 'survey-step-thankyou'){
                     $("."+response.start_survey_step).removeClass('d-none')
                     $(".survey-btn").removeClass('d-none')
+                }
+
+                if(response.answers.whisky_industry_knowledge!=undefined && response.answers.whisky_industry_knowledge!=""){
+                    $( "#slider-range-max" ).slider({
+                       value: response.answers.whisky_industry_knowledge
+                    });
+                }
+
+                if(response.answers.bottlebits_help_me!=undefined && (response.answers.bottlebits_help_me).length > 0){
+                    let list = response.answers.bottlebits_help_me;
+                    $(".bottlebits_help_me").html('')
+                    for (var i = 0; i < list.length; i++) {
+                        let bottlebits_help_me = (list[i]).trim()
+                        $(".bottlebits_help_me").append('<li class="ui-state-default ui-sortable-handle"><img src="/img/drag.png" width="20px" height="24px"><span class="pl-3">'+bottlebits_help_me+'</span></li>')
+                    }
+
+                    $( "#sortable" ).sortable();
+                    
                 }
             }
             else{
@@ -114,6 +132,17 @@ $(document).ready(function () {
 	
 
 	});
+
+    
+    $(document).on("click",".step-2-previous",function(e){
+        $('.survey-steps').addClass('d-none')
+        $(".survey-step-1").removeClass('d-none')
+    });
+
+    $(document).on("click",".step-3-previous",function(e){
+        $('.survey-steps').addClass('d-none')
+        $(".survey-step-2").removeClass('d-none')
+    });
 
     $(document).on("click",".survey-welcome",function(e){
         $('.survey-steps').addClass('d-none')

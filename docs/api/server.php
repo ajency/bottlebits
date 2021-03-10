@@ -13,6 +13,14 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
+$whisky_knowledge_list = [
+            'Newbie'=>1,
+            'Astute'=>2,
+            'Dilettante'=>3,
+            'Connoisseur'=>4
+            ];
+
+
 $postRequest = $_POST;
 if(isset($postRequest['sign_up'])){
 	$firstName = (isset($postRequest['first_name'])) ? $postRequest['first_name'] :'';
@@ -140,6 +148,7 @@ if(isset($postRequest['session_exits'])){
 	if (isset($_SESSION['user_id']) && $_SESSION['user_id']!="") {
 		$userId = $_SESSION['user_id'];
 		$start_survey_step = 'survey-step-welcome';
+		$answers = [];
 
 		$sql = "SELECT * FROM survey where user_id = '".$userId."'";
 		$result = $conn->query($sql);
@@ -155,11 +164,23 @@ if(isset($postRequest['session_exits'])){
 				$start_survey_step = 'survey-step-3';
 			}
 			else{
-				$start_survey_step = 'survey-step-3';
+				$start_survey_step = 'survey-step-thankyou';
+			}
+
+			if($row['whisky_industry_knowledge'] != null && $row['whisky_industry_knowledge'] != ''){
+				$answers['whisky_industry_knowledge'] = (isset($whisky_knowledge_list[$row['whisky_industry_knowledge']])) ? $whisky_knowledge_list[$row['whisky_industry_knowledge']]: '';
+			}
+
+			if($row['bottlebits_help_me'] != null && $row['bottlebits_help_me'] != ''){
+				$answers['bottlebits_help_me'] = explode(',', $row['bottlebits_help_me']);
+			}
+
+			if($row['initial_investment_intention'] != null && $row['initial_investment_intention'] != ''){
+				$answers['initial_investment_intention'] = $row['initial_investment_intention'];
 			}
 		}
 
-	  	$response = ['success'=>true,'code'=> 'session_exits','start_survey_step'=>$start_survey_step];
+	  	$response = ['success'=>true,'code'=> 'session_exits','start_survey_step'=>$start_survey_step,'answers'=>$answers];
 	  	echo json_encode($response);
 	  	exit;
 	} else {
