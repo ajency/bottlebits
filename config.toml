@@ -1,4 +1,4 @@
-baseURL = "https://ajency.github.io/bottlebits/"
+baseURL = "https://ajency.github.io/"
 languageCode = "en-us"
 title = "Bottlebits"
 theme = "bottlebits"
