@@ -133,6 +133,22 @@ if(isset($postRequest['step_3'])){
 
 
 }
+
+
+if(isset($postRequest['session_exits'])){
+	
+	if (isset($_SESSION['user_id']) && $_SESSION['user_id']!="") {;
+	  	$response = ['success'=>true,'code'=> 'session_exits'];
+	  	echo json_encode($response);
+	  	exit;
+	} else {
+		$response = ['success'=>false,'code'=> 'session_exits'];
+	  	echo json_encode($response);
+	  	exit;
+	}
+
+
+}
  
 // // Close connection
 $conn->close();

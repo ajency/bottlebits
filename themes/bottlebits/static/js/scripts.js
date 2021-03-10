@@ -1,6 +1,23 @@
 $(document).ready(function () {
     let SITE_URL = 'http://localhost:8888/bottlebits/docs/';
 
+    let requestValues = {
+		'session_exits' : true
+	}
+
+	$.ajax({
+        url: SITE_URL+"api/server.php",
+        type: "post",
+        data: requestValues ,
+        success: function (response) {
+        	
+           // You will get response from your PHP page (what you echo or print)
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+           console.log(textStatus, errorThrown);
+        }
+    });
+
     $(document).on("click",".sign-up-btn",function(e){
     	
     	let first_name = $("#first_name").val();
