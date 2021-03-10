@@ -7796,14 +7796,18 @@ body {
   max-width: 430px; }
   .range-slider .ui-slider {
     height: 8px;
-    background-color: #9B785C; }
+    background-color: #9b785c;
+    border-radius: 0;
+    cursor: pointer; }
   .range-slider .ui-slider-handle {
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background-color: #9B785C;
     top: -12px;
-    cursor: pointer; }
+    cursor: pointer;
+    border: 1px solid rgba(122, 95, 73, 0.42);
+    background-color: #9b785c;
+    box-shadow: 0 2px 10px 0 #7b5f49; }
     .range-slider .ui-slider-handle:focus {
       outline: 0; }
   .range-slider .ui-state-active {
