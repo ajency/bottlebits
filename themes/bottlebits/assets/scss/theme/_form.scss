@@ -44,8 +44,8 @@ form {
     ul {
         display: flex;
         align-items: center;
-        justify-content: space-between;
         margin: 0;
+        flex-wrap: wrap;
         padding: 0;
         li {
             list-style-type: none;
@@ -55,6 +55,7 @@ form {
             height: 36px;
             color: #E3CAB6;
             font-size: 12px;
+            margin:2px;
         }
     }
     input[type=radio] {

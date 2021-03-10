@@ -1,24 +1,34 @@
 .range-slider {
     margin-top: 45px;
     max-width: 430px;
+    position: relative;
     .ui-slider {
         height: 8px;
         background-color: #9b785c;
         border-radius: 0;
         cursor: pointer;
-        // background-color: rgba(122,95,73,0.42);
+        border: 1px solid #eee6e0;
+        @media (max-width: 767px) {
+            height: 300px;
+            width: 8px;
+        }
     }
     .ui-slider-handle {
         width: 28px;
         height: 28px;
         border-radius: 50%;
-        top: -12px;
         cursor: pointer;
         border: 1px solid rgba(122, 95, 73, 0.42);
         background-color: #9b785c;
         box-shadow: 0 2px 10px 0 #7b5f49;
         &:focus {
             outline: 0;
+        }
+        @media (min-width: 768px) {
+            top: -12px;
+        }
+        @media (max-width: 767px) {
+            left: -11px;
         }
     }
     .ui-state-active {
@@ -44,6 +54,37 @@
             &:last-child {
                 text-align: right;
             }
+        }
+        @media (max-width: 767px) {
+            position: absolute;
+            top: 0;
+            margin-top: 0;
+            flex-direction: column;
+            height: 300px;
+            padding-left: 30px;
+        }
+    }
+    &-indicators {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+        pointer-events: none;
+        span {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border: 1px solid rgba(122, 95, 73, 0.42);
+            opacity: 0.2;
+            background-color: #000000;
+            box-shadow: 0 2px 10px 0 #7b5f49;
+            border-radius: 50%;
+        }
+        @media (max-width: 767px) {
+            height: 300px;
+            flex-direction: column;
         }
     }
 }
