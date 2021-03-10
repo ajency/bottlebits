@@ -123,7 +123,17 @@ body {
         font-size: 18px;
     }
 }
-
+.scroll{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: max-content;
+    color: $theme-color;
+    text-transform: uppercase;
+    text-align: center;
+}
 .text-grey-1 {
     color: #E3CAB6;
 }
@@ -356,7 +366,7 @@ body {
     font-family: "New York";
     letter-spacing: 0;
     line-height: 38px;
-    padding-left: 50px;
+    padding-left: 10px;
 }
 
 #sortable li span {

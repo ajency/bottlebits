@@ -7416,6 +7416,8 @@ header {
   line-height: 45px;
   text-align: center;
   color: #fff;
+  font-weight: bold;
+  font-family: "Nunito Sans";
   font-weight: bold; }
 
 .about {
@@ -7557,6 +7559,17 @@ body {
     .inner-text {
       line-height: 36px;
       font-size: 18px; } }
+.scroll {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: max-content;
+  color: #C1803B;
+  text-transform: uppercase;
+  text-align: center; }
+
 .text-grey-1 {
   color: #E3CAB6; }
 
@@ -7668,7 +7681,7 @@ body {
   font-family: "New York";
   letter-spacing: 0;
   line-height: 38px;
-  padding-left: 50px; }
+  padding-left: 10px; }
 
 #sortable li span {
   position: absolute;
