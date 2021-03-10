@@ -7561,8 +7561,7 @@ body {
   color: #E3CAB6; }
 
 .popup-fixed {
-  height: 680px;
-  width: 1095px; }
+  height: 680px; }
 
 .popup {
   border-radius: 10px;
@@ -7750,6 +7749,11 @@ body {
 
 .outer {
   position: relative; }
+
+.btn-bottm {
+  position: absolute;
+  bottom: 30px;
+  left: 110px; }
 
 .steps-dots {
   position: absolute;

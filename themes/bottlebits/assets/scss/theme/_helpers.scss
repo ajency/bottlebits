@@ -131,7 +131,6 @@ body {
 ///////////////@at-root
 .popup-fixed {
     height: 680px;
-    width: 1095px;
 }
 
 .popup {
@@ -457,7 +456,11 @@ body {
 .outer {
     position: relative;
 }
-
+.btn-bottm{
+    position: absolute;
+    bottom: 30px;
+    left: 110px;
+}
 .steps-dots {
     position: absolute;
     right: 50px;
