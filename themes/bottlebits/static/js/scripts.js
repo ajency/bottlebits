@@ -224,9 +224,9 @@ $(document).ready(function () {
     function whiskyKnowledgeList(){
         let whisky_knowledge_list = {
             1:'Newbie',
-            2:'Astute'
-            3:'Dilettante'
-            4:'Connoisseur'
+            2:'Astute',
+            3:'Dilettante',
+            4:'Connoisseur',
             }
 
         return whisky_knowledge_list;

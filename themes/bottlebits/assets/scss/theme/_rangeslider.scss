@@ -1,43 +1,47 @@
-.range-slider{
+.range-slider {
     margin-top: 45px;
     max-width: 430px;
-    .ui-slider{
+    .ui-slider {
         height: 8px;
-        background-color: #9B785C;
+        background-color: #9b785c;
+        border-radius: 0;
+        cursor: pointer;
         // background-color: rgba(122,95,73,0.42);
     }
-    .ui-slider-handle{
+    .ui-slider-handle {
         width: 28px;
         height: 28px;
         border-radius: 50%;
-        background-color: #9B785C;
         top: -12px;
         cursor: pointer;
-        &:focus{
+        border: 1px solid rgba(122, 95, 73, 0.42);
+        background-color: #9b785c;
+        box-shadow: 0 2px 10px 0 #7b5f49;
+        &:focus {
             outline: 0;
         }
     }
-    .ui-state-active{
+    .ui-state-active {
         border: 0;
     }
-    .ui-widget-header{
+    .ui-widget-header {
         background: #eee6e0;
     }
-    &-labels{
+    &-labels {
         padding-left: 0;
         margin-bottom: 0;
         margin-top: 40px;
         display: flex;
         justify-content: space-between;
         margin-right: -50px;
-        li{
+        li {
             display: inline-block;
             width: 25%;
             font-size: 15px;
             font-family: $fontNewYork;
             line-height: 38px;
             color: #262525;
-            &:last-child{
+            &:last-child {
                 text-align: right;
             }
         }

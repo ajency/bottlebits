@@ -7238,6 +7238,26 @@ a.text-error:hover, a.text-error:focus {
   font-family: 'Nunito Sans', sans-serif;
   text-transform: capitalize; }
 
+.commonbtn {
+  display: block;
+  height: 45px;
+  width: 150px;
+  border-radius: 2.4px;
+  background-color: #D29300;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold; }
+
+.modal-button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: max-content;
+  left: 0;
+  right: 0; }
+
 .form-title {
   color: #C7C7C6;
   font-family: "Abril Fatface";
@@ -7396,6 +7416,8 @@ header {
   line-height: 45px;
   text-align: center;
   color: #fff;
+  font-weight: bold;
+  font-family: "Nunito Sans";
   font-weight: bold; }
 
 .about {
@@ -7537,12 +7559,29 @@ body {
     .inner-text {
       line-height: 36px;
       font-size: 18px; } }
+.scroll {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: max-content;
+  color: #C1803B;
+  text-transform: uppercase;
+  text-align: center; }
+
 .text-grey-1 {
   color: #E3CAB6; }
 
+.popup-fixed {
+  height: 680px; }
+
 .popup {
-  background: url("https://i.ibb.co/9pJgxqV/tex-Paper.png");
-  padding: 50px; }
+  border-radius: 10px;
+  background: url(https://i.ibb.co/9pJgxqV/tex-Paper.png);
+  display: flex;
+  justify-content: center;
+  padding: 28px; }
   .popup-heading {
     color: #986B3C;
     font-family: "Abril Fatface";
@@ -7558,11 +7597,9 @@ body {
     line-height: 30px; }
   .popup .line-1 {
     margin-top: 10px;
-    width: 1037px;
     border-bottom: 3px solid #9B785C; }
   .popup .line-2 {
     margin-top: 4px;
-    width: 1039px;
     border-bottom: 1px solid #9B785C; }
   .popup .question {
     color: #262525;
@@ -7585,96 +7622,213 @@ body {
     line-height: 32px;
     text-align: center;
     line-height: 40.8px; }
-
-.range {
-  position: relative;
-  width: 550px;
-  height: 5px; }
-
-.range input {
-  width: 100%;
-  position: absolute;
-  top: 2px;
-  height: 0;
-  -webkit-appearance: none; }
-  .range input::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 18px;
-    height: 18px;
-    margin: -8px 0 0;
-    border-radius: 50%;
-    background: #e7661b;
-    cursor: pointer;
-    border: 0 !important; }
-  .range input::-moz-range-thumb {
-    width: 18px;
-    height: 18px;
-    margin: -8px 0 0;
-    border-radius: 50%;
-    background: #e7661b;
-    cursor: pointer;
-    border: 0 !important; }
-  .range input::-ms-thumb {
-    width: 18px;
-    height: 18px;
-    margin: -8px 0 0;
-    border-radius: 50%;
-    background: #e7661b;
-    cursor: pointer;
-    border: 0 !important; }
-  .range input::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 2px;
-    cursor: pointer;
-    background: #9B785C; }
-  .range input::-moz-range-track {
-    width: 100%;
-    height: 2px;
-    cursor: pointer;
-    background: #9B785C; }
-  .range input::-ms-track {
-    width: 100%;
-    height: 2px;
-    cursor: pointer;
-    background: #9B785C; }
-  .range input:focus {
-    background: none;
-    outline: none; }
-  .range input::-ms-track {
-    width: 100%;
-    cursor: pointer;
-    background: transparent;
-    border-color: transparent;
-    color: transparent; }
-
-.range-labels {
-  margin: 18px -41px 0;
-  padding: 0;
-  list-style: none; }
-  .range-labels li {
-    position: relative;
-    float: left;
-    width: 90.25px;
-    text-align: center;
-    color: #b2b2b2;
+  .popup .qdesc {
+    opacity: 0.75;
+    color: #222222;
+    font-family: "New York";
     font-size: 14px;
+    font-style: italic;
+    letter-spacing: 0;
+    line-height: 16px;
+    padding-left: 50.8px; }
+
+.radiosbtn {
+  padding-left: 50.8px; }
+  .radiosbtn li {
+    list-style: none;
+    margin: 20px 0;
+    color: #262525;
+    font-family: "New York";
+    letter-spacing: 0; }
+  .radiosbtn input[type='radio']:after {
+    height: 24px;
+    width: 24px;
+    border-radius: 15px;
+    top: -5px;
+    left: -0px;
+    position: relative;
+    background-color: #F1EDDB;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #262525; }
+  .radiosbtn input[type='radio']:checked:after {
+    height: 24px;
+    width: 24px;
+    border-radius: 15px;
+    top: -5px;
+    left: 0px;
+    position: relative;
+    background-color: #C1803B;
+    content: '';
+    display: inline-block;
+    visibility: visible; }
+
+#sortable {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 50.8px;
+  width: 60%; }
+
+#sortable li {
+  height: 38px;
+  width: 640px;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  color: #262525;
+  font-family: "New York";
+  letter-spacing: 0;
+  line-height: 38px;
+  padding-left: 10px; }
+
+#sortable li span {
+  position: absolute;
+  margin-left: -1.3em; }
+
+.previous {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 50.8px; }
+  .previous .icon {
+    height: 45px;
+    width: 45px;
+    border: thin solid #b0b0b0;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    background: white;
+    margin-right: 10px;
+    color: #262525; }
+  .previous .text {
+    color: #986B3C;
+    font-family: "New York";
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 16px;
+    text-align: center;
+    text-transform: capitalize; }
+
+.modal {
+  backdrop-filter: blur(100px); }
+
+.modal-content {
+  background: transparent; }
+
+.modal-dialog {
+  max-width: 100%;
+  width: max-content;
+  margin: 1.75rem auto; }
+
+.desc {
+  font-family: "New York";
+  font-size: 23px;
+  letter-spacing: 0;
+  line-height: 36px; }
+
+.social-popup {
+  width: 476px; }
+
+.social-links {
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.copy-link {
+  background: chocolate;
+  width: max-content;
+  margin: auto;
+  color: #FFFFFF;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 22px; }
+  .copy-link img {
+    height: 22px;
+    width: 19px; }
+  .copy-link a {
+    padding: 9px 16px; }
+    .copy-link a span {
+      margin-left: 5px; }
+
+#amount {
+  display: none; }
+
+.blur {
+  filter: blur(20px); }
+
+.outer {
+  position: relative; }
+
+.btn-bottm {
+  position: absolute;
+  bottom: 30px;
+  left: 110px; }
+
+.steps-dots {
+  position: absolute;
+  right: 50px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 99;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .steps-dots .dot {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background: #C1803B;
+    opacity: .8;
+    margin: 5px 0; }
+    .steps-dots .dot.active {
+      transform: scale(2);
+      opacity: 1; }
+
+.range-slider {
+  margin-top: 45px;
+  max-width: 430px; }
+  .range-slider .ui-slider {
+    height: 8px;
+    background-color: #9b785c;
+    border-radius: 0;
     cursor: pointer; }
-    .range-labels li::before {
-      position: absolute;
-      top: -25px;
-      right: 0;
-      left: 0;
-      content: "";
-      margin: 0 auto;
-      width: 9px;
-      height: 9px;
-      background: #b2b2b2;
-      border-radius: 50%; }
-  .range-labels .active {
-    color: #37adbf; }
-  .range-labels .selected::before {
-    background: #37adbf; }
-  .range-labels .active.selected::before {
-    display: none; }
+  .range-slider .ui-slider-handle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    top: -12px;
+    cursor: pointer;
+    border: 1px solid rgba(122, 95, 73, 0.42);
+    background-color: #9b785c;
+    box-shadow: 0 2px 10px 0 #7b5f49; }
+    .range-slider .ui-slider-handle:focus {
+      outline: 0; }
+  .range-slider .ui-state-active {
+    border: 0; }
+  .range-slider .ui-widget-header {
+    background: #eee6e0; }
+  .range-slider-labels {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: -50px; }
+    .range-slider-labels li {
+      display: inline-block;
+      width: 25%;
+      font-size: 15px;
+      font-family: "NewYork";
+      line-height: 38px;
+      color: #262525; }
+      .range-slider-labels li:last-child {
+        text-align: right; }
 
 /*# sourceMappingURL=style.css.map */
