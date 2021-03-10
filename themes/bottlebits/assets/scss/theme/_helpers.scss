@@ -129,9 +129,12 @@ body {
 }
 
 ///////////////@at-root
-.popup {
+.popup-fixed {
     height: 680px;
     width: 1095px;
+}
+
+.popup {
     border-radius: 10px;
     background: url(https://i.ibb.co/9pJgxqV/tex-Paper.png);
     display: flex;
@@ -155,12 +158,10 @@ body {
     .line {
         &-1 {
             margin-top: 10px;
-            width: 1037px;
             border-bottom: 3px solid #9B785C;
         }
         &-2 {
             margin-top: 4px;
-            width: 1039px;
             border-bottom: 1px solid #9B785C;
         }
     }
@@ -369,7 +370,6 @@ body {
     align-items: center;
     justify-content: flex-start;
     padding-left: 50.8px;
-    margin-top: 50px;
     .icon {
         height: 45px;
         width: 45px;
@@ -391,21 +391,68 @@ body {
         text-transform: capitalize;
     }
 }
-.modal{
+
+.modal {
     backdrop-filter: blur(100px);
 }
-.modal-content{
+
+.modal-content {
     background: transparent;
 }
+
 .modal-dialog {
     max-width: 100%;
     width: max-content;
     margin: 1.75rem auto;
-    .popup{
+}
+
+.desc {
+    font-family: "New York";
+    font-size: 23px;
+    letter-spacing: 0;
+    line-height: 36px;
+}
+
+.social-popup {
+    width: 476px;
+}
+
+.social-links {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    img {}
+}
+
+.copy-link {
+    background: chocolate;
+    width: max-content;
+    margin: auto;
+    color: #FFFFFF;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 22px;
+    img {
+        height: 22px;
+        width: 19px;
+    }
+    a{
+    padding: 9px 16px;
+    span{
+        margin-left: 5px;
+    }
     }
 }
 
 #amount
 {
     display: none;
+}
+.blur{
+    filter: blur(20px);
+}
+.outer{
+    position: relative;
 }
