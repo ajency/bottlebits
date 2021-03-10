@@ -6,7 +6,7 @@
     <meta name="description" content="Bottlebits">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link type="image/x-icon" href="/bottlebits/img/favicon.ico" rel="shortcut icon">  
-    <link rel="stylesheet" href="/bottlebits/css/style.min.b0b5318bbf2351315bab7bb967b3491785b920022c6eded1b5a260d2da2abbd9.css"> 
+    <link rel="stylesheet" href="/bottlebits/css/style.min.45c75927bf88ac016552f67bbad493fce78ce618c62e5ab24dca8481da83cf89.css"> 
     <link rel="stylesheet" href="/bottlebits/vendor/slick/slick.css">
     <link rel="stylesheet" href="/bottlebits/vendor/slider.css">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
@@ -24,13 +24,18 @@
     </div>
     <div class="banner_text ">
         <h1 class="heading">
-            The World of Investment-Grade Bottles is About to Evolve
+            The World of Investment-Grade Bottles is about to Evolve.
         </h1>
         <a href="#" class="banner_btn">
             Sign up
          </a>
     </div>
-
+<div class="d-block d-md-none scroll">
+    scroll
+    <div class="d-block">
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </div>
+</div>
 </div>
 
 <section class="about">
@@ -122,7 +127,7 @@
         </div>
     </div>
 </section><div class="outer">
-    <div class="blur">
+    <div class="">
         <div class="container pt-5 pb-5">
             <div class="custom-row d-md-flex p-1">
                 <div class="custom-col-50 p-3 border-gold border-right-0">
@@ -161,7 +166,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row my-md-3">
+                        <div class="row my-md-3 ">
                             <div class="col-md-9"><input type="email" name="Email" placeholder="Email" class="w-100 mb-2 mb-md-0 " id=""></div>
                             <div class="col-md-3">
                                 <select class="w-100 " id="country">
@@ -439,15 +444,12 @@
       </button>    
 </div>
 
-
-
-
-
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="container">
-                <div class="popup">
+                
+                <div class="popup popup-fixed">
                     <div class="container">
                         <div class="popup-heading">Thank you Mark, for your interest in Bottlebits.</div>
                         <div class="popup-subheading">
@@ -480,13 +482,13 @@
                             </div>                            
                         </div>
 
-                        
-                        <a href="#" class="commonbtn">Next</a>
+                        <a href="#" class="commonbtn btn-bottm" >Next</a>
 
                     </div>
 
 
                 </div>
+                
                 <div class="popup align-items-center">
                     <div class="container">
                         <div class="popup-heading">Thank you Mark, for your interest in Bottlebits.</div>
@@ -507,12 +509,30 @@
 
                         <p class="qdesc">(arrange them in order of importance, from top – most important to bottom – least important)</p>
                         <ul id="sortable">
-                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Pursue and engage with my passion for the industry</li>
-                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Make attractive returns </li>
-                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Diversify my investments</li>
-                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Increase my knowledge of the industry</li>
-                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Connect with other members that share my passion</li>
-                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Access to exclusive material and experiences </li>
+                            <li class="ui-state-default">  
+                    <img src="/bottlebits/img/drag.png" width="20px" height="24px">
+
+                                <span class="pl-3">Pursue and engage with my passion for the industry</span></li>
+                            <li class="ui-state-default">  
+                    <img src="/bottlebits/img/drag.png" width="20px" height="24px">
+
+                                <span class="pl-3">Make attractive returns </span></li>
+                            <li class="ui-state-default">  
+                    <img src="/bottlebits/img/drag.png" width="20px" height="24px">
+
+                                <span class="pl-3">Diversify my investments</span></li>
+                            <li class="ui-state-default">  
+                    <img src="/bottlebits/img/drag.png" width="20px" height="24px">
+
+                                <span class="pl-3">Increase my knowledge of the industry</span></li>
+                            <li class="ui-state-default">  
+                    <img src="/bottlebits/img/drag.png" width="20px" height="24px">
+
+                                <span class="pl-3">Connect with other members that share my passion</span></li>
+                            <li class="ui-state-default">  
+                    <img src="/bottlebits/img/drag.png" width="20px" height="24px">
+
+                                <span class="pl-3">Access to exclusive material and experiences </span></li>
                         </ul>
 
                         <div class="d-flex align-items-center justify-content-between mt-3">
@@ -530,6 +550,8 @@
                     </div>
 
                 </div>
+                
+
                 <div class="popup align-items-center">
                     <div class="container">
                         <div class="popup-heading">Thank you Mark, for your interest in Bottlebits.</div>
@@ -576,6 +598,8 @@
 
 
                 </div>
+                
+
                 <div class="popup align-items-center">
                     <div class="container">
                         <div class="popup-heading">Welcome to bottlebits® </div>
@@ -595,11 +619,12 @@
                             <p class="text-center">
                                 <strong>Help us customise your experience by answering these 3 short questions.</strong>
                             </p>
-                            <a href="#" class="commonbtn">Next</a>
+                            <a href="#" class="commonbtn mx-auto">Next</a>
                         </div>
                     </div>
                 </div>
-                <div class="popup align-items-center social-popup">
+                
+                <div class="popup align-items-center social-popup mx-auto">
                     <div class="container">
                         <div class="popup-heading">Thank you </div>
                         <div class="popup-subheading">
@@ -623,6 +648,16 @@
                             <input type="text" name="Link" id="Link">
                             <a><img src="/bottlebits/img/copy.png" height="70px" width="70px"><span>Copy Link</span></a>
                         </div>
+                    </div>
+                </div>
+
+
+                <div class="steps-dots">
+                    <div class="dot active">
+                    </div>
+                    <div class="dot">
+                    </div>
+                    <div class="dot">
                     </div>
                 </div>
             </div>
