@@ -17,9 +17,8 @@ header {
 
 .heading {
     color: $theme-color;
-    font-size: clamp(40px, 5vw, 10em);
+    font-size: clamp(26px, 5vw, 10em);
     font-family: $fontabril;
-    line-height: 55px;
     @media screen and (min-width: 992px) {
         line-height: 115px;
     }
@@ -64,6 +63,12 @@ header {
         font-family: "Nunito Sans";
         font-weight: bold;
     }
+    .banner-heading {
+        font-size: 36px;
+        @media screen and (min-width: 992px) {
+            font-size: 80px;
+        }
+    }
 }
 
 /////////////// about section
@@ -85,22 +90,28 @@ header {
             margin: auto;
             color: #ffffff;
             font-weight: bold;
-            line-height: 30px;
             text-align: center;
             margin-top: -30px;
+            line-height: 18px;
             margin-bottom: 30px;
             font-family: "New York";
+            font-size: 13px;
             @media screen and (min-width: 992px) {
                 font-size: 20px;
                 margin-top: -60px;
                 margin-bottom: 60px;
-                }
+                line-height: 30px;
+            }
         }
     }
     .seal {
         position: absolute;
-        height: 77px;
-        width: 67px;
+        height: 47px;
+        width: 37px;
+        @media screen and (min-width: 992px) {
+            height: 77px;
+            width: 67px;
+        }
         z-index: 1;
         top: -15px;
         left: -20px;
@@ -109,6 +120,6 @@ header {
 
 .pt-60 {
     @media screen and (min-width: 992px) {
-    padding-top: 80px;
+        padding-top: 30px;
     }
 }
