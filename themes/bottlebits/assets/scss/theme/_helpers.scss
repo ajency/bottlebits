@@ -145,10 +145,12 @@ body {
         font-size: 18px;
     }
 }
-
+a{
+    cursor: pointer;
+}
 .scroll {
     position: absolute;
-    bottom: 6%;
+    bottom: 8%;
     left: 0;
     right: 0;
     margin: auto;
@@ -545,6 +547,7 @@ body {
     a {
         padding: 9px 16px;
         background-color: #d29300;
+        cursor: pointer;
         span {
             margin-left: 5px;
         }
@@ -622,6 +625,11 @@ body {
 .input-bg {
     background-color: #6b6b6b;
     padding-left: 15px;
+    font-family: "New York";
+    color: #ffffff;
+    font-size: 20px;
+    width: 180px;
+
 }
 .input-txt::placeholder {
     color: #ffffff;
