@@ -7228,18 +7228,21 @@ a.text-error:hover, a.text-error:focus {
   height: 45px;
   width: 150px;
   border-radius: 2.4px;
-  background-color: #856C32;
-  color: #FFFFFF;
+  background-color: #856c32;
+  color: #ffffff;
   border: none;
   font-size: 20px;
   font-weight: 800;
+  text-decoration: none !important;
   letter-spacing: 0;
   line-height: 27px;
-  font-family: 'Nunito Sans', sans-serif; }
+  font-family: "Nunito Sans", sans-serif;
+  cursor: pointer; }
   @media (max-width: 767px) {
     .submit {
       width: 100%; } }
 .commonbtn {
+  cursor: pointer;
   display: block;
   height: 35px;
   width: 73px;
@@ -7247,11 +7250,12 @@ a.text-error:hover, a.text-error:focus {
   font-size: 16px;
   line-height: 35px;
   border-radius: 2.4px;
-  background-color: #D29300;
-  font-family: 'Nunito Sans', sans-serif;
+  background-color: #d29300;
+  font-family: "Nunito Sans", sans-serif;
   text-align: center;
-  color: #FFFFFF;
-  font-weight: 800; }
+  color: #ffffff;
+  font-weight: 800;
+  text-decoration: none !important; }
   @media screen and (min-width: 992px) {
     .commonbtn {
       height: 45px;
@@ -7263,13 +7267,15 @@ a.text-error:hover, a.text-error:focus {
   top: 0;
   bottom: 0;
   margin: auto;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   height: max-content;
   left: 0;
   right: 0;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Nunito Sans";
   font-size: 20px;
+  cursor: pointer;
+  text-decoration: none !important;
   font-weight: 800; }
 
 .form-title {
@@ -7352,6 +7358,9 @@ form {
   margin: 0;
   flex-wrap: wrap;
   padding: 0; }
+  @media screen and (min-width: 992px) {
+    .radio ul {
+      justify-content: space-between; } }
   .radio ul li {
     list-style-type: none;
     position: relative;
@@ -7360,7 +7369,10 @@ form {
     height: 36px;
     color: #e3cab6;
     font-size: 12px;
-    margin: 2px; }
+    margin: 5px; }
+    @media screen and (min-width: 992px) {
+      .radio ul li {
+        margin: 0; } }
     @media (max-width: 767px) {
       .radio ul li:first-child {
         width: 100%;
@@ -7368,17 +7380,17 @@ form {
 .radio input[type="radio"] {
   position: relative;
   border: 1px solid #656565;
-  padding: 0.5em;
+  padding: 14px 29px;
   -webkit-appearance: none;
   height: 36px;
-  width: 63px;
   border-radius: 4px;
   background: transparent;
   cursor: pointer; }
 
 .radio input[type="radio"]:checked {
-  background: #31313150;
-  background-size: 100%; }
+  background: #bbbbbb50;
+  background-size: 100%;
+  color: #C1803B; }
 
 .radio input[type="radio"]:focus {
   outline-color: transparent;
@@ -7408,8 +7420,12 @@ form {
   background-position: center; }
 
 @media (min-width: 768px) {
-  .custom-col-50 {
-    width: 50%; } }
+  .custom-col-60 {
+    width: 52%; } }
+
+@media (min-width: 768px) {
+  .custom-col-40 {
+    width: 48%; } }
 
 header {
   position: absolute;
@@ -7455,7 +7471,6 @@ header {
   line-height: 30px; }
 
 .banner_text {
-  padding-top: 100px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -7465,7 +7480,9 @@ header {
   height: max-content;
   text-align: center;
   width: 80%; }
-
+  @media screen and (min-width: 992px) {
+    .banner_text {
+      padding-top: 100px; } }
 .banner_btn {
   display: inline-block;
   height: 45px;
@@ -7474,25 +7491,32 @@ header {
   background-color: #D29300;
   line-height: 45px;
   text-align: center;
-  color: #fff;
+  color: #fff !important;
   font-weight: bold;
+  cursor: pointer;
+  text-decoration: none !important;
   font-family: "Nunito Sans";
   font-weight: bold;
-  font-size: 20px; }
-
+  font-size: 20px;
+  margin-top: 40px; }
+  @media screen and (min-width: 992px) {
+    .banner_btn {
+      margin-top: 0; } }
 .banner .banner-heading {
   font-size: 36px; }
   @media screen and (min-width: 992px) {
     .banner .banner-heading {
       font-size: 80px; } }
 .about {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 50px;
   background: url(https://i.ibb.co/QQxjG0d/graph.png);
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain; }
-
+  @media screen and (min-width: 992px) {
+    .about {
+      padding-top: 100px; } }
 .grid-section .item {
   position: relative; }
   .grid-section .item .item-text {
@@ -7536,10 +7560,14 @@ header {
   .footer-text {
     font-size: 12px; } }
 
+* {
+  scroll-behavior: smooth; }
+
 body {
   background-image: url("https://i.ibb.co/b2cR7ws/rsz-1tex-wood.png");
   background-position: center;
-  padding: 0 !important; }
+  padding: 0 !important;
+  scroll-behavior: smooth; }
 
 .text-white {
   color: #fff; }
@@ -7576,8 +7604,10 @@ body {
     font-size: 36px !important; } }
 
 .grid-container {
-  box-shadow: 0px 81px 28px 50px #000; }
-
+  box-shadow: 0px 10px 28px 50px #000; }
+  @media screen and (min-width: 992px) {
+    .grid-container {
+      box-shadow: 0px 81px 28px 50px #000; } }
 .font-14 {
   font-size: 12px; }
   @media screen and (min-width: 992px) {
@@ -7596,7 +7626,9 @@ body {
 
 .border-gold {
   border: 1px solid #986b3c; }
-
+  @media screen and (min-width: 992px) {
+    .border-gold {
+      border-right: 0; } }
 .text-theme {
   color: #C1803B; }
 
@@ -7637,7 +7669,7 @@ body {
       font-size: 18px; } }
 .scroll {
   position: absolute;
-  bottom: 40px;
+  bottom: 6%;
   left: 0;
   right: 0;
   margin: auto;
@@ -7654,7 +7686,7 @@ body {
 
 .popup {
   border-radius: 10px;
-  background: url(https://i.ibb.co/9pJgxqV/tex-Paper.png);
+  background: url(https://i.ibb.co/YjmQDsw/rsz-1tex-paper-1.png);
   display: flex;
   justify-content: center; }
   @media screen and (min-width: 992px) {
@@ -7975,6 +8007,20 @@ body {
       left: -8px; } }
 .ht-mx {
   height: max-content; }
+
+.text-error {
+  color: #ababab !important; }
+
+.strk {
+  color: #A74A00; }
+
+@media screen and (max-width: 768px) {
+  .marg-nega {
+    margin: -24px;
+    margin-bottom: 20px; } }
+
+.bdrrad {
+  border-radius: 8px; }
 
 .range-slider {
   margin-top: 45px;
