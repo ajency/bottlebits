@@ -17,7 +17,10 @@ $(document).ready(function () {
                 if(response.start_survey_step != 'survey-step-thankyou'){
                     $("."+response.start_survey_step).removeClass('d-none')
                     $(".survey-btn").removeClass('d-none')
-                }
+                } else {
+					$(".survey-step-thankyou").removeClass('d-none')
+					$(".survey-btn").removeClass('d-none')
+				}
 
                 if(response.answers.whisky_industry_knowledge!=undefined && response.answers.whisky_industry_knowledge!=""){
                     $( "#slider-range-max" ).slider({
