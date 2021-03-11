@@ -30,7 +30,7 @@ $(document).ready(function () {
                     $(".bottlebits_help_me").html('')
                     for (var i = 0; i < list.length; i++) {
                         let bottlebits_help_me = (list[i]).trim()
-                        $(".bottlebits_help_me").append('<li class="ui-state-default ui-sortable-handle"><img src="/img/drag.png" width="20px" height="24px"><span class="pl-3">'+bottlebits_help_me+'</span></li>')
+                        $(".bottlebits_help_me").append('<li class="ui-state-default ui-sortable-handle"><span class="pl-3">'+bottlebits_help_me+'</span></li>')
                     }
 
                     $( "#sortable" ).sortable();
