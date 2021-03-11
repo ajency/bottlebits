@@ -7358,9 +7358,6 @@ form {
   margin: 0;
   flex-wrap: wrap;
   padding: 0; }
-  @media screen and (min-width: 992px) {
-    .radio ul {
-      justify-content: space-between; } }
   .radio ul li {
     list-style-type: none;
     position: relative;
@@ -7369,10 +7366,7 @@ form {
     height: 36px;
     color: #e3cab6;
     font-size: 12px;
-    margin: 5px; }
-    @media screen and (min-width: 992px) {
-      .radio ul li {
-        margin: 0; } }
+    margin: 3px; }
     @media (max-width: 767px) {
       .radio ul li:first-child {
         width: 100%;
@@ -7470,43 +7464,45 @@ header {
   font-size: 20px;
   line-height: 30px; }
 
-.banner_text {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  height: max-content;
-  text-align: center;
-  width: 80%; }
-  @media screen and (min-width: 992px) {
-    .banner_text {
-      padding-top: 100px; } }
-.banner_btn {
-  display: inline-block;
-  height: 45px;
-  width: 150px;
-  border-radius: 2.4px;
-  background-color: #D29300;
-  line-height: 45px;
-  text-align: center;
-  color: #fff !important;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none !important;
-  font-family: "Nunito Sans";
-  font-weight: bold;
-  font-size: 20px;
-  margin-top: 40px; }
-  @media screen and (min-width: 992px) {
-    .banner_btn {
-      margin-top: 0; } }
-.banner .banner-heading {
-  font-size: 36px; }
-  @media screen and (min-width: 992px) {
-    .banner .banner-heading {
-      font-size: 80px; } }
+.banner {
+  position: relative; }
+  .banner_text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: max-content;
+    text-align: center;
+    width: 80%; }
+    @media screen and (min-width: 992px) {
+      .banner_text {
+        padding-top: 100px; } }
+  .banner_btn {
+    display: inline-block;
+    height: 45px;
+    width: 150px;
+    border-radius: 2.4px;
+    background-color: #D29300;
+    line-height: 45px;
+    text-align: center;
+    color: #fff !important;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none !important;
+    font-family: "Nunito Sans";
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 40px; }
+    @media screen and (min-width: 992px) {
+      .banner_btn {
+        margin-top: 0; } }
+  .banner .banner-heading {
+    font-size: 36px; }
+    @media screen and (min-width: 992px) {
+      .banner .banner-heading {
+        font-size: 80px; } }
 .about {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -7601,7 +7597,7 @@ body {
 
 @media screen and (min-width: 992px) {
   .font-36 {
-    font-size: 36px !important; } }
+    font-size: 30px !important; } }
 
 .grid-container {
   box-shadow: 0px 10px 28px 50px #000; }
@@ -7651,8 +7647,8 @@ body {
       line-height: 36px; } }
 .subheading {
   color: #c1803b;
-  font-family: "New York";
-  font-size: clamp(26px, 4vh, 36px);
+  font-family: "NewYork";
+  font-size: clamp(21px, 4vw, 30px);
   font-weight: bold;
   letter-spacing: 0;
   text-align: center; }
@@ -7661,15 +7657,18 @@ body {
       line-height: 55px; } }
 .inner-text {
   color: #ffffff;
-  font-family: "New York";
+  font-family: "NewYork";
   letter-spacing: 1px; }
   @media screen and (min-width: 992px) {
     .inner-text {
       line-height: 36px;
       font-size: 18px; } }
+a {
+  cursor: pointer; }
+
 .scroll {
   position: absolute;
-  bottom: 6%;
+  bottom: 8%;
   left: 0;
   right: 0;
   margin: auto;
@@ -7703,7 +7702,7 @@ body {
   .popup-subheading {
     opacity: 0.75;
     color: #222222;
-    font-family: "New York";
+    font-family: "NewYork";
     font-size: 25px;
     letter-spacing: 0; }
     @media screen and (min-width: 992px) {
@@ -7717,7 +7716,7 @@ body {
     border-bottom: 1px solid #9b785c; }
   .popup .question {
     color: #262525;
-    font-family: "New York";
+    font-family: "NewYork";
     font-size: 25px;
     font-weight: bold;
     letter-spacing: 0;
@@ -7751,7 +7750,7 @@ body {
   .popup .qdesc {
     opacity: 0.75;
     color: #222222;
-    font-family: "New York";
+    font-family: "NewYork";
     font-size: 14px;
     font-style: italic;
     letter-spacing: 0;
@@ -7769,7 +7768,7 @@ body {
     list-style: none;
     margin: 20px 0;
     color: #262525;
-    font-family: "New York";
+    font-family: "NewYork";
     letter-spacing: 0; }
   .radiosbtn input[type="radio"]:after {
     height: 24px;
@@ -7809,7 +7808,7 @@ body {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   margin: 20px 0;
   color: #262525;
-  font-family: "New York";
+  font-family: "NewYork";
   letter-spacing: 0;
   padding: 10px 30px;
   padding-right: 5px; }
@@ -7854,7 +7853,7 @@ body {
     color: #262525; }
   .previous .text {
     color: #986b3c;
-    font-family: "New York";
+    font-family: "NewYork";
     font-weight: bold;
     letter-spacing: 0;
     line-height: 16px;
@@ -7889,11 +7888,11 @@ body {
       margin-bottom: 0; } }
 
 .desc {
-  font-family: "New York";
+  font-family: "NewYork";
   font-size: 14px; }
   @media screen and (min-width: 992px) {
     .desc {
-      font-size: 23px;
+      font-size: 18px;
       letter-spacing: 0;
       line-height: 36px; } }
 .social-popup {
@@ -7919,7 +7918,8 @@ body {
     width: 19px; }
   .copy-link a {
     padding: 9px 16px;
-    background-color: #d29300; }
+    background-color: #d29300;
+    cursor: pointer; }
     .copy-link a span {
       margin-left: 5px; }
 
@@ -7982,13 +7982,22 @@ body {
     background-repeat: no-repeat;
     background-size: cover; } }
 
+.sticky-div {
+  position: sticky;
+  bottom: 0;
+  z-index: 9; }
+
 .input-bg {
   background-color: #6b6b6b;
-  padding-left: 15px; }
+  padding-left: 15px;
+  font-family: "NewYork";
+  color: #ffffff;
+  font-size: 20px;
+  width: 180px; }
 
 .input-txt::placeholder {
   color: #ffffff;
-  font-family: "New York";
+  font-family: "NewYork";
   font-size: 20px; }
 
 .mt-05 {
@@ -8001,7 +8010,7 @@ body {
   right: 0;
   margin: auto;
   padding: 0 !important;
-  width: 22px; }
+  width: 30px; }
   @media screen and (min-width: 992px) {
     .of-abs {
       left: -8px; } }
@@ -8021,6 +8030,14 @@ body {
 
 .bdrrad {
   border-radius: 8px; }
+
+.text-decoration-underline {
+  text-decoration: underline; }
+
+@media (max-width: 767px) {
+  .about .inner-text {
+    font-size: 14px;
+    line-height: 24px; } }
 
 .range-slider {
   margin-top: 45px;

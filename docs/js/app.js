@@ -2,8 +2,8 @@ $(document).ready(function () {
   rangeSlider();
 });
 
-$(window).resize(function() { 
-  $( "#slider-range-max" ).slider( "destroy" );
+$(window).resize(function () {
+  $("#slider-range-max").slider("destroy");
   rangeSlider();
 });
 
@@ -70,3 +70,13 @@ $(function () {
   $("#sortable").sortable();
   $("#sortable").disableSelection();
 });
+
+function myFunction() {
+  var copyText = document.getElementById("Link");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "copied" + copyText.value;
+}
