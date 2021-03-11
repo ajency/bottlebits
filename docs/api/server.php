@@ -111,7 +111,6 @@ if(isset($postRequest['step_2'])){
 	}
 	else{
 		$sql = "UPDATE survey SET bottlebits_help_me='".$bottlebitsHelpMe."' WHERE user_id= '".$userId."'";
-		print_r($row);
 	}
 
 	if ($conn->query($sql) === TRUE) {;
