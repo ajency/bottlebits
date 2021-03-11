@@ -101,6 +101,11 @@ form {
         margin: 0;
         flex-wrap: wrap;
         padding: 0;
+        @media screen and (min-width: 992px) {
+            justify-content: space-between;
+        }
+        
+        
         li {
             list-style-type: none;
             position: relative;
@@ -109,7 +114,12 @@ form {
             height: 36px;
             color: #e3cab6;
             font-size: 12px;
-            margin: 2px;
+            margin: 5px;
+            @media screen and (min-width: 992px) {
+                margin:0;
+            }
+            
+            
             &:first-child{
                 @media (max-width: 767px) {
                     width: 100%;
@@ -121,17 +131,17 @@ form {
     input[type="radio"] {
         position: relative;
         border: 1px solid #656565;
-        padding: 0.5em;
+        padding: 14px 29px;
         -webkit-appearance: none;
         height: 36px;
-        width: 63px;
         border-radius: 4px;
         background: transparent;
         cursor: pointer;
     }
     input[type="radio"]:checked {
-        background: #31313150;
+        background: #bbbbbb50;
         background-size: 100%;
+        color: $theme-color;
     }
     input[type="radio"]:focus {
         outline-color: transparent;
