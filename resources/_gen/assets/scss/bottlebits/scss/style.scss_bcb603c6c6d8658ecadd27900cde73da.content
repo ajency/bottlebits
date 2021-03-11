@@ -8026,6 +8026,9 @@ a {
 .bdrrad {
   border-radius: 8px; }
 
+.text-decoration-underline {
+  text-decoration: underline; }
+
 .range-slider {
   margin-top: 45px;
   max-width: 430px;
