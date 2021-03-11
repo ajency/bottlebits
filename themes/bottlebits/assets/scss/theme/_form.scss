@@ -1,6 +1,6 @@
 .form {
     &-title {
-        color: #C7C7C6;
+        color: #c7c7c6;
         font-family: "Abril Fatface";
         font-size: 33px;
         letter-spacing: -0.33px;
@@ -8,7 +8,7 @@
     }
     &-subtitle {
         opacity: 0.75;
-        color: #FFFFFF;
+        color: #ffffff;
         font-family: "New York";
         font-size: 20px;
         letter-spacing: 0;
@@ -18,25 +18,79 @@
 
 form {
     font-family: $fontNewYork;
+    input[type="text"],
+    input[type="email"] {
+        &::placeholder {
+            color: #e3cab6;
+            font-family: "New York";
+            font-size: 14px;
+        }
+        &:-ms-input-placeholder {
+            color: #e3cab6;
+            font-family: "New York";
+            font-size: 14px;
+        }
+
+        &::-ms-input-placeholder {
+            color: #e3cab6;
+            font-family: "New York";
+            font-size: 14px;
+        }
+    }
     select,
     input {
         border: 0;
         height: 40px;
         background-color: #000;
-        color: #E3CAB6;
+        color: #e3cab6;
         font-family: "New York";
         font-size: 14px;
         letter-spacing: 1px;
         line-height: 16px;
-        &::placeholder {
-            color: #E3CAB6;
-        }
     }
     input {
         padding-left: 15px;
+        &.text-error{
+            &::placeholder {
+                color: #772727;
+            }
+            &:-ms-input-placeholder {
+                color: #772727;
+            }
+    
+            &::-ms-input-placeholder {
+                color: #772727;
+            }
+        }
     }
     select {
+        cursor: pointer;
+        outline: 0;
         padding-left: 10px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+    }
+    select::-ms-expand {
+        display: none;
+    }
+
+    .select-wrapper {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #A74A00;
+            pointer-events: none;
+            // cursor: pointer;
+        }
     }
 }
 
@@ -53,12 +107,18 @@ form {
             margin: 0;
             padding: 0;
             height: 36px;
-            color: #E3CAB6;
+            color: #e3cab6;
             font-size: 12px;
-            margin:2px;
+            margin: 2px;
+            &:first-child{
+                @media (max-width: 767px) {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+            }
         }
     }
-    input[type=radio] {
+    input[type="radio"] {
         position: relative;
         border: 1px solid #656565;
         padding: 0.5em;
@@ -67,12 +127,13 @@ form {
         width: 63px;
         border-radius: 4px;
         background: transparent;
+        cursor: pointer;
     }
-    input[type=radio]:checked {
+    input[type="radio"]:checked {
         background: #31313150;
         background-size: 100%;
     }
-    input[type=radio]:focus {
+    input[type="radio"]:focus {
         outline-color: transparent;
         outline: none;
     }
@@ -86,12 +147,12 @@ form {
         height: 100%;
         text-align: center;
         line-height: 36px;
-        color: #E3CAB6;
+        color: #e3cab6;
         font-family: $fontNewYork;
     }
 }
-.text-error{
-    outline: 1px solid red;
+.text-error {
+    outline: 1px solid #772727;
     width: max-content;
-    padding: 2px;
+    color: #772727 !important;
 }
