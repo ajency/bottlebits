@@ -51,13 +51,28 @@
             font-family: $fontNewYork;
             line-height: 38px;
             color: #262525;
+            &:first-child{
+                @media (max-width: 767px) {
+                    position: relative;
+                    top: -5px;
+                }
+            }
             &:last-child {
                 text-align: right;
+                @media (max-width: 767px) {
+                    position: relative;
+                    top: 5px;
+                }
+            }
+            @media (max-width: 767px) {
+                line-height: 1;
+                width: 100%;
             }
         }
         @media (max-width: 767px) {
             position: absolute;
             top: 0;
+            left: 15px;
             margin-top: 0;
             flex-direction: column;
             height: 300px;
