@@ -7591,7 +7591,7 @@ body {
   color: #E3CAB6; }
 
 .popup-fixed {
-  height: 680px; }
+  min-height: 680px; }
 
 .popup {
   border-radius: 10px;
@@ -7634,6 +7634,7 @@ body {
     margin-right: 10px;
     height: 40.8px;
     width: 40.8px;
+    min-width: 40.8px;
     border: 0.8px solid #9B785C;
     border-radius: 50%;
     color: #986B3C;
@@ -7882,12 +7883,25 @@ body {
       font-family: "NewYork";
       line-height: 38px;
       color: #262525; }
+      @media (max-width: 767px) {
+        .range-slider-labels li:first-child {
+          position: relative;
+          top: -5px; } }
       .range-slider-labels li:last-child {
         text-align: right; }
+        @media (max-width: 767px) {
+          .range-slider-labels li:last-child {
+            position: relative;
+            top: 5px; } }
+      @media (max-width: 767px) {
+        .range-slider-labels li {
+          line-height: 1;
+          width: 100%; } }
     @media (max-width: 767px) {
       .range-slider-labels {
         position: absolute;
         top: 0;
+        left: 15px;
         margin-top: 0;
         flex-direction: column;
         height: 300px;

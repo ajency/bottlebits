@@ -21,23 +21,22 @@
 <script src="{{"vendor/slick/slick.min.js" | absURL}}"></script>
 <script src="{{"js/app.js" | absURL}}"></script>
 <script src="{{"js/slider.js" | absURL}}"></script>
-<script>
+<!-- <script>
     $( function() {
-        
+      const isMobile = () => window.innerWidth < 768;  
       $( "#slider-range-max" ).slider({
-        // range: "min",
-        range: "max",
+        range: isMobile() ? "min" : "max",
         min: 1,
         max: 4,
         value: 3,
-        // orientation: "vertical",
+        orientation: isMobile() ? "vertical" : "horizontal",
         slide: function( event, ui ) {
           $( "#whisky_knowledge" ).val( ui.value );
         }
       });
       $( "#whisky_knowledge" ).val( $( "#slider-range-max" ).slider( "value" ) );
     } );
-</script>
+</script> -->
 <script src="{{"js/scripts.js" | absURL}}"></script>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://www.google.com/recaptcha/api.js"></script>

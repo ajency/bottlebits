@@ -150,7 +150,7 @@ body {
 
 ///////////////@at-root
 .popup-fixed {
-    height: 680px;
+    min-height: 680px;
 }
 
 .popup {
@@ -201,6 +201,7 @@ body {
         margin-right: 10px;
         height: 40.8px;
         width: 40.8px;
+        min-width: 40.8px;
         border: 0.8px solid #9B785C;
         border-radius: 50%;
         color: #986B3C;
