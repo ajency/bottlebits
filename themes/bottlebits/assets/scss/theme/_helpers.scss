@@ -48,7 +48,8 @@ body {
 
 @media screen and (min-width: 992px) {
     .font-36 {
-        font-size: 36px !important;
+        // font-size: 34px !important;
+        font-size: 30px !important;
     }
 }
 
@@ -126,8 +127,8 @@ body {
 
 .subheading {
     color: #c1803b;
-    font-family: "New York" !important;
-    font-size: clamp(26px, 4vh, 36px);
+    font-family: $fontNewYork;
+    font-size: clamp(21px, 4vw, 30px);
     font-weight: bold;
     letter-spacing: 0;
     @media screen and (min-width: 992px) {
@@ -138,7 +139,7 @@ body {
 
 .inner-text {
     color: #ffffff;
-    font-family: "New York" !important;
+    font-family: $fontNewYork;
     letter-spacing: 1px;
     @media screen and (min-width: 992px) {
         line-height: 36px;
@@ -190,7 +191,7 @@ a{
     &-subheading {
         opacity: 0.75;
         color: #222222;
-        font-family: "New York" !important;
+        font-family: $fontNewYork;
         font-size: 25px;
         letter-spacing: 0;
         @media screen and (min-width: 992px) {
@@ -209,7 +210,7 @@ a{
     }
     .question {
         color: #262525;
-        font-family: "New York" !important;
+        font-family: $fontNewYork;
         font-size: 25px;
         font-weight: bold;
         letter-spacing: 0;
@@ -245,7 +246,7 @@ a{
     .qdesc {
         opacity: 0.75;
         color: #222222;
-        font-family: "New York" !important;
+        font-family: $fontNewYork;
         font-size: 14px;
         font-style: italic;
         letter-spacing: 0;
@@ -268,7 +269,7 @@ a{
         list-style: none;
         margin: 20px 0;
         color: #262525;
-        font-family: "New York" !important;
+        font-family: $fontNewYork;
         letter-spacing: 0;
     }
     input[type="radio"]:after {
@@ -412,7 +413,7 @@ a{
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
     margin: 20px 0;
     color: #262525;
-    font-family: "New York" !important;
+    font-family: $fontNewYork;
     letter-spacing: 0;
     padding: 10px 30px;
     padding-right: 5px;
@@ -463,7 +464,7 @@ a{
     }
     .text {
         color: #986b3c;
-        font-family: "New York" !important;
+        font-family: $fontNewYork;
         font-weight: bold;
         letter-spacing: 0;
         line-height: 16px;
@@ -508,7 +509,7 @@ a{
 }
 
 .desc {
-    font-family: "New York" !important;
+    font-family: $fontNewYork;
     font-size: 14px;
     @media screen and (min-width: 992px) {
         font-size: 23px;
@@ -630,7 +631,7 @@ a{
 .input-bg {
     background-color: #6b6b6b;
     padding-left: 15px;
-    font-family: "New York" !important;
+    font-family: $fontNewYork;
     color: #ffffff;
     font-size: 20px;
     width: 180px;
@@ -638,7 +639,7 @@ a{
 }
 .input-txt::placeholder {
     color: #ffffff;
-    font-family: "New York" !important;
+    font-family: $fontNewYork;
     font-size: 20px;
 }
 .mt-05 {
@@ -678,4 +679,13 @@ a{
 
 .text-decoration-underline{
     text-decoration: underline;
+}
+
+.about{
+    .inner-text{
+        @media (max-width: 767px) {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
 }
