@@ -10,25 +10,33 @@
     letter-spacing: 0;
     line-height: 27px;
     font-family: 'Nunito Sans', sans-serif;
+
 }
 
 .commonbtn {
     display: block;
     height: 45px;
-    width: 150px;
+    width: 124px;
     border-radius: 2.4px;
     background-color: #D29300;
     line-height: 45px;
+    font-family: 'Nunito Sans', sans-serif;
     text-align: center;
-    color: #fff;
-    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 800;
 }
 .modal-button{
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto;
+    font-family: 'Nunito Sans', sans-serif;
     height: max-content;
     left: 0;
     right: 0;
+    color: #FFFFFF;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-weight: 800;
 }

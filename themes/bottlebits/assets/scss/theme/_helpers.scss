@@ -49,7 +49,7 @@ body {
 }
 
 .grid-container {
-    box-shadow: 0px 30px 62px 50px #000;
+    box-shadow: 0px 81px 28px 50px #000;
 }
 
 .font {
@@ -196,6 +196,7 @@ body {
         letter-spacing: 0;
         line-height: 30px;
         position: relative;
+        padding-left: 10.8px;
     }
     .qnumb {
         margin-right: 10px;
@@ -220,12 +221,12 @@ body {
         font-style: italic;
         letter-spacing: 0;
         line-height: 16px;
-        padding-left: 50.8px;
+            padding-left: 60.8px;
     }
 }
 
 .radiosbtn {
-    padding-left: 50.8px;
+        padding-left: 60.8px;
     li {
         list-style: none;
         margin: 20px 0;
@@ -361,13 +362,10 @@ body {
 #sortable {
     list-style-type: none;
     margin: 0;
-    padding-left: 50.8px;
-    width: 60%;
+        padding-left: 60.8px;
 }
 
 #sortable li {
-    height: 38px;
-    width: 640px;
     border-radius: 2px;
     background-color: #FFFFFF;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
@@ -375,20 +373,19 @@ body {
     color: #262525;
     font-family: "New York";
     letter-spacing: 0;
-    line-height: 38px;
     padding-left: 10px;
 }
 
 #sortable li span {
-    position: absolute;
     margin-left: -1.3em;
 }
 
 .previous {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 50.8px;
+        padding-left: 60.8px;
     .icon {
         height: 45px;
         width: 45px;
@@ -433,7 +430,7 @@ body {
 }
 
 .social-popup {
-    width: 476px;
+    max-width: 590px;
 }
 
 .social-links {
@@ -459,6 +456,7 @@ body {
     }
     a {
         padding: 9px 16px;
+        background-color:#D29300;
         span {
             margin-left: 5px;
         }
@@ -532,4 +530,23 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
     }
+}
+.input-bg{
+    background-color: #6B6B6B;
+    padding-left: 15px;
+}
+.input-txt::placeholder{
+    color: #FFFFFF;
+  font-family: "New York";
+  font-size: 20px;
+}
+.mt-05{
+    margin-top: 5px;
+}
+.of-abs{
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
