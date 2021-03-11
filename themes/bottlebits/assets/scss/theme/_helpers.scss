@@ -1,5 +1,5 @@
 body {
-    background-image: url('https://i.ibb.co/b2cR7ws/rsz-1tex-wood.png');
+    background-image: url("https://i.ibb.co/b2cR7ws/rsz-1tex-wood.png");
     background-position: center;
     // background-image: url('../../../static/images/tex-wood.png');
     padding: 0 !important;
@@ -10,7 +10,7 @@ body {
         color: #fff;
     }
     &-green {
-        color: #008F4F;
+        color: #008f4f;
     }
     &-blue {
         color: #234361;
@@ -19,10 +19,10 @@ body {
         color: $text-grey;
     }
     &-grey {
-        color: #C7C7C6;
+        color: #c7c7c6;
     }
     &-red {
-        color: #9C0800;
+        color: #9c0800;
     }
     &-off-white {
         color: $text-offwhite;
@@ -42,7 +42,7 @@ body {
     letter-spacing: 2px;
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width: 992px) {
     .font-36 {
         font-size: 36px !important;
     }
@@ -79,7 +79,7 @@ body {
 
 .border {
     &-gold {
-        border: 1px solid #986B3C;
+        border: 1px solid #986b3c;
     }
 }
 
@@ -111,7 +111,7 @@ body {
 }
 
 .subheading {
-    color: #C1803B;
+    color: #c1803b;
     font-family: "New York";
     font-size: clamp(26px, 4vh, 36px);
     font-weight: bold;
@@ -123,7 +123,7 @@ body {
 }
 
 .inner-text {
-    color: #FFFFFF;
+    color: #ffffff;
     font-family: "New York";
     letter-spacing: 1px;
     @media screen and (min-width: 992px) {
@@ -145,7 +145,7 @@ body {
 }
 
 .text-grey-1 {
-    color: #E3CAB6;
+    color: #e3cab6;
 }
 
 ///////////////@at-root
@@ -158,9 +158,12 @@ body {
     background: url(https://i.ibb.co/9pJgxqV/tex-Paper.png);
     display: flex;
     justify-content: center;
-    padding: 28px;
+    @media screen and (min-width: 992px) {
+        padding: 28px;
+    }
+
     &-heading {
-        color: #986B3C;
+        color: #986b3c;
         font-family: "Abril Fatface";
         font-size: 30px;
         letter-spacing: -0.3px;
@@ -181,11 +184,11 @@ body {
     .line {
         &-1 {
             margin-top: 10px;
-            border-bottom: 3px solid #9B785C;
+            border-bottom: 3px solid #9b785c;
         }
         &-2 {
             margin-top: 4px;
-            border-bottom: 1px solid #9B785C;
+            border-bottom: 1px solid #9b785c;
         }
     }
     .question {
@@ -199,17 +202,27 @@ body {
         padding-left: 10.8px;
     }
     .qnumb {
+        @media screen and (max-width: 992px) {
+            height: 24.5px;
+            width: 24.5px;
+            border: 0.5px solid #9b785c;
+            background-color: #a58367;
+            color: #f0ecdb;
+            font-family: "Abril Fatface";
+            font-size: 14.4px;
+            letter-spacing: -0.14px;
+            margin-right: 0;
+            line-height: 25.5px;
+        }
         margin-right: 10px;
         height: 40.8px;
         width: 40.8px;
-        min-width: 40.8px;
-        border: 0.8px solid #9B785C;
+        border: 0.8px solid #9b785c;
         border-radius: 50%;
-        color: #986B3C;
+        color: #986b3c;
         font-family: "Abril Fatface";
         font-size: 24px;
         letter-spacing: -0.24px;
-        line-height: 32px;
         text-align: center;
         line-height: 40.8px;
     }
@@ -221,12 +234,15 @@ body {
         font-style: italic;
         letter-spacing: 0;
         line-height: 16px;
+        padding-left: 32.8px;
+        @media screen and (min-width: 992px) {
             padding-left: 60.8px;
+        }
     }
 }
 
 .radiosbtn {
-        padding-left: 60.8px;
+    padding-left: 60.8px;
     li {
         list-style: none;
         margin: 20px 0;
@@ -234,20 +250,20 @@ body {
         font-family: "New York";
         letter-spacing: 0;
     }
-    input[type='radio']:after {
+    input[type="radio"]:after {
         height: 24px;
         width: 24px;
         border-radius: 15px;
         top: -5px;
         left: -0px;
         position: relative;
-        background-color: #F1EDDB;
-        content: '';
+        background-color: #f1eddb;
+        content: "";
         display: inline-block;
         visibility: visible;
         border: 2px solid #262525;
     }
-    input[type='radio']:checked:after {
+    input[type="radio"]:checked:after {
         height: 24px;
         width: 24px;
         border-radius: 15px;
@@ -255,7 +271,7 @@ body {
         left: 0px;
         position: relative;
         background-color: $theme-color;
-        content: '';
+        content: "";
         display: inline-block;
         visibility: visible;
     }
@@ -362,22 +378,45 @@ body {
 #sortable {
     list-style-type: none;
     margin: 0;
+    padding-left: 30.8px;
+    @media screen and (min-width: 992px) {
         padding-left: 60.8px;
+    }
 }
 
 #sortable li {
+    position: relative;
     border-radius: 2px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
     margin: 20px 0;
     color: #262525;
     font-family: "New York";
     letter-spacing: 0;
-    padding-left: 10px;
+    padding: 10px 30px;
+    padding-right: 5px;
+    &::before {
+        content: "";
+        background: url(https://i.ibb.co/N3hBdNX/drag.png);
+        position: absolute;
+        left: 5px;
+        top: 0;
+        height: 40px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 25px;
+        z-index: 9;
+        bottom: 0;
+        margin: auto;
+    }
 }
 
 #sortable li span {
     margin-left: -1.3em;
+    width: 100%;
+    display: block;
+    line-height: 1;
 }
 
 .previous {
@@ -385,7 +424,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-        padding-left: 60.8px;
+  @media screen and (min-width: 992px) {
+    padding-left: 60.8px;
+  }
+  
+  
     .icon {
         height: 45px;
         width: 45px;
@@ -398,7 +441,7 @@ body {
         color: #262525;
     }
     .text {
-        color: #986B3C;
+        color: #986b3c;
         font-family: "New York";
         font-weight: bold;
         letter-spacing: 0;
@@ -410,6 +453,7 @@ body {
 
 .modal {
     backdrop-filter: blur(100px);
+    padding-right: 0;
 }
 
 .modal-content {
@@ -421,12 +465,22 @@ body {
     width: max-content;
     margin: 1.75rem auto;
 }
+@media screen and (max-width: 768px) {
+    .sm-dev-bx-shdw {
+        background-color: #f0ebda;
+        box-shadow: 0 -5px 31px 0 rgba(0, 0, 0, 0.32);
+    }
+}
 
 .desc {
     font-family: "New York";
-    font-size: 23px;
-    letter-spacing: 0;
-    line-height: 36px;
+    font-size: 14px;
+    @media screen and (min-width: 992px) {
+        font-size: 23px;
+
+        letter-spacing: 0;
+        line-height: 36px;
+    }
 }
 
 .social-popup {
@@ -437,14 +491,15 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    img {}
+    img {
+    }
 }
 
 .copy-link {
     background: chocolate;
     width: max-content;
     margin: auto;
-    color: #FFFFFF;
+    color: #ffffff;
     font-family: "Nunito Sans";
     font-size: 16px;
     font-weight: 800;
@@ -456,7 +511,7 @@ body {
     }
     a {
         padding: 9px 16px;
-        background-color:#D29300;
+        background-color: #d29300;
         span {
             margin-left: 5px;
         }
@@ -498,7 +553,7 @@ body {
         width: 5px;
         border-radius: 50%;
         background: $theme-color;
-        opacity: .8;
+        opacity: 0.8;
         margin: 5px 0;
         &.active {
             transform: scale(2);
@@ -507,15 +562,15 @@ body {
     }
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width: 992px) {
     .pr-lg-10 {
         padding-right: 100px;
     }
 }
-.mt--100{
+.mt--100 {
     margin-top: -100px;
 }
-.resp-img{
+.resp-img {
     position: absolute;
     top: 0;
     left: 0;
@@ -523,30 +578,38 @@ body {
     height: auto;
     z-index: 0;
 }
-@media screen and (max-width:600px){
-    .mb-bg{
+@media screen and (max-width: 600px) {
+    .mb-bg {
         padding: 10px;
-        background: url('https://i.ibb.co/T29Ypv3/Group-4.png');
+        background: url("https://i.ibb.co/T29Ypv3/Group-4.png");
         background-repeat: no-repeat;
         background-size: cover;
     }
 }
-.input-bg{
-    background-color: #6B6B6B;
+.input-bg {
+    background-color: #6b6b6b;
     padding-left: 15px;
 }
-.input-txt::placeholder{
-    color: #FFFFFF;
-  font-family: "New York";
-  font-size: 20px;
+.input-txt::placeholder {
+    color: #ffffff;
+    font-family: "New York";
+    font-size: 20px;
 }
-.mt-05{
+.mt-05 {
     margin-top: 5px;
 }
-.of-abs{
+.of-abs {
     position: absolute;
     bottom: -25px;
     left: 0;
     right: 0;
     margin: auto;
+    padding: 0 !important;
+    width: 22px;
+    @media screen and (min-width: 992px) {
+        left: -8px;
+    }
+}
+.ht-mx {
+    height: max-content;
 }
