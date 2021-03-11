@@ -7358,9 +7358,6 @@ form {
   margin: 0;
   flex-wrap: wrap;
   padding: 0; }
-  @media screen and (min-width: 992px) {
-    .radio ul {
-      justify-content: space-between; } }
   .radio ul li {
     list-style-type: none;
     position: relative;
@@ -7369,10 +7366,7 @@ form {
     height: 36px;
     color: #e3cab6;
     font-size: 12px;
-    margin: 5px; }
-    @media screen and (min-width: 992px) {
-      .radio ul li {
-        margin: 0; } }
+    margin: 3px; }
     @media (max-width: 767px) {
       .radio ul li:first-child {
         width: 100%;
@@ -7470,43 +7464,45 @@ header {
   font-size: 20px;
   line-height: 30px; }
 
-.banner_text {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  height: max-content;
-  text-align: center;
-  width: 80%; }
-  @media screen and (min-width: 992px) {
-    .banner_text {
-      padding-top: 100px; } }
-.banner_btn {
-  display: inline-block;
-  height: 45px;
-  width: 150px;
-  border-radius: 2.4px;
-  background-color: #D29300;
-  line-height: 45px;
-  text-align: center;
-  color: #fff !important;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none !important;
-  font-family: "Nunito Sans";
-  font-weight: bold;
-  font-size: 20px;
-  margin-top: 40px; }
-  @media screen and (min-width: 992px) {
-    .banner_btn {
-      margin-top: 0; } }
-.banner .banner-heading {
-  font-size: 36px; }
-  @media screen and (min-width: 992px) {
-    .banner .banner-heading {
-      font-size: 80px; } }
+.banner {
+  position: relative; }
+  .banner_text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: max-content;
+    text-align: center;
+    width: 80%; }
+    @media screen and (min-width: 992px) {
+      .banner_text {
+        padding-top: 100px; } }
+  .banner_btn {
+    display: inline-block;
+    height: 45px;
+    width: 150px;
+    border-radius: 2.4px;
+    background-color: #D29300;
+    line-height: 45px;
+    text-align: center;
+    color: #fff !important;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none !important;
+    font-family: "Nunito Sans";
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 40px; }
+    @media screen and (min-width: 992px) {
+      .banner_btn {
+        margin-top: 0; } }
+  .banner .banner-heading {
+    font-size: 36px; }
+    @media screen and (min-width: 992px) {
+      .banner .banner-heading {
+        font-size: 80px; } }
 .about {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -7667,9 +7663,12 @@ body {
     .inner-text {
       line-height: 36px;
       font-size: 18px; } }
+a {
+  cursor: pointer; }
+
 .scroll {
   position: absolute;
-  bottom: 6%;
+  bottom: 8%;
   left: 0;
   right: 0;
   margin: auto;
@@ -7919,7 +7918,8 @@ body {
     width: 19px; }
   .copy-link a {
     padding: 9px 16px;
-    background-color: #d29300; }
+    background-color: #d29300;
+    cursor: pointer; }
     .copy-link a span {
       margin-left: 5px; }
 
@@ -7984,7 +7984,11 @@ body {
 
 .input-bg {
   background-color: #6b6b6b;
-  padding-left: 15px; }
+  padding-left: 15px;
+  font-family: "New York";
+  color: #ffffff;
+  font-size: 20px;
+  width: 180px; }
 
 .input-txt::placeholder {
   color: #ffffff;

@@ -6,7 +6,6 @@ require_once("geoip2.phar");
 use GeoIp2\Database\Reader;
 
 
-
 $servername = "localhost";
 $username = "root";
 $password = "root";
@@ -28,7 +27,7 @@ $whisky_knowledge_list = [
 
 if (isSet($_SESSION['started']))
 { 
-	if((mktime() - $_SESSION['started'] - 60*30) > 0){ 
+	if((time() - $_SESSION['started'] - 60*30) > 0){ 
 		unset($_SESSION['started']); 
 		unset($_SESSION['user_id']); 
 	} 
@@ -54,7 +53,7 @@ if(isset($postRequest['sign_up'])){
 	if ($conn->query($sql) === TRUE) {
 	  	$last_id = $conn->insert_id;
 	  	$_SESSION['user_id'] = $last_id;
-	  	$_SESSION['started'] = mktime(); 
+	  	$_SESSION['started'] = time(); 
 	  	$response = ['success'=>true,'code'=> 'user_signup','message'=>'User successfully signed up'];
 	  	echo json_encode($response);
 	  	exit;
@@ -112,7 +111,6 @@ if(isset($postRequest['step_2'])){
 	}
 	else{
 		$sql = "UPDATE survey SET bottlebits_help_me='".$bottlebitsHelpMe."' WHERE user_id= '".$userId."'";
-		print_r($row);
 	}
 
 	if ($conn->query($sql) === TRUE) {;

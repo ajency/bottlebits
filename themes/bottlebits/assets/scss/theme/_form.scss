@@ -102,7 +102,6 @@ form {
         flex-wrap: wrap;
         padding: 0;
         @media screen and (min-width: 992px) {
-            justify-content: space-between;
         }
         
         
@@ -114,9 +113,9 @@ form {
             height: 36px;
             color: #e3cab6;
             font-size: 12px;
-            margin: 5px;
+            margin: 3px;
             @media screen and (min-width: 992px) {
-                margin:0;
+            
             }
             
             
