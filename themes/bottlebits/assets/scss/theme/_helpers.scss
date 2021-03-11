@@ -1,8 +1,12 @@
+*{
+    scroll-behavior: smooth;
+}
 body {
     background-image: url("https://i.ibb.co/b2cR7ws/rsz-1tex-wood.png");
     background-position: center;
     // background-image: url('../../../static/images/tex-wood.png');
     padding: 0 !important;
+    scroll-behavior: smooth;
 }
 
 .text {
@@ -49,7 +53,12 @@ body {
 }
 
 .grid-container {
-    box-shadow: 0px 81px 28px 50px #000;
+    box-shadow: 0px 10px 28px 50px #000;
+    @media screen and (min-width: 992px) {
+        box-shadow: 0px 81px 28px 50px #000;
+    }
+    
+    
 }
 
 .font {
@@ -80,6 +89,11 @@ body {
 .border {
     &-gold {
         border: 1px solid #986b3c;
+        @media screen and (min-width: 992px) {
+            border-right: 0;
+        }
+        
+        
     }
 }
 
@@ -134,7 +148,7 @@ body {
 
 .scroll {
     position: absolute;
-    bottom: 40px;
+    bottom: 6%;
     left: 0;
     right: 0;
     margin: auto;
@@ -155,7 +169,7 @@ body {
 
 .popup {
     border-radius: 10px;
-    background: url(https://i.ibb.co/9pJgxqV/tex-Paper.png);
+    background: url(https://i.ibb.co/YjmQDsw/rsz-1tex-paper-1.png);
     display: flex;
     justify-content: center;
     @media screen and (min-width: 992px) {
@@ -631,4 +645,21 @@ body {
 }
 .ht-mx {
     height: max-content;
+}
+.text-error{
+    color: #ababab !important;
+}
+.strk{
+    color: #A74A00;
+}
+@media screen and (max-width: 768px) {
+    .marg-nega{
+        margin: -24px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.bdrrad{
+    border-radius: 8px;
 }

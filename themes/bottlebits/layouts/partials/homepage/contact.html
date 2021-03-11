@@ -1,12 +1,12 @@
-<div class="outer">
+<div class="outer" id="signup" style="border-radius: 8px;">
     <div class="">
         <div class="container pt-5 pb-5">
-            <div class="custom-row d-md-flex p-1">
-                <div class="custom-col-50 user-signup-form p-2 p-lg-3
-                    border-gold
-                    border-right-0 position-relative">
+            <div class="custom-row d-md-flex p-1 bdrrad">
+                <div class="custom-col-60 user-signup-form p-2 p-lg-3
+                    border-gold bdrrad
+                    border-right-md-0 position-relative border-md-0">
                     <!-- <img src="{{"img/Group.png"| relURL}}" class="d-md-none img-fluid w-100 resp-img"> -->
-                    <div class="mb-bg">
+                    <div class="mb-bg marg-nega">
 
                         <h1 class="text-grey form-title position-relative"
                             style="z-index: 1;">
@@ -46,19 +46,22 @@
                                 my-lg-0">
                                 <div class="radio">
                                     <ul>
-                                        <li class="h-auto font-14">Age Group</li>
-                                        <li><label for="Radio1">41-42</label><input
+                                        <li class="h-auto font-14">Age Group <span>*</span></li>
+                                        <li><label for="Radio1">18-25</label><input
                                                 type="radio" name="age_group"
                                                 value="41-42" /> </li>
-                                        <li><label for="Radio2">42-43</label><input
+                                        <li><label for="Radio2">25-35</label><input
                                                 type="radio" name="age_group"
                                                 value="42-43" /> </li>
-                                        <li><label for="Radio3">44-56</label><input
+                                        <li><label for="Radio3">35-45</label><input
                                                 type="radio" name="age_group"
                                                 value="44-56" /> </li>
-                                        <li><label for="Radio4">58-59</label><input
+                                        <li><label for="Radio4">45-55</label><input
                                                 type="radio" name="age_group"
                                                 value="58-59" /> </li>
+                                                <li><label for="Radio4">55+</label><input
+                                                    type="radio" name="age_group"
+                                                    value="58-59" /> </li>
                                     </ul>
                                 </div>
 
@@ -71,10 +74,10 @@
                                     text-txt mb-2
                                     mb-md-0" id="email">
                             </div>
-                            <div class="col-lg-3 mt-md-2 mt-lg-0">
+                            <div class=" col-6 col-lg-3 mt-md-2 mt-lg-0">
                                 <div class="select-wrapper">
                                     <select class="w-100" id="country">
-                                        <option selected value="">Country</option>
+                                        <option selected value="">Country <span class="strk">*</span></option>
                                         <option value="Afghanistan">Afghanistan</option>
                                         <option value="Aland Islands">Aland
                                             Islands</option>
@@ -419,7 +422,7 @@
 
                     </form>
                 </div>
-                <div class="custom-col-50 d-none d-md-block">
+                <div class="custom-col-40 d-none d-md-block">
                     <img src="{{"images/ImmersiveExperience.png" | relURL}}"
                         class="img-fluid w-100 h-100"
                         style="object-fit: cover;">
@@ -439,38 +442,42 @@
     aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-
             <div class="container">
                 <!-- Queation 1 -->
                 <!-- survey-steps survey-step-1 d-none -->
-                <div class="popup popup-fixed survey-steps survey-step-1 d-none">
+                <div class="popup popup-fixed position-relative survey-steps survey-step-1 d-none pt-5">
                     <div class="container">
-                        <div class="popup-heading">Thank you Mark, for your
+                        <div class="popup-heading d-none d-md-block">Thank you
+                            Mark, for
+                            your
                             interest in Bottlebits.</div>
-                        <div class="popup-subheading">
+                        <div class="popup-subheading d-none d-md-block">
                             To understand your preferences, take a short survey
                         </div>
                         <div class="line-1"></div>
                         <div class="line-2"></div>
-            
-                        <div class="d-flex align-items-center mt-3">
-                            <div class="qnumb">
-                                1
+
+                        <div class="d-flex align-items-md-center mt-3">
+                            <div class="position-relative ht-mx">
+                                <div class="qnumb">
+                                    1
+                                </div>
+                                <span class="qdesc pl-1 of-abs">of 3</span>
                             </div>
                             <div class="question">
                                 How would you rate your knowledge about the
                                 whisky industry?
                             </div>
                         </div>
-            
-            
+
+
                         <div class="pl-md-5">
                             <div class="range-slider">
                                 <input type="hidden" id="whisky_knowledge"
                                     value="2" readonly style="border:0;
                                     color:#f6931f; font-weight:bold;">
                                 <div id="slider-range-max">
-            
+
                                 </div>
                                 <ul class="range-slider-labels">
                                     <li>Newbie</li>
@@ -486,23 +493,38 @@
                                 </div>
                             </div>
                         </div>
-            
+
+
                         <a href="#" class="commonbtn btn-bottm survey-qn-1">Next</a>
                     </div>
-            
-            
+                    <a class="close position-absolute" style="top: 10px;right:
+                        14px;">
+                         <img src="{{"img/times.png" | relURL}}"
+                         class="mx-1" height="40px" width="40px">
+                </a>
+                    <div class="steps-dots d-none d-md-flex">
+                        <div class="dot active">
+                        </div>
+                        <div class="dot">
+                        </div>
+                        <div class="dot">
+                        </div>
+                    </div>
+
                 </div>
                 <!-- survey-steps survey-step-2 d-none -->
-                <div class="popup  align-items-center survey-steps survey-step-2 d-none ">
+                <div class="popup align-items-center survey-steps survey-step-2
+                    d-none pt-3 position-relative">
                     <div class="container">
-                        <div class="popup-heading d-none d-md-block">Thank you Mark, for your
+                        <div class="popup-heading d-none d-md-block">Thank you
+                            Mark, for your
                             interest in Bottlebits.</div>
                         <div class="popup-subheading d-none d-md-block">
                             To understand your preferences, take a short survey
                         </div>
                         <div class="line-1"></div>
                         <div class="line-2"></div>
-            
+
                         <div class="d-flex align-items-md-center mt-2">
                             <div class="position-relative ht-mx">
                                 <div class="qnumb">
@@ -514,49 +536,50 @@
                                 I’m expecting that Bottlebits will help me
                             </div>
                         </div>
-            
+
                         <p class="qdesc">(arrange them in order of importance,
                             from top – most important to bottom – least
                             important)
                         </p>
-            
+
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-8">
                                 <ul id="sortable" class="bottlebits_help_me">
                                     <li class="ui-state-default">
-                                        <!-- <img src="{{"img/drag.png"| relURL}}" width="20px" height="24px"> -->
+
                                         <span class="pl-3">Pursue and engage
                                             with my
                                             passion for the industry</span></li>
                                     <li class="ui-state-default">
-                                        <!-- <img src="{{"img/drag.png"| relURL}}" width="20px" height="24px"> -->
+
                                         <span class="pl-3">Make attractive
                                             returns
                                         </span></li>
                                     <li class="ui-state-default">
-                                        <!-- <img src="{{"img/drag.png"| relURL}}" width="20px" height="24px"> -->
+
                                         <span class="pl-3">Diversify my
                                             investments</span></li>
                                     <li class="ui-state-default">
-                                        <!-- <img src="{{"img/drag.png"| relURL}}" width="20px" height="24px"> -->
+
                                         <span class="pl-3">Increase my knowledge
                                             of the
                                             industry</span></li>
                                     <li class="ui-state-default">
-                                        <!-- <img src="{{"img/drag.png"| relURL}}" width="20px" height="24px"> -->
+
                                         <span class="pl-3">Connect with other
                                             members
                                             that share my passion</span></li>
                                     <li class="ui-state-default">
-                                        <!-- <img src="{{"img/drag.png"| relURL}}" width="20px" height="24px"> -->
+
                                         <span class="pl-3">Access to exclusive
                                             material
                                             and experiences </span></li>
                                 </ul>
                             </div>
                         </div>
-            
-                        <div class="d-flex align-items-center neg-margin sm-dev-bx-shdw
+
+                        <div class="d-flex align-items-center neg-margin
+                            sm-dev-bx-shdw
                             justify-content-between mt-3">
                             <div class="previous step-2-previous">
                                 <span class="icon">
@@ -567,23 +590,38 @@
                                     previous
                                 </span>
                             </div>
-            
+
                             <a href="#" class="commonbtn survey-qn-2">Next</a>
                         </div>
                     </div>
-            
+                    <a class="close position-absolute" style="top: 20px;right:
+                    20px;">
+                     <img src="{{"img/times.png" | relURL}}"
+                     class="mx-1" height="40px" width="40px">
+            </a>
+                    <div class="steps-dots d-none d-md-flex">
+
+                        <div class="dot">
+                        </div>
+                        <div class="dot active">
+                        </div>
+                        <div class="dot">
+                        </div>
+                    </div>
                 </div>
                 <!-- survey-steps survey-step-3 d-none -->
-                <div class="popup align-items-center pt-5 survey-steps survey-step-3 d-none">
+                <div class="popup align-items-center pt-3 survey-steps survey-step-3
+                    d-none pt-5 position-relative">
                     <div class="container">
-                        <div class="popup-heading d-none d-md-block">Thank you Mark, for your
+                        <div class="popup-heading d-none d-md-block">Thank you
+                            Mark, for your
                             interest in Bottlebits.</div>
                         <div class="popup-subheading d-none d-md-block">
                             To understand your preferences, take a short survey
                         </div>
                         <div class="line-1"></div>
                         <div class="line-2"></div>
-            
+
                         <div class="d-flex align-items-md-center mt-2">
                             <div class="position-relative ht-mx">
                                 <div class="qnumb">
@@ -592,12 +630,13 @@
                                 <span class="qdesc pl-1 of-abs">of 3</span>
                             </div>
                             <div class="question">
-                                My initial investment intention is around  <i class="qdesc pl-0 mt-05">(£ per year)</i>
+                                My initial investment intention is around <i
+                                    class="qdesc pl-0 mt-05">(£ per year)</i>
                             </div>
-                           
+
                         </div>
-            
-            
+
+
                         <ul class="radiosbtn">
                             <li><input type='radio'
                                     name="initial_investment_intention"
@@ -626,9 +665,10 @@
                                 >
                             </li>
                         </ul>
-            
+
                         <div class="d-flex align-items-center
-                            justify-content-between mt-3 neg-margin sm-dev-bx-shdw">
+                            justify-content-between mt-3 neg-margin
+                            sm-dev-bx-shdw">
                             <div class="previous">
                                 <span class="icon">
                                     <i class="fa fa-chevron-left"
@@ -638,19 +678,34 @@
                                     previous
                                 </span>
                             </div>
-            
+
                             <a href="#" class="commonbtn survey-qn-3">Next</a>
                         </div>
                     </div>
-            
-            
+                    <a class="close position-absolute" style="top: 10px;right:
+                        14px;">
+                         <img src="{{"img/times.png" | relURL}}"
+                         class="mx-1" height="40px" width="40px">
+                </a>
+                    <div class="steps-dots d-none d-md-flex">
+
+                        <div class="dot">
+                        </div>
+                        <div class="dot">
+                        </div>
+                        <div class="dot active">
+                        </div>
+                    </div>
+
                 </div>
                 <!-- Welcome -->
-                <!-- survey-steps survey-step-welcome -->
-                <div class="popup align-items-center survey-steps survey-step-welcome d-none ">
+                <!-- survey-steps
+        survey-step-welcome d-none -->
+                <div class="popup align-items-center survey-steps
+                    survey-step-welcome pt-5 d-none position-relative">
                     <div class="container">
-                        <div class="popup-heading ">Welcome to bottlebits® </div>
-                        <div class="popup-subheading ">
+                        <div class="popup-heading">Welcome to bottlebits® </div>
+                        <div class="popup-subheading">
                             Your journey to investing, collecting, and
                             connoisseurship starts here…
                         </div>
@@ -687,16 +742,23 @@
                                     </p>
                                 </div>
                                 <div class="col-4 col-md-12">
-            
+
                                     <a href="#" class="commonbtn mx-auto
                                         survey-welcome">Next</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <a class="close position-absolute" style="top: 10px;right:
+                        14px;">
+                         <img src="{{"img/times.png" | relURL}}"
+                         class="mx-1" height="40px" width="40px">
+                </a>
                 </div>
-                <!-- Thank you -->
-                <div class="popup text-center align-items-center social-popup mx-auto d-none survey-steps d-none survey-step-thankyou">
+                <!-- d-none survey-steps survey-step-thankyou -->
+                <div class="popup text-center align-items-center social-popup
+                    mx-auto d-none survey-steps survey-step-thankyou
+                    position-relative">
                     <div class="container">
                         <div class="popup-heading">Thank you </div>
                         <div class="popup-subheading">
@@ -718,9 +780,9 @@
                                 class="mx-1" height="40px" width="40px">
                             <img src="{{"img/social5.png" | relURL}}"
                                 class="mx-1" height="40px" width="40px">
-            
+
                         </div>
-            
+
                         <div class="d-flex copy-link my-3">
                             <input type="text" name="Link" id="Link"
                                 placeholder="bottlebits.com" class="input-txt
@@ -729,19 +791,15 @@
                                     height="70px" width="70px"><span>Copy Link</span></a>
                         </div>
                     </div>
-                </div>
-            
-            
-                <div class="steps-dots">
-                    <div class="dot active">
-                    </div>
-                    <div class="dot">
-                    </div>
-                    <div class="dot">
-                    </div>
+                    <a class="close position-absolute" style="top: 10px;right:
+                        14px;">
+                         <img src="{{"img/times.png" | relURL}}"
+                         class="mx-1" height="40px" width="40px">
+                </a>
                 </div>
             </div>
-            
         </div>
     </div>
 </div>
+<!-- survey-steps
+survey-step-welcome d-none -->

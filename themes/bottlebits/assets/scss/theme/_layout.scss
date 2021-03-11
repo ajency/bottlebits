@@ -4,9 +4,14 @@
     background-image: url(https://i.ibb.co/b2cR7ws/rsz-1tex-wood.png);
     background-position: center;
     }
-    &-col-50{
+    &-col-60{
         @media (min-width: 768px) {
-            width: 50%;
+            width: 52%;
+        }        
+    }
+    &-col-40{
+        @media (min-width: 768px) {
+            width: 48%;
         }        
     }
 }
