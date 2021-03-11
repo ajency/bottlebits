@@ -7236,29 +7236,44 @@ a.text-error:hover, a.text-error:focus {
   letter-spacing: 0;
   line-height: 27px;
   font-family: 'Nunito Sans', sans-serif; }
-
+  @media (max-width: 767px) {
+    .submit {
+      width: 100%; } }
 .commonbtn {
   display: block;
-  height: 45px;
-  width: 150px;
+  height: 35px;
+  width: 73px;
+  box-shadow: 0 2px 4px 0 rgba(115, 80, 0, 0.44);
+  font-size: 16px;
+  line-height: 35px;
   border-radius: 2.4px;
   background-color: #D29300;
-  line-height: 45px;
+  font-family: 'Nunito Sans', sans-serif;
   text-align: center;
-  color: #fff;
-  font-weight: bold; }
-
+  color: #FFFFFF;
+  font-weight: 800; }
+  @media screen and (min-width: 992px) {
+    .commonbtn {
+      height: 45px;
+      width: 124px;
+      font-size: 20px;
+      line-height: 45px; } }
 .modal-button {
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
+  font-family: 'Nunito Sans', sans-serif;
   height: max-content;
   left: 0;
-  right: 0; }
+  right: 0;
+  color: #FFFFFF;
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  font-weight: 800; }
 
 .form-title {
-  color: #C7C7C6;
+  color: #c7c7c6;
   font-family: "Abril Fatface";
   font-size: 33px;
   letter-spacing: -0.33px;
@@ -7266,7 +7281,7 @@ a.text-error:hover, a.text-error:focus {
 
 .form-subtitle {
   opacity: 0.75;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "New York";
   font-size: 20px;
   letter-spacing: 0;
@@ -7274,23 +7289,62 @@ a.text-error:hover, a.text-error:focus {
 
 form {
   font-family: "NewYork"; }
+  form input[type="text"]::placeholder,
+  form input[type="email"]::placeholder {
+    color: #e3cab6;
+    font-family: "New York";
+    font-size: 14px; }
+  form input[type="text"]:-ms-input-placeholder,
+  form input[type="email"]:-ms-input-placeholder {
+    color: #e3cab6;
+    font-family: "New York";
+    font-size: 14px; }
+  form input[type="text"]::-ms-input-placeholder,
+  form input[type="email"]::-ms-input-placeholder {
+    color: #e3cab6;
+    font-family: "New York";
+    font-size: 14px; }
   form select,
   form input {
     border: 0;
     height: 40px;
     background-color: #000;
-    color: #E3CAB6;
+    color: #e3cab6;
     font-family: "New York";
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 16px; }
-    form select::placeholder,
-    form input::placeholder {
-      color: #E3CAB6; }
   form input {
     padding-left: 15px; }
+    form input.text-error::placeholder {
+      color: #772727; }
+    form input.text-error:-ms-input-placeholder {
+      color: #772727; }
+    form input.text-error::-ms-input-placeholder {
+      color: #772727; }
   form select {
-    padding-left: 10px; }
+    cursor: pointer;
+    outline: 0;
+    padding-left: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px; }
+  form select::-ms-expand {
+    display: none; }
+  form .select-wrapper {
+    position: relative; }
+    form .select-wrapper::after {
+      content: "";
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid #A74A00;
+      pointer-events: none; }
 
 .radio ul {
   display: flex;
@@ -7304,11 +7358,14 @@ form {
     margin: 0;
     padding: 0;
     height: 36px;
-    color: #E3CAB6;
+    color: #e3cab6;
     font-size: 12px;
     margin: 2px; }
-
-.radio input[type=radio] {
+    @media (max-width: 767px) {
+      .radio ul li:first-child {
+        width: 100%;
+        margin-bottom: 10px; } }
+.radio input[type="radio"] {
   position: relative;
   border: 1px solid #656565;
   padding: 0.5em;
@@ -7316,13 +7373,14 @@ form {
   height: 36px;
   width: 63px;
   border-radius: 4px;
-  background: transparent; }
+  background: transparent;
+  cursor: pointer; }
 
-.radio input[type=radio]:checked {
+.radio input[type="radio"]:checked {
   background: #31313150;
   background-size: 100%; }
 
-.radio input[type=radio]:focus {
+.radio input[type="radio"]:focus {
   outline-color: transparent;
   outline: none; }
 
@@ -7336,13 +7394,13 @@ form {
   height: 100%;
   text-align: center;
   line-height: 36px;
-  color: #E3CAB6;
+  color: #e3cab6;
   font-family: "NewYork"; }
 
 .text-error {
-  outline: 1px solid red;
+  outline: 1px solid #772727;
   width: max-content;
-  padding: 2px; }
+  color: #772727 !important; }
 
 .custom-row {
   box-shadow: 0 5px 43px 0 rgba(0, 0, 0, 0.66);
@@ -7419,7 +7477,8 @@ header {
   color: #fff;
   font-weight: bold;
   font-family: "Nunito Sans";
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 20px; }
 
 .banner .banner-heading {
   font-size: 36px; }
@@ -7486,7 +7545,7 @@ body {
   color: #fff; }
 
 .text-green {
-  color: #008F4F; }
+  color: #008f4f; }
 
 .text-blue {
   color: #234361; }
@@ -7495,10 +7554,10 @@ body {
   color: #C7C7C6; }
 
 .text-grey {
-  color: #C7C7C6; }
+  color: #c7c7c6; }
 
 .text-red {
-  color: #9C0800; }
+  color: #9c0800; }
 
 .text-off-white {
   color: #ffffffb3; }
@@ -7517,7 +7576,7 @@ body {
     font-size: 36px !important; } }
 
 .grid-container {
-  box-shadow: 0px 30px 62px 50px #000; }
+  box-shadow: 0px 81px 28px 50px #000; }
 
 .font-14 {
   font-size: 12px; }
@@ -7536,7 +7595,7 @@ body {
   text-decoration: line-through; }
 
 .border-gold {
-  border: 1px solid #986B3C; }
+  border: 1px solid #986b3c; }
 
 .text-theme {
   color: #C1803B; }
@@ -7559,7 +7618,7 @@ body {
     .lineht-36 {
       line-height: 36px; } }
 .subheading {
-  color: #C1803B;
+  color: #c1803b;
   font-family: "New York";
   font-size: clamp(26px, 4vh, 36px);
   font-weight: bold;
@@ -7569,7 +7628,7 @@ body {
     .subheading {
       line-height: 55px; } }
 .inner-text {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "New York";
   letter-spacing: 1px; }
   @media screen and (min-width: 992px) {
@@ -7588,19 +7647,21 @@ body {
   text-align: center; }
 
 .text-grey-1 {
-  color: #E3CAB6; }
+  color: #e3cab6; }
 
 .popup-fixed {
-  height: 680px; }
+  min-height: 680px; }
 
 .popup {
   border-radius: 10px;
   background: url(https://i.ibb.co/9pJgxqV/tex-Paper.png);
   display: flex;
-  justify-content: center;
-  padding: 28px; }
+  justify-content: center; }
+  @media screen and (min-width: 992px) {
+    .popup {
+      padding: 28px; } }
   .popup-heading {
-    color: #986B3C;
+    color: #986b3c;
     font-family: "Abril Fatface";
     font-size: 30px;
     letter-spacing: -0.3px; }
@@ -7618,10 +7679,10 @@ body {
         line-height: 30px; } }
   .popup .line-1 {
     margin-top: 10px;
-    border-bottom: 3px solid #9B785C; }
+    border-bottom: 3px solid #9b785c; }
   .popup .line-2 {
     margin-top: 4px;
-    border-bottom: 1px solid #9B785C; }
+    border-bottom: 1px solid #9b785c; }
   .popup .question {
     color: #262525;
     font-family: "New York";
@@ -7629,20 +7690,32 @@ body {
     font-weight: bold;
     letter-spacing: 0;
     line-height: 30px;
-    position: relative; }
+    position: relative;
+    padding-left: 10.8px; }
   .popup .qnumb {
     margin-right: 10px;
     height: 40.8px;
     width: 40.8px;
-    border: 0.8px solid #9B785C;
+    border: 0.8px solid #9b785c;
     border-radius: 50%;
-    color: #986B3C;
+    color: #986b3c;
     font-family: "Abril Fatface";
     font-size: 24px;
     letter-spacing: -0.24px;
-    line-height: 32px;
     text-align: center;
     line-height: 40.8px; }
+    @media screen and (max-width: 992px) {
+      .popup .qnumb {
+        height: 24.5px;
+        width: 24.5px;
+        border: 0.5px solid #9b785c;
+        background-color: #a58367;
+        color: #f0ecdb;
+        font-family: "Abril Fatface";
+        font-size: 14.4px;
+        letter-spacing: -0.14px;
+        margin-right: 0;
+        line-height: 25.5px; } }
   .popup .qdesc {
     opacity: 0.75;
     color: #222222;
@@ -7651,29 +7724,31 @@ body {
     font-style: italic;
     letter-spacing: 0;
     line-height: 16px;
-    padding-left: 50.8px; }
-
+    padding-left: 32.8px; }
+    @media screen and (min-width: 992px) {
+      .popup .qdesc {
+        padding-left: 60.8px; } }
 .radiosbtn {
-  padding-left: 50.8px; }
+  padding-left: 60.8px; }
   .radiosbtn li {
     list-style: none;
     margin: 20px 0;
     color: #262525;
     font-family: "New York";
     letter-spacing: 0; }
-  .radiosbtn input[type='radio']:after {
+  .radiosbtn input[type="radio"]:after {
     height: 24px;
     width: 24px;
     border-radius: 15px;
     top: -5px;
     left: -0px;
     position: relative;
-    background-color: #F1EDDB;
-    content: '';
+    background-color: #f1eddb;
+    content: "";
     display: inline-block;
     visibility: visible;
     border: 2px solid #262525; }
-  .radiosbtn input[type='radio']:checked:after {
+  .radiosbtn input[type="radio"]:checked:after {
     height: 24px;
     width: 24px;
     border-radius: 15px;
@@ -7681,38 +7756,57 @@ body {
     left: 0px;
     position: relative;
     background-color: #C1803B;
-    content: '';
+    content: "";
     display: inline-block;
     visibility: visible; }
 
 #sortable {
   list-style-type: none;
   margin: 0;
-  padding-left: 50.8px;
-  width: 60%; }
-
+  padding-left: 30.8px; }
+  @media screen and (min-width: 992px) {
+    #sortable {
+      padding-left: 60.8px; } }
 #sortable li {
-  height: 38px;
-  width: 640px;
+  position: relative;
   border-radius: 2px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   margin: 20px 0;
   color: #262525;
   font-family: "New York";
   letter-spacing: 0;
-  line-height: 38px;
-  padding-left: 10px; }
+  padding: 10px 30px;
+  padding-right: 5px; }
+  #sortable li::before {
+    content: "";
+    background: url(https://i.ibb.co/N3hBdNX/drag.png);
+    position: absolute;
+    left: 5px;
+    top: 0;
+    height: 40px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    z-index: 9;
+    bottom: 0;
+    margin: auto; }
 
 #sortable li span {
-  position: absolute;
-  margin-left: -1.3em; }
+  margin-left: -1.3em;
+  width: 100%;
+  display: block;
+  line-height: 1; }
 
 .previous {
+  cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding-left: 50.8px; }
+  justify-content: flex-start; }
+  @media screen and (min-width: 992px) {
+    .previous {
+      padding-left: 60.8px; } }
   .previous .icon {
     height: 45px;
     width: 45px;
@@ -7724,7 +7818,7 @@ body {
     margin-right: 10px;
     color: #262525; }
   .previous .text {
-    color: #986B3C;
+    color: #986b3c;
     font-family: "New York";
     font-weight: bold;
     letter-spacing: 0;
@@ -7733,7 +7827,8 @@ body {
     text-transform: capitalize; }
 
 .modal {
-  backdrop-filter: blur(100px); }
+  backdrop-filter: blur(100px);
+  padding-right: 0; }
 
 .modal-content {
   background: transparent; }
@@ -7743,14 +7838,21 @@ body {
   width: max-content;
   margin: 1.75rem auto; }
 
+@media screen and (max-width: 768px) {
+  .sm-dev-bx-shdw {
+    background-color: #f0ebda;
+    box-shadow: 0 -5px 31px 0 rgba(0, 0, 0, 0.32); } }
+
 .desc {
   font-family: "New York";
-  font-size: 23px;
-  letter-spacing: 0;
-  line-height: 36px; }
-
+  font-size: 14px; }
+  @media screen and (min-width: 992px) {
+    .desc {
+      font-size: 23px;
+      letter-spacing: 0;
+      line-height: 36px; } }
 .social-popup {
-  width: 476px; }
+  max-width: 590px; }
 
 .social-links {
   justify-content: center;
@@ -7761,7 +7863,7 @@ body {
   background: chocolate;
   width: max-content;
   margin: auto;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Nunito Sans";
   font-size: 16px;
   font-weight: 800;
@@ -7771,7 +7873,8 @@ body {
     height: 22px;
     width: 19px; }
   .copy-link a {
-    padding: 9px 16px; }
+    padding: 9px 16px;
+    background-color: #d29300; }
     .copy-link a span {
       margin-left: 5px; }
 
@@ -7806,7 +7909,7 @@ body {
     width: 5px;
     border-radius: 50%;
     background: #C1803B;
-    opacity: .8;
+    opacity: 0.8;
     margin: 5px 0; }
     .steps-dots .dot.active {
       transform: scale(2);
@@ -7833,6 +7936,32 @@ body {
     background: url("https://i.ibb.co/T29Ypv3/Group-4.png");
     background-repeat: no-repeat;
     background-size: cover; } }
+
+.input-bg {
+  background-color: #6b6b6b;
+  padding-left: 15px; }
+
+.input-txt::placeholder {
+  color: #ffffff;
+  font-family: "New York";
+  font-size: 20px; }
+
+.mt-05 {
+  margin-top: 5px; }
+
+.of-abs {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 0 !important;
+  width: 22px; }
+  @media screen and (min-width: 992px) {
+    .of-abs {
+      left: -8px; } }
+.ht-mx {
+  height: max-content; }
 
 .range-slider {
   margin-top: 45px;
@@ -7882,12 +8011,25 @@ body {
       font-family: "NewYork";
       line-height: 38px;
       color: #262525; }
+      @media (max-width: 767px) {
+        .range-slider-labels li:first-child {
+          position: relative;
+          top: -5px; } }
       .range-slider-labels li:last-child {
         text-align: right; }
+        @media (max-width: 767px) {
+          .range-slider-labels li:last-child {
+            position: relative;
+            top: 5px; } }
+      @media (max-width: 767px) {
+        .range-slider-labels li {
+          line-height: 1;
+          width: 100%; } }
     @media (max-width: 767px) {
       .range-slider-labels {
         position: absolute;
         top: 0;
+        left: 15px;
         margin-top: 0;
         flex-direction: column;
         height: 300px;
