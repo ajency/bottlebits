@@ -10,7 +10,9 @@
     letter-spacing: 0;
     line-height: 27px;
     font-family: 'Nunito Sans', sans-serif;
-
+    @media (max-width: 767px) {
+        width: 100%;
+    }
 }
 
 .commonbtn {
