@@ -20,6 +20,14 @@ $whisky_knowledge_list = [
             'Connoisseur'=>4
             ];
 
+if (isSet($_SESSION['started']))
+{ 
+	if((mktime() - $_SESSION['started'] - 60*30) > 0){ 
+		unset($_SESSION['started']); 
+		unset($_SESSION['user_id']); 
+	} 
+} 
+
 
 $postRequest = $_POST;
 if(isset($postRequest['sign_up'])){
@@ -40,6 +48,7 @@ if(isset($postRequest['sign_up'])){
 	if ($conn->query($sql) === TRUE) {
 	  	$last_id = $conn->insert_id;
 	  	$_SESSION['user_id'] = $last_id;
+	  	$_SESSION['started'] = mktime(); 
 	  	$response = ['success'=>true,'code'=> 'user_signup','message'=>'User successfully signed up'];
 	  	echo json_encode($response);
 	  	exit;
