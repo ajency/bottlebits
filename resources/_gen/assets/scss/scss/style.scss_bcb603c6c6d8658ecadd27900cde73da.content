@@ -7647,7 +7647,7 @@ body {
       line-height: 36px; } }
 .subheading {
   color: #c1803b;
-  font-family: "New York";
+  font-family: "New York" !important;
   font-size: clamp(26px, 4vh, 36px);
   font-weight: bold;
   letter-spacing: 0;
@@ -7657,7 +7657,7 @@ body {
       line-height: 55px; } }
 .inner-text {
   color: #ffffff;
-  font-family: "New York";
+  font-family: "New York" !important;
   letter-spacing: 1px; }
   @media screen and (min-width: 992px) {
     .inner-text {
@@ -7702,7 +7702,7 @@ a {
   .popup-subheading {
     opacity: 0.75;
     color: #222222;
-    font-family: "New York";
+    font-family: "New York" !important;
     font-size: 25px;
     letter-spacing: 0; }
     @media screen and (min-width: 992px) {
@@ -7716,7 +7716,7 @@ a {
     border-bottom: 1px solid #9b785c; }
   .popup .question {
     color: #262525;
-    font-family: "New York";
+    font-family: "New York" !important;
     font-size: 25px;
     font-weight: bold;
     letter-spacing: 0;
@@ -7750,7 +7750,7 @@ a {
   .popup .qdesc {
     opacity: 0.75;
     color: #222222;
-    font-family: "New York";
+    font-family: "New York" !important;
     font-size: 14px;
     font-style: italic;
     letter-spacing: 0;
@@ -7768,7 +7768,7 @@ a {
     list-style: none;
     margin: 20px 0;
     color: #262525;
-    font-family: "New York";
+    font-family: "New York" !important;
     letter-spacing: 0; }
   .radiosbtn input[type="radio"]:after {
     height: 24px;
@@ -7808,7 +7808,7 @@ a {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   margin: 20px 0;
   color: #262525;
-  font-family: "New York";
+  font-family: "New York" !important;
   letter-spacing: 0;
   padding: 10px 30px;
   padding-right: 5px; }
@@ -7853,7 +7853,7 @@ a {
     color: #262525; }
   .previous .text {
     color: #986b3c;
-    font-family: "New York";
+    font-family: "New York" !important;
     font-weight: bold;
     letter-spacing: 0;
     line-height: 16px;
@@ -7888,7 +7888,7 @@ a {
       margin-bottom: 0; } }
 
 .desc {
-  font-family: "New York";
+  font-family: "New York" !important;
   font-size: 14px; }
   @media screen and (min-width: 992px) {
     .desc {
@@ -7982,17 +7982,22 @@ a {
     background-repeat: no-repeat;
     background-size: cover; } }
 
+.sticky-div {
+  position: sticky;
+  bottom: 0;
+  z-index: 9; }
+
 .input-bg {
   background-color: #6b6b6b;
   padding-left: 15px;
-  font-family: "New York";
+  font-family: "New York" !important;
   color: #ffffff;
   font-size: 20px;
   width: 180px; }
 
 .input-txt::placeholder {
   color: #ffffff;
-  font-family: "New York";
+  font-family: "New York" !important;
   font-size: 20px; }
 
 .mt-05 {
