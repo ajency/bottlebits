@@ -1,15 +1,16 @@
 <?php
 session_start();
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// error_reporting(E_ALL);
+require_once("constants.php");
 require_once("geoip2.phar");
 use GeoIp2\Database\Reader;
 
 
-$servername = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "bottlebits"; 
+$servername = SERVER_NAME;
+$username = DB_USER_NAME;
+$password = DB_PASSWORD;
+$dbname = DATABASE_NAME; 
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
