@@ -15,15 +15,24 @@
 
 .commonbtn {
     display: block;
+    height: 35px;
+    width: 73px;
+    box-shadow: 0 2px 4px 0 rgba(115,80,0,0.44);
+    font-size: 16px;
+    line-height: 35px;
+
+  @media screen and (min-width: 992px) {
     height: 45px;
     width: 124px;
+    
+    font-size: 20px;
+    line-height: 45px;
+  }
     border-radius: 2.4px;
     background-color: #D29300;
-    line-height: 45px;
     font-family: 'Nunito Sans', sans-serif;
     text-align: center;
     color: #FFFFFF;
-    font-size: 20px;
     font-weight: 800;
 }
 .modal-button{
