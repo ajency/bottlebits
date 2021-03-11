@@ -38,6 +38,8 @@ $(document).ready(function () {
                 }
             }
             else{
+                if(response.country!=undefined)
+                    $("#country").val(response.country);
                 
                 $(".survey-step-thankyou").removeClass('d-none')
                 $(".survey-btn").addClass('d-none')

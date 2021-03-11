@@ -1,5 +1,11 @@
 <?php
 session_start();
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+require_once("geoip2.phar");
+use GeoIp2\Database\Reader;
+
+
 
 $servername = "localhost";
 $username = "root";
@@ -193,7 +199,15 @@ if(isset($postRequest['session_exits'])){
 	  	echo json_encode($response);
 	  	exit;
 	} else {
-		$response = ['success'=>false,'code'=> 'session_exits'];
+		$reader = new Reader('GeoLite2-Country.mmdb');
+		
+		$country =  '';
+		if($_SERVER['REMOTE_ADDR']!='::1'){
+			$record = $reader->country($_SERVER['REMOTE_ADDR']);
+			$country = $record->country->name;
+		}
+		
+		$response = ['success'=>false,'code'=> 'session_exits','country'=>$country];
 	  	echo json_encode($response);
 	  	exit;
 	}
