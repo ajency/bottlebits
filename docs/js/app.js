@@ -3,7 +3,6 @@ $(document).ready(function () {
 });
 
 $(window).resize(function() { 
-  console.log("testtetst")
   $( "#slider-range-max" ).slider( "destroy" );
   rangeSlider();
 });
