@@ -39,7 +39,7 @@
                                         <option selected value="">Gender</option>
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
-                                        <option value="Prefer not to Say">Prefer not to Say</option>
+                                        <option value="other">Prefer not to Say"</option>
                                     </select>
                                 </div>
                             </div>
@@ -450,7 +450,7 @@
                 <!-- survey-steps survey-step-1 d-none -->
                 <div class="popup popup-fixed position-relative survey-steps
                     survey-step-1 d-none pt-5">
-                    <div class="container position-relative">
+                    <div class="container">
                         <div class="popup-heading d-none d-md-block">Thank you
                             Mark, for
                             your
@@ -499,12 +499,7 @@
                         </div>
 
 
-                        <div class="d-flex align-items-center neg-margin
-                        sm-dev-bx-shdw
-                        justify-content-between mt-3 sticky-div">
-            
-                        <a href="#" class="commonbtn survey-qn-2">Next</a>
-                    </div>
+                        <a href="#" class="commonbtn btn-bottm survey-qn-1">Next</a>
                     </div>
                     <a class="close position-absolute" style="top: 10px;right:
                         14px;" type="button" class="btn-close"
@@ -714,58 +709,52 @@
                 <!-- Welcome -->
                 <!-- survey-steps
         survey-step-welcome d-none -->
-                <!-- -->
-                <div class="popup text-center align-items-center social-popup
-                    survey-steps
-                    survey-step-welcome d-none
-                    mx-auto
-                    position-relative">
+                <div class="popup align-items-center survey-steps
+                    survey-step-welcome pt-5 d-none position-relative">
                     <div class="container">
-                        <div class="popup-heading">Thank you </div>
+                        <div class="popup-heading">Welcome to bottlebits® </div>
                         <div class="popup-subheading">
-                            Spread the word.
+                            Your journey to investing, collecting, and
+                            connoisseurship starts here…
                         </div>
                         <div class="line-1"></div>
                         <div class="line-2"></div>
                         <div class="desc mt-3">
-                            Let your friends/family know about Bottlebits.
-                        </div>
-                        <div class="d-flex social-links mt-3">
-                            <a href="https://www.facebook.com/Bottlebits">
-                                <img src="{{"img/social1.png" | relURL}}"
-                                    class="mx-1" height="40px" width="40px">
-                            </a>
-                            <a href="https://www.instagram.com/bottlebits/">
-                                <img src="{{"img/social2.png" | relURL}}"
-                                    class="mx-1" height="40px" width="40px">
-                            </a>
-                            <a href="#">
-                                <img src="{{"img/social3.png" | relURL}}"
-                                    class="mx-1" height="40px" width="40px">
-                            </a>
-                            <a href="https://twitter.com/bottlebits">
-                                <img src="{{"img/social4.png" | relURL}}"
-                                    class="mx-1" height="40px" width="40px">
-                            </a>
-                            <a href="#">
-                                <img src="{{"img/social5.png" | relURL}}"
-                                    class="mx-1" height="40px" width="40px">
-                            </a>
+                            <p>We noticed that your options to invest in
+                                investment-grade bottles of top performing
+                                spirits, fine wine, and champagne are <strong>limited</strong>
+                                (or even <strong>unknown</strong> ), and the
+                                process can be <strong>exhausting</strong>.
+                                That’s why we are going to make it <strong>easy</strong>
+                                and
+                                <strong>fun</strong> for you. </p>
+                            <p> We will give you access to <strong>only curated</strong>
+                                investment-grade bottles, ways to <strong>realise
+                                    your investments</strong>, and a journey of
+                                <strong>knowledge</strong> with exclusive
+                                content from our world-leading experts. <strong>Don’t
+                                    worry about the bottles</strong>, we’ll keep
+                                them in a specialised warehouse and insured.
+                                And, of course, the <strong>security</strong> of
+                                your assets, data, and transactions will always
+                                be our priority.
+                            </p>
+                            <p>For now, just relax; we will give you our roadmap
+                                to launching in no time.</p>
+                            <div class="row sm-dev-bx-shdw">
+                                <div class="col-8 col-md-12">
+                                    <p class="text-left text-md-center">
+                                        <strong>Help us customise your
+                                            experience by
+                                            answering these 3 short questions.</strong>
+                                    </p>
+                                </div>
+                                <div class="col-4 col-md-12">
 
-                        </div>
-
-
-
-                        <div class="d-flex copy-link my-3">
-                            <input type="text" name="Link" id="Link"
-                                placeholder="bottlebits.com" class="input-txt
-                                input-bg border-0"
-                                type="text" value="bottlebits.com" disabled>
-                            <a onclick="myFunction()" onmouseout="outFunc()"><img
-                                    src="{{"img/copy.png" | relURL}}"
-                                    height="70px" width="70px"><span
-                                    class="tooltiptext"
-                                    id="myTooltip">Copy Link</span> </a>
+                                    <a href="#" class="commonbtn mx-auto
+                                        survey-welcome">Next</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <a class="close position-absolute" style="top: 10px;right:
@@ -775,7 +764,67 @@
                             class="mx-1" height="40px" width="40px">
                     </a>
                 </div>
+                <!-- d-none survey-steps survey-step-thankyou -->
+                <div class="popup text-center align-items-center social-popup
+                survey-steps
+                survey-step-thankyou d-none
+                mx-auto
+                position-relative">
+                <div class="container">
+                    <div class="popup-heading">Thank you </div>
+                    <div class="popup-subheading">
+                        Spread the word.
+                    </div>
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="desc mt-3">
+                        Let your friends/family know about Bottlebits.
+                    </div>
+                    <div class="d-flex social-links mt-3">
+                        <a href="https://www.facebook.com/Bottlebits" target="_blank">
+                            <img src="{{"img/social1.png" | relURL}}"
+                                class="mx-1" height="40px" width="40px">
+                        </a>
+                        <a href="https://www.instagram.com/bottlebits/" target="_blank">
+                            <img src="{{"img/social2.png" | relURL}}"
+                                class="mx-1" height="40px" width="40px">
+                        </a>
+                        <a href="#">
+                            <img src="{{"img/social3.png" | relURL}}"
+                                class="mx-1" height="40px" width="40px">
+                        </a>
+                        <a href="https://twitter.com/bottlebits" target="_blank">
+                            <img src="{{"img/social4.png" | relURL}}"
+                                class="mx-1" height="40px" width="40px">
+                        </a>
+                        <a href="#">
+                            <img src="{{"img/social5.png" | relURL}}"
+                                class="mx-1" height="40px" width="40px">
+                        </a>
 
+                    </div>
+
+
+
+                    <div class="d-flex copy-link my-3">
+                        <input type="text" name="Link" id="Link"
+                            placeholder="bottlebits.com" class="input-txt
+                            input-bg border-0"
+                            type="text" value="bottlebits.com" disabled>
+                        <a onclick="myFunction()" onmouseout="outFunc()"><img
+                                src="{{"img/copy.png" | relURL}}"
+                                height="70px" width="70px"><span
+                                class="tooltiptext"
+                                id="myTooltip">Copy Link</span> </a>
+                    </div>
+                </div>
+                <a class="close position-absolute" style="top: 10px;right:
+                    14px;" type="button" class="btn-close"
+                    data-bs-dismiss="modal" aria-label="Close">
+                    <img src="{{"img/times.png" | relURL}}"
+                        class="mx-1" height="40px" width="40px">
+                </a>
+            </div>
             </div>
         </div>
     </div>
