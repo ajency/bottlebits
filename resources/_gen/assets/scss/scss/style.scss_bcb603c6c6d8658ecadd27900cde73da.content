@@ -7286,6 +7286,19 @@ a.text-error:hover, a.text-error:focus {
   #ml-60 {
     margin-left: 60px; } }
 
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff !important;
+  opacity: .5;
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  background-color: transparent !important; }
+
 .form-title {
   color: #c7c7c6;
   font-family: "Abril Fatface";
@@ -8093,7 +8106,7 @@ a {
     width: 24px;
     border-radius: 15px;
     top: -5px;
-    left: -1px;
+    left: -3px;
     position: relative;
     background-color: #f1eddb;
     content: "";
@@ -8105,7 +8118,7 @@ a {
     width: 24px;
     border-radius: 15px;
     top: -5px;
-    left: -1px;
+    left: -3px;
     position: relative;
     background-color: #C1803B;
     content: "";
