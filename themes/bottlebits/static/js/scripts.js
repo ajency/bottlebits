@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    let SITE_URL = 'http://localhost:8888/bottlebits/docs/';
+    let SITE_URL = 'https://bottlebits.thotakaa.com/';
 
     let requestValues = {
 		'session_exits' : true
@@ -119,12 +119,12 @@ $(document).ready(function () {
 		        data: requestValues ,
 		        success: function (response) {
                     response = JSON.parse(response)
-                    if(response.success == true){
-                        $(".survey-btn").removeClass('d-none')
+                    if(response.success == true){                        
                         $('.survey-steps').addClass('d-none')
                         $('.survey-step-welcome').removeClass('d-none')
                         $(".user-signup-form").addClass('blur')
                         $("#exampleModal").modal('show');
+						$(".survey-btn").removeClass('d-none')
                     }
                     
 		           // You will get response from your PHP page (what you echo or print)

@@ -7272,7 +7272,7 @@ a.text-error:hover, a.text-error:focus {
   left: 0;
   right: 0;
   color: #ffffff;
-  font-family: "Nunito Sans";
+  font-family: "Nunito Sans", sans-serif;
   font-size: 20px;
   cursor: pointer;
   text-decoration: none !important;
@@ -7288,7 +7288,7 @@ a.text-error:hover, a.text-error:focus {
 .form-subtitle {
   opacity: 0.75;
   color: #ffffff;
-  font-family: "New York";
+  font-family: "NewYork";
   font-size: 20px;
   letter-spacing: 0;
   line-height: 30px; }
@@ -7298,17 +7298,17 @@ form {
   form input[type="text"]::placeholder,
   form input[type="email"]::placeholder {
     color: #e3cab6;
-    font-family: "New York";
+    font-family: "NewYork";
     font-size: 14px; }
   form input[type="text"]:-ms-input-placeholder,
   form input[type="email"]:-ms-input-placeholder {
     color: #e3cab6;
-    font-family: "New York";
+    font-family: "NewYork";
     font-size: 14px; }
   form input[type="text"]::-ms-input-placeholder,
   form input[type="email"]::-ms-input-placeholder {
     color: #e3cab6;
-    font-family: "New York";
+    font-family: "NewYork";
     font-size: 14px; }
   form select,
   form input {
@@ -7316,7 +7316,7 @@ form {
     height: 40px;
     background-color: #000;
     color: #e3cab6;
-    font-family: "New York";
+    font-family: "NewYork";
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 16px; }
@@ -7408,6 +7408,14 @@ form {
   width: max-content;
   color: #772727 !important; }
 
+.g-recaptcha {
+  transform-origin: 0 0;
+  transform: scale(1); }
+
+@media screen and (max-width: 575px) {
+  .g-recaptcha {
+    transform: scale(0.75); } }
+
 .custom-row {
   box-shadow: 0 5px 43px 0 rgba(0, 0, 0, 0.66);
   background-image: url(https://i.ibb.co/b2cR7ws/rsz-1tex-wood.png);
@@ -7478,7 +7486,7 @@ header {
     width: 80%; }
     @media screen and (min-width: 992px) {
       .banner_text {
-        padding-top: 100px; } }
+        padding-top: 50px; } }
   .banner_btn {
     display: inline-block;
     height: 45px;
@@ -7491,7 +7499,7 @@ header {
     font-weight: bold;
     cursor: pointer;
     text-decoration: none !important;
-    font-family: "Nunito Sans";
+    font-family: "Nunito Sans", sans-serif;
     font-weight: bold;
     font-size: 20px;
     margin-top: 40px; }
@@ -7513,37 +7521,6 @@ header {
   @media screen and (min-width: 992px) {
     .about {
       padding-top: 100px; } }
-.grid-section .item {
-  position: relative; }
-  .grid-section .item .item-text {
-    opacity: 0.75;
-    max-width: 304px;
-    margin: auto;
-    color: #ffffff;
-    font-weight: bold;
-    text-align: center;
-    margin-top: -30px;
-    line-height: 18px;
-    margin-bottom: 30px;
-    font-family: "New York";
-    font-size: 13px; }
-    @media screen and (min-width: 992px) {
-      .grid-section .item .item-text {
-        font-size: 20px;
-        margin-top: -60px;
-        margin-bottom: 60px;
-        line-height: 30px; } }
-.grid-section .seal {
-  position: absolute;
-  height: 47px;
-  width: 37px;
-  z-index: 1;
-  top: -15px;
-  left: -20px; }
-  @media screen and (min-width: 992px) {
-    .grid-section .seal {
-      height: 77px;
-      width: 67px; } }
 @media screen and (min-width: 992px) {
   .pt-60 {
     padding-top: 30px; } }
@@ -7586,6 +7563,9 @@ body {
 .text-off-white {
   color: #ffffffb3; }
 
+.text-palegrey {
+  color: #C7AA93; }
+
 .font-bold {
   font-weight: bold; }
 
@@ -7599,11 +7579,6 @@ body {
   .font-36 {
     font-size: 30px !important; } }
 
-.grid-container {
-  box-shadow: 0px 10px 28px 50px #000; }
-  @media screen and (min-width: 992px) {
-    .grid-container {
-      box-shadow: 0px 81px 28px 50px #000; } }
 .font-14 {
   font-size: 12px; }
   @media screen and (min-width: 992px) {
@@ -7648,7 +7623,7 @@ body {
 .subheading {
   color: #c1803b;
   font-family: "NewYork";
-  font-size: clamp(21px, 4vw, 30px);
+  font-size: clamp(21px, 4vw, 32px);
   font-weight: bold;
   letter-spacing: 0;
   text-align: center; }
@@ -7680,159 +7655,6 @@ a {
 .text-grey-1 {
   color: #e3cab6; }
 
-.popup-fixed {
-  min-height: 680px; }
-
-.popup {
-  border-radius: 10px;
-  background: url(https://i.ibb.co/YjmQDsw/rsz-1tex-paper-1.png);
-  display: flex;
-  justify-content: center; }
-  @media screen and (min-width: 992px) {
-    .popup {
-      padding: 28px; } }
-  .popup-heading {
-    color: #986b3c;
-    font-family: "Abril Fatface";
-    font-size: 30px;
-    letter-spacing: -0.3px; }
-    @media screen and (min-width: 992px) {
-      .popup-heading {
-        line-height: 41px; } }
-  .popup-subheading {
-    opacity: 0.75;
-    color: #222222;
-    font-family: "NewYork";
-    font-size: 25px;
-    letter-spacing: 0; }
-    @media screen and (min-width: 992px) {
-      .popup-subheading {
-        line-height: 30px; } }
-  .popup .line-1 {
-    margin-top: 10px;
-    border-bottom: 3px solid #9b785c; }
-  .popup .line-2 {
-    margin-top: 4px;
-    border-bottom: 1px solid #9b785c; }
-  .popup .question {
-    color: #262525;
-    font-family: "NewYork";
-    font-size: 25px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 30px;
-    position: relative;
-    padding-left: 10.8px; }
-  .popup .qnumb {
-    margin-right: 10px;
-    height: 40.8px;
-    width: 40.8px;
-    border: 0.8px solid #9b785c;
-    border-radius: 50%;
-    color: #986b3c;
-    font-family: "Abril Fatface";
-    font-size: 24px;
-    letter-spacing: -0.24px;
-    text-align: center;
-    line-height: 40.8px; }
-    @media screen and (max-width: 992px) {
-      .popup .qnumb {
-        height: 24.5px;
-        width: 24.5px;
-        border: 0.5px solid #9b785c;
-        background-color: #a58367;
-        color: #f0ecdb;
-        font-family: "Abril Fatface";
-        font-size: 14.4px;
-        letter-spacing: -0.14px;
-        margin-right: 0;
-        line-height: 25.5px; } }
-  .popup .qdesc {
-    opacity: 0.75;
-    color: #222222;
-    font-family: "NewYork";
-    font-size: 14px;
-    font-style: italic;
-    letter-spacing: 0;
-    line-height: 16px;
-    padding-left: 32.8px; }
-    @media screen and (min-width: 992px) {
-      .popup .qdesc {
-        padding-left: 60.8px; } }
-.radiosbtn {
-  padding-left: 32.8px; }
-  @media screen and (min-width: 992px) {
-    .radiosbtn {
-      padding-left: 60.8px; } }
-  .radiosbtn li {
-    list-style: none;
-    margin: 20px 0;
-    color: #262525;
-    font-family: "NewYork";
-    letter-spacing: 0; }
-  .radiosbtn input[type="radio"]:after {
-    height: 24px;
-    width: 24px;
-    border-radius: 15px;
-    top: -5px;
-    left: -0px;
-    position: relative;
-    background-color: #f1eddb;
-    content: "";
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid #262525; }
-  .radiosbtn input[type="radio"]:checked:after {
-    height: 24px;
-    width: 24px;
-    border-radius: 15px;
-    top: -5px;
-    left: 0px;
-    position: relative;
-    background-color: #C1803B;
-    content: "";
-    display: inline-block;
-    visibility: visible; }
-
-#sortable {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 30.8px; }
-  @media screen and (min-width: 992px) {
-    #sortable {
-      padding-left: 60.8px; } }
-#sortable li {
-  position: relative;
-  border-radius: 2px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-  margin: 20px 0;
-  color: #262525;
-  font-family: "NewYork";
-  letter-spacing: 0;
-  padding: 10px 30px;
-  padding-right: 5px; }
-  #sortable li::before {
-    content: "";
-    background: url(https://i.ibb.co/N3hBdNX/drag.png);
-    position: absolute;
-    left: 5px;
-    top: 0;
-    height: 40px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 25px;
-    z-index: 9;
-    bottom: 0;
-    margin: auto; }
-
-#sortable li span {
-  margin-left: -1.3em;
-  width: 100%;
-  display: block;
-  line-height: 1; }
-
 .previous {
   cursor: pointer;
   display: flex;
@@ -7860,33 +7682,6 @@ a {
     text-align: center;
     text-transform: capitalize; }
 
-.modal {
-  backdrop-filter: blur(100px);
-  padding-right: 0; }
-
-.modal-content {
-  background: transparent; }
-
-@media screen and (max-width: 992px) {
-  .neg-margin {
-    margin-left: -15px;
-    margin-right: -15px;
-    padding: 20px !important; } }
-
-.modal-dialog {
-  max-width: 100%;
-  width: max-content;
-  margin: 1.75rem auto; }
-
-@media screen and (max-width: 768px) {
-  .sm-dev-bx-shdw {
-    background-color: #f0ebda;
-    box-shadow: 0 -5px 31px 0 rgba(0, 0, 0, 0.32);
-    align-items: center;
-    padding: 10px 5px; }
-    .sm-dev-bx-shdw p {
-      margin-bottom: 0; } }
-
 .desc {
   font-family: "NewYork";
   font-size: 14px; }
@@ -7903,25 +7698,42 @@ a {
   align-items: center;
   text-align: center; }
 
+@media screen and (min-width: 992px) {
+  .step-1 {
+    position: absolute;
+    bottom: 30px; } }
+
 .copy-link {
-  background: chocolate;
-  width: max-content;
-  margin: auto;
+  background-color: #6B6B6B;
   color: #ffffff;
-  font-family: "Nunito Sans";
+  font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
   font-weight: 800;
-  letter-spacing: 0;
-  line-height: 22px; }
+  margin: auto;
+  border-radius: 5px; }
+  .copy-link .input-bg {
+    font-size: 16px; }
   .copy-link img {
     height: 22px;
     width: 19px; }
   .copy-link a {
-    padding: 9px 16px;
     background-color: #d29300;
     cursor: pointer; }
     .copy-link a span {
       margin-left: 5px; }
+
+.copy-link img {
+  height: 22px;
+  width: 19px; }
+
+.copy-link .copytext {
+  padding: 9px 0;
+  background-color: #d29300;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; }
+  .copy-link .copytext span {
+    margin-left: 5px; }
 
 #amount {
   display: none; }
@@ -7993,7 +7805,7 @@ a {
   font-family: "NewYork";
   color: #ffffff;
   font-size: 20px;
-  width: 180px; }
+  width: 100%; }
 
 .input-txt::placeholder {
   color: #ffffff;
@@ -8021,7 +7833,7 @@ a {
   color: #ababab !important; }
 
 .strk {
-  color: #A74A00; }
+  color: #a74a00; }
 
 @media screen and (max-width: 768px) {
   .marg-nega {
@@ -8131,5 +7943,251 @@ a {
       .range-slider-indicators {
         height: 300px;
         flex-direction: column; } }
+.grid-container {
+  box-shadow: 0px 10px 28px 50px #000; }
+  @media screen and (min-width: 992px) {
+    .grid-container {
+      box-shadow: 0px 81px 28px 50px #000; } }
+.grid-section .item {
+  position: relative; }
+  .grid-section .item .item-text {
+    opacity: 0.75;
+    max-width: 304px;
+    margin: auto;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -30px;
+    line-height: 18px;
+    margin-bottom: 30px;
+    font-family: "NewYork";
+    font-size: 13px; }
+    @media screen and (min-width: 992px) {
+      .grid-section .item .item-text {
+        font-size: 20px;
+        margin-top: -60px;
+        margin-bottom: 60px;
+        line-height: 30px; } }
+.grid-section .seal {
+  position: absolute;
+  height: 47px;
+  width: 37px;
+  z-index: 1;
+  top: -15px;
+  left: -20px; }
+  @media screen and (min-width: 992px) {
+    .grid-section .seal {
+      height: 77px;
+      width: 67px; } }
+.popup {
+  border-radius: 10px;
+  background: url(https://i.ibb.co/YjmQDsw/rsz-1tex-paper-1.png);
+  display: flex;
+  justify-content: center; }
+  @media screen and (min-width: 992px) {
+    .popup {
+      padding: 28px; } }
+  .popup-heading {
+    color: #986b3c;
+    font-family: "Abril Fatface";
+    font-size: 30px;
+    letter-spacing: -0.3px; }
+    @media screen and (min-width: 992px) {
+      .popup-heading {
+        line-height: 41px; } }
+  .popup-subheading {
+    opacity: 0.75;
+    color: #222222;
+    font-family: "NewYork";
+    font-size: 25px;
+    letter-spacing: 0; }
+    @media screen and (min-width: 992px) {
+      .popup-subheading {
+        line-height: 30px; } }
+  .popup .line-1 {
+    margin-top: 10px;
+    border-bottom: 3px solid #9b785c; }
+  .popup .line-2 {
+    margin-top: 4px;
+    border-bottom: 1px solid #9b785c; }
+  .popup .question {
+    color: #262525;
+    font-family: "NewYork";
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 30px;
+    position: relative;
+    padding-left: 10.8px; }
+  .popup .qnumb {
+    margin-right: 10px;
+    height: 40.8px;
+    width: 40.8px;
+    border: 0.8px solid #9b785c;
+    border-radius: 50%;
+    color: #986b3c;
+    font-family: "Abril Fatface";
+    font-size: 24px;
+    letter-spacing: -0.24px;
+    text-align: center;
+    line-height: 40.8px; }
+    @media screen and (max-width: 992px) {
+      .popup .qnumb {
+        height: 24.5px;
+        width: 24.5px;
+        border: 0.5px solid #9b785c;
+        background-color: #a58367;
+        color: #f0ecdb;
+        font-family: "Abril Fatface";
+        font-size: 14.4px;
+        letter-spacing: -0.14px;
+        margin-right: 0;
+        line-height: 25.5px; } }
+  .popup .qdesc {
+    opacity: 0.75;
+    color: #222222;
+    font-family: "NewYork";
+    font-size: 14px;
+    font-style: italic;
+    letter-spacing: 0;
+    line-height: 16px;
+    padding-left: 32.8px; }
+    @media screen and (min-width: 992px) {
+      .popup .qdesc {
+        padding-left: 60.8px; } }
+.popup-fixed {
+  min-height: 680px; }
+
+.radiosbtn {
+  padding-left: 32.8px; }
+  @media screen and (min-width: 992px) {
+    .radiosbtn {
+      padding-left: 60.8px; } }
+  .radiosbtn li {
+    list-style: none;
+    margin: 20px 0;
+    color: #262525;
+    font-family: "NewYork";
+    letter-spacing: 0; }
+  .radiosbtn input[type="radio"]:after {
+    height: 24px;
+    width: 24px;
+    border-radius: 15px;
+    top: -5px;
+    left: -0px;
+    position: relative;
+    background-color: #f1eddb;
+    content: "";
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #262525; }
+  .radiosbtn input[type="radio"]:checked:after {
+    height: 24px;
+    width: 24px;
+    border-radius: 15px;
+    top: -5px;
+    left: 0px;
+    position: relative;
+    background-color: #C1803B;
+    content: "";
+    display: inline-block;
+    visibility: visible; }
+
+#sortable {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 30.8px; }
+  @media screen and (min-width: 992px) {
+    #sortable {
+      padding-left: 60.8px; } }
+#sortable li {
+  position: relative;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  color: #262525;
+  font-family: "NewYork";
+  letter-spacing: 0;
+  padding: 10px 30px;
+  padding-right: 5px; }
+  #sortable li::before {
+    content: "";
+    background: url(https://i.ibb.co/N3hBdNX/drag.png);
+    position: absolute;
+    left: 5px;
+    top: 0;
+    height: 40px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    z-index: 9;
+    bottom: 0;
+    margin: auto; }
+
+#sortable li span {
+  margin-left: -1.3em;
+  width: 100%;
+  display: block;
+  line-height: 1; }
+
+.modal {
+  backdrop-filter: blur(100px);
+  padding-right: 0; }
+
+.modal-content {
+  background: transparent; }
+
+@media screen and (max-width: 992px) {
+  .neg-margin {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 20px !important; } }
+
+.modal-dialog {
+  max-width: 100%;
+  width: max-content;
+  margin: 1.75rem auto; }
+
+@media screen and (max-width: 768px) {
+  .sm-dev-bx-shdw {
+    background-color: #f0ebda;
+    box-shadow: 0 -5px 31px 0 rgba(0, 0, 0, 0.32);
+    align-items: center;
+    padding: 10px 5px;
+    position: sticky;
+    bottom: 0;
+    z-index: 9; }
+    .sm-dev-bx-shdw p {
+      margin-bottom: 0; } }
+
+.copyboard input {
+  font-size: 12px;
+  letter-spacing: 0; }
+
+.copyboard #copy {
+  background-color: #d29300;
+  cursor: pointer;
+  display: flex;
+  max-width: 129px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  text-align: center;
+  justify-content: center;
+  padding: 9px; }
+
+.toast-tip {
+  background: #6b6b6b;
+  width: max-content;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -50px;
+  right: 0; }
 
 /*# sourceMappingURL=style.css.map */
