@@ -7892,7 +7892,7 @@ a {
   font-size: 14px; }
   @media screen and (min-width: 992px) {
     .desc {
-      font-size: 23px;
+      font-size: 18px;
       letter-spacing: 0;
       line-height: 36px; } }
 .social-popup {
@@ -8010,7 +8010,7 @@ a {
   right: 0;
   margin: auto;
   padding: 0 !important;
-  width: 22px; }
+  width: 30px; }
   @media screen and (min-width: 992px) {
     .of-abs {
       left: -8px; } }
