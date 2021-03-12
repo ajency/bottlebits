@@ -60,7 +60,7 @@ body {
     &-14 {
         font-size: 12px;
         @media screen and (min-width: 992px) {
-            font-size: 14px;
+            font-size: 14px !important;
         }
     }
     &-18 {
@@ -184,6 +184,7 @@ a {
         letter-spacing: 0;
         line-height: 16px;
         text-align: center;
+        font-size: 14px;
         text-transform: capitalize;
     }
 }
@@ -236,6 +237,7 @@ a {
     a {
         background-color: #d29300;
         cursor: pointer;
+        color: #fff;
         span {
             margin-left: 5px;
         }
@@ -260,6 +262,13 @@ a {
         }
     }
 }
+@media screen and (min-width: 992px) {
+    .pl-md-60{
+        margin-left: 60px;
+    }
+}
+
+
 
 #amount {
     display: none;

@@ -59,3 +59,11 @@
 
   font-weight: 800;
 }
+.commonbtn-welcome {
+  @media screen and (min-width: 992px) {
+    width: 194px !important;
+  }
+}
+#ml-60{
+  margin-left: 60px;
+}

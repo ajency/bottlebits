@@ -124,7 +124,9 @@ $(document).ready(function () {
                         $('.survey-step-welcome').removeClass('d-none')
                         $(".user-signup-form").addClass('blur')
                         $("#exampleModal").modal('show');
-						$(".survey-btn").removeClass('d-none')
+						setInterval(()=>{
+							$(".survey-btn").removeClass('d-none');
+						  },2000)
                     }
                     
 		           // You will get response from your PHP page (what you echo or print)
