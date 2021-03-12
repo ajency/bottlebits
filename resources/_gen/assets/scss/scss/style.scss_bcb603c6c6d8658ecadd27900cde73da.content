@@ -7373,7 +7373,7 @@ form {
     height: 36px;
     color: #e3cab6;
     font-size: 12px;
-    margin: 3px; }
+    margin: 2px; }
     @media (max-width: 767px) {
       .radio ul li:first-child {
         width: 100%;
