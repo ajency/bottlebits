@@ -20,18 +20,19 @@
                         <div class="row my-md-3">
                             <div class="col-md-6">
                                 <input type="text" name="Firstname" class="w-100
-                                    input-txt" placeholder="First Name *" id="first_name">
+                                    input-txt" placeholder="First Name*" id="first_name">
                             </div>
                             <div class="col-md-6 my-2 my-md-0">
                                 <input type="text" name="Lastname" class="w-100
-                                    input-txt" placeholder="Last Name *" id="last_name">
+                                    input-txt" placeholder="Last Name*" id="last_name">
                             </div>
                         </div>
                         <div class="row mb-0 align-items-center">
                             <div class="col-lg-3">
-                                <div class="select-wrapper">
-                                    <select class="w-100 input-txt" id="gender">
-                                        <option selected value="">Gender</option>
+                                <div class="select-wrapper bg-black">
+                                    <select class="w-100 input-txt" id="gender" style="width: 86px !important;
+                                    overflow-x: hidden !important;">
+                                        <option hidden value="">Gender</option>
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
                                         <option value="Prefer not to Say">Prefer not to Say</option>
@@ -42,8 +43,7 @@
                                 my-lg-0">
                                 <div class="radio">
                                     <ul>
-                                        <li class="h-auto font-14">Age Group
-                                            <span>*</span></li>
+                                        <li class="h-auto font-14">Age Group<span>*</span></li>
                                         <li><label for="Radio1">18-25</label><input type="radio" name="age_group" value="41-42" /> </li>
                                         <li><label for="Radio2">25-35</label><input type="radio" name="age_group" value="42-43" /> </li>
                                         <li><label for="Radio3">35-45</label><input type="radio" name="age_group" value="44-56" /> </li>
@@ -56,14 +56,14 @@
                         </div>
                         <div class="row my-md-3">
                             <div class="col-lg-9">
-                                <input type="email" name="email" placeholder="Email *" class="w-100 input-txt
+                                <input type="email" name="email" placeholder="Email*" class="w-100 input-txt
                                     text-txt mb-2
                                     mb-md-0" id="email">
                             </div>
                             <div class="col-6 col-lg-3 mt-md-2 mt-lg-0">
                                 <div class="select-wrapper">
                                     <select class="w-100" id="country">
-                                        <option selected value="">Country <span
+                                        <option selected value="">Country<span
                                                 class="strk">*</span></option>
                                         <option value="Afghanistan">Afghanistan</option>
                                         <option value="Aland Islands">Aland
@@ -624,12 +624,12 @@
                         <div class="d-flex align-items-center
                             justify-content-between mt-3 neg-margin
                             sm-dev-bx-shdw">
-                            <div class="previous">
+                            <div class="previous step-2-previous">
                                 <span class="icon">
                                     <i class="fa fa-chevron-left"
                                         aria-hidden="true"></i>
                                 </span>
-                                <span class="text step-3-previous">
+                                <span class="text">
                                     previous
                                 </span>
                             </div>
@@ -716,13 +716,13 @@ position-relative">
                             <a href="https://www.instagram.com/bottlebits/" target="_blank">
                                 <img src="{{"img/social2.png" | relURL}}" class="mx-1" height="40px" width="40px">
                             </a>
-                            <a href="#">
+                            <a href="https://telegram.me/share/url?url=https://bottlebits.thotakaa.com&text=Bottlebits">
                                 <img src="{{"img/social3.png" | relURL}}" class="mx-1" height="40px" width="40px">
                             </a>
                             <a href="https://twitter.com/bottlebits" target="_blank">
                                 <img src="{{"img/social4.png" | relURL}}" class="mx-1" height="40px" width="40px">
                             </a>
-                            <a href="#">
+                            <a href="https://web.whatsapp.com/send?text=https://bottlebits.thotakaa.com/" target="_blank">
                                 <img src="{{"img/social5.png" | relURL}}" class="mx-1" height="40px" width="40px">
                             </a>
 
@@ -735,7 +735,7 @@ position-relative">
                                 <div class="row align-items-center pr-0">
                                     <div class="col-7">
                                         <input type="text" name="Link" id="Link" placeholder="bottlebits.com" class="input-txt
-                input-bg border-0" type="text" value="bottlebits.com" disabled>
+                input-bg border-0" type="text" value="bottlebits.com" data-link="https://bottlebits.thotakaa.com/" disabled>
                                     </div>
                                     <div class="col-5 pr-0">
                                         <div class="copytext">
@@ -746,7 +746,7 @@ position-relative">
                                 </div>
 
                                 <div class="toast-tip d-none" id="toast-tp">
-                                    copied to clipboard
+                                    Copied to clipboard
                                 </div>
                             </div>
                         </div>
