@@ -7563,7 +7563,7 @@ header {
   scroll-behavior: smooth; }
 
 body {
-  background-image: url("https://i.ibb.co/b2cR7ws/rsz-1tex-wood.png");
+  background-image: url("https://i.ibb.co/x8CYGPc/rsz-tex-wood.png");
   background-position: center;
   padding: 0 !important;
   scroll-behavior: smooth; }
@@ -8013,7 +8013,7 @@ a {
       width: 67px; } }
 .popup {
   border-radius: 10px;
-  background: url(https://i.ibb.co/YjmQDsw/rsz-1tex-paper-1.png);
+  background: url(https://i.ibb.co/9q263K5/tex-Paper.png);
   display: flex;
   justify-content: center; }
   @media screen and (min-width: 992px) {
