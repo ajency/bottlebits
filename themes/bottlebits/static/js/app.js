@@ -72,42 +72,11 @@ $(function () {
 });
 
 function myFunction(event) {
-  // event.preventDefault();
-  // console.log("working");
-  // var copyText = document.getElementById("Link");
-  // copyText.select();
-  // copyText.setSelectionRange(0, 99999);
-  // document.execCommand("copy");
   
-  // $("#toast-tp").removeClass('d-none');
-
-  // setTimeout(()=>{
-  //   $("#toast-tp").addClass('d-none');
-  // },1000)
-  console.log('test');
-var textarea = document.createElement("textarea");
-// console.log($('#Link').attr('data-link'));
-// textarea.textContent = $('#Link').attr('data-link');
-// console.log('test2');
-// textarea.style.position = "fixed"; // Prevent scrolling to bottom of page in Microsoft Edge.
-// console.log('test3');
-// document.body.appendChild(textarea);
-// console.log('test4');
-// textarea.select();
-// console.log('test5');
-// try {
-// document.execCommand("copy"); // Security exception may be thrown by some browsers.
-// console.log('test6');
-// $("#toast-tp").removeClass('d-none');
-//   setTimeout(()=>{
-//     $("#toast-tp").addClass('d-none');
-//   },1000)
-// } catch (ex) {
-// console.warn("Copy to clipboard failed.", ex);
-// } finally {
-// document.body.removeChild(textarea);
-// console.warn("Copy to clipboards");
-// }
 navigator.clipboard.writeText( $('#Link').attr('data-link'));
+$("#toast-tp").removeClass('d-none');
+  setTimeout(()=>{
+    $("#toast-tp").addClass('d-none');
+  },1000)
 }
 
