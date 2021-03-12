@@ -83,8 +83,10 @@ function myFunction(event) {
   // setTimeout(()=>{
   //   $("#toast-tp").addClass('d-none');
   // },1000)
+  console.log('test');
 var textarea = document.createElement("textarea");
-textarea.textContent = $('#Link').val();
+console.log($('#Link').attr('data-link'));
+textarea.textContent = $('#Link').attr('data-link');
 textarea.style.position = "fixed"; // Prevent scrolling to bottom of page in Microsoft Edge.
 document.body.appendChild(textarea);
 textarea.select();
