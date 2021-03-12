@@ -10,7 +10,7 @@
   text-decoration: none !important;
   letter-spacing: 0;
   line-height: 27px;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: $nunitosans;
   cursor: pointer;
   @media (max-width: 767px) {
     width: 100%;
@@ -36,7 +36,7 @@
   }
   border-radius: 2.4px;
   background-color: #d29300;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: $nunitosans;
   text-align: center;
   color: #ffffff;
   font-weight: 800;
@@ -47,12 +47,12 @@
   top: 0;
   bottom: 0;
   margin: auto;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: $nunitosans;
   height: max-content;
   left: 0;
   right: 0;
   color: #ffffff;
-  font-family: "Nunito Sans";
+  font-family: $nunitosans;
   font-size: 20px;
   cursor: pointer;
   text-decoration: none !important;

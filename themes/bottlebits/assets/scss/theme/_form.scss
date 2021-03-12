@@ -1,7 +1,7 @@
 .form {
     &-title {
         color: #c7c7c6;
-        font-family: "Abril Fatface";
+        font-family: $fontabril;
         font-size: 33px;
         letter-spacing: -0.33px;
         line-height: 45px;
@@ -9,7 +9,7 @@
     &-subtitle {
         opacity: 0.75;
         color: #ffffff;
-        font-family: "New York";
+        font-family: $fontNewYork;
         font-size: 20px;
         letter-spacing: 0;
         line-height: 30px;
@@ -22,18 +22,18 @@ form {
     input[type="email"] {
         &::placeholder {
             color: #e3cab6;
-            font-family: "New York";
+            font-family: $fontNewYork;
             font-size: 14px;
         }
         &:-ms-input-placeholder {
             color: #e3cab6;
-            font-family: "New York";
+            font-family: $fontNewYork;
             font-size: 14px;
         }
 
         &::-ms-input-placeholder {
             color: #e3cab6;
-            font-family: "New York";
+            font-family: $fontNewYork;
             font-size: 14px;
         }
     }
@@ -43,7 +43,7 @@ form {
         height: 40px;
         background-color: #000;
         color: #e3cab6;
-        font-family: "New York";
+        font-family: $fontNewYork;
         font-size: 14px;
         letter-spacing: 1px;
         line-height: 16px;
@@ -165,3 +165,14 @@ form {
     width: max-content;
     color: #772727 !important;
 }
+
+.g-recaptcha {
+    transform-origin: 0 0;
+    transform: scale(1);
+}
+@media screen and (max-width: 575px) {
+    .g-recaptcha {
+        transform: scale(0.75);
+    }
+}
+

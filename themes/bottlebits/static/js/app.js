@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  rangeSlider();
+  rangeSlider(); 
 });
 
 $(window).resize(function () {
@@ -71,12 +71,33 @@ $(function () {
   $("#sortable").disableSelection();
 });
 
-function myFunction() {
-  var copyText = document.getElementById("Link");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999);
-  document.execCommand("copy");
+function myFunction(event) {
+  // console.log("working");
+  // var copyText = document.getElementById("Link");
+  // copyText.select();
+  // copyText.setSelectionRange(0, 99999);
+  // document.execCommand("copy");
+  
+  // $("#toast-tp").removeClass('d-none');
 
-  var tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "copied" + copyText.value;
+  // setTimeout(()=>{
+  //   $("#toast-tp").addClass('d-none');
+  // },1000)
+var textarea = document.createElement("textarea");
+textarea.textContent = $('#Link').val();
+textarea.style.position = "fixed"; // Prevent scrolling to bottom of page in Microsoft Edge.
+document.body.appendChild(textarea);
+textarea.select();
+try {
+document.execCommand("copy"); // Security exception may be thrown by some browsers.
+  $("#toast-tp").removeClass('d-none');
+  setTimeout(()=>{
+    $("#toast-tp").addClass('d-none');
+  },1000)
+} catch (ex) {
+console.warn("Copy to clipboard failed.", ex);
+} finally {
+document.body.removeChild(textarea);
 }
+}
+

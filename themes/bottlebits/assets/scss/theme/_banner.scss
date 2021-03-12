@@ -41,7 +41,7 @@ header {
     position: relative;
     &_text {
        @media screen and (min-width: 992px) {
-        padding-top: 100px;
+        padding-top: 50px;
        }
         position: absolute;
         top: 0;
@@ -65,7 +65,7 @@ header {
         font-weight: bold;
         cursor: pointer;
         text-decoration: none !important;
-        font-family: "Nunito Sans";
+        font-family: $nunitosans;
         font-weight: bold;
         font-size: 20px;
         margin-top: 40px;
@@ -88,10 +88,7 @@ header {
     padding-top: 50px;
     @media screen and (min-width: 992px) {
     padding-top: 100px;
-
     }
-    
-    
     padding-bottom: 50px;
     background: url(https://i.ibb.co/QQxjG0d/graph.png);
     background-repeat: no-repeat;
@@ -99,42 +96,6 @@ header {
     background-size: contain;
 }
 
-.grid-section {
-    .item {
-        position: relative;
-        .item-text {
-            opacity: 0.75;
-            max-width: 304px;
-            margin: auto;
-            color: #ffffff;
-            font-weight: bold;
-            text-align: center;
-            margin-top: -30px;
-            line-height: 18px;
-            margin-bottom: 30px;
-            font-family: "New York";
-            font-size: 13px;
-            @media screen and (min-width: 992px) {
-                font-size: 20px;
-                margin-top: -60px;
-                margin-bottom: 60px;
-                line-height: 30px;
-            }
-        }
-    }
-    .seal {
-        position: absolute;
-        height: 47px;
-        width: 37px;
-        @media screen and (min-width: 992px) {
-            height: 77px;
-            width: 67px;
-        }
-        z-index: 1;
-        top: -15px;
-        left: -20px;
-    }
-}
 
 .pt-60 {
     @media screen and (min-width: 992px) {
