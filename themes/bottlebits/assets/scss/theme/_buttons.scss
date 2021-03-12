@@ -64,6 +64,9 @@
     width: 194px !important;
   }
 }
-#ml-60{
-  margin-left: 60px;
+@media screen and (min-width: 992px) {
+  #ml-60{
+    margin-left: 60px;
+  }
 }
+

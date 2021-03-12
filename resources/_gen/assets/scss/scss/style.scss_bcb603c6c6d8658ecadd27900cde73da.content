@@ -7282,8 +7282,9 @@ a.text-error:hover, a.text-error:focus {
   .commonbtn-welcome {
     width: 194px !important; } }
 
-#ml-60 {
-  margin-left: 60px; }
+@media screen and (min-width: 992px) {
+  #ml-60 {
+    margin-left: 60px; } }
 
 .form-title {
   color: #c7c7c6;
@@ -8092,7 +8093,7 @@ a {
     width: 24px;
     border-radius: 15px;
     top: -5px;
-    left: -0px;
+    left: -1px;
     position: relative;
     background-color: #f1eddb;
     content: "";
@@ -8104,7 +8105,7 @@ a {
     width: 24px;
     border-radius: 15px;
     top: -5px;
-    left: 0px;
+    left: -1px;
     position: relative;
     background-color: #C1803B;
     content: "";
