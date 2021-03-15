@@ -7894,6 +7894,9 @@ a {
   margin-top: 45px;
   max-width: 430px;
   position: relative; }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .range-slider {
+      margin-left: 40px; } }
   .range-slider .ui-slider {
     height: 8px;
     background-color: #9b785c;
