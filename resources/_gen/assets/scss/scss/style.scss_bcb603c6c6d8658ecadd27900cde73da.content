@@ -7611,7 +7611,7 @@ body {
     .font-14 {
       font-size: 14px !important; } }
 .font-18 {
-  font-size: 12px; }
+  font-size: 13px; }
   @media screen and (min-width: 992px) {
     .font-18 {
       font-size: 18px; } }
