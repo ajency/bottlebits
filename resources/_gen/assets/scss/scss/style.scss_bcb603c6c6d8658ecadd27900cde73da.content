@@ -7521,14 +7521,10 @@ header {
     text-decoration: none !important;
     font-family: "Nunito Sans", sans-serif;
     font-weight: bold;
-    font-size: 20px;
-    margin-top: 40px; }
+    font-size: 20px; }
     @media screen and (min-width: 992px) {
       .banner_btn {
-        margin-top: 0; } }
-    @media screen and (min-width: 768px) {
-      .banner_btn {
-        margin-top: 10px; } }
+        margin-top: 30px; } }
   .banner .banner-heading {
     font-size: 36px; }
     @media screen and (min-width: 768px) {

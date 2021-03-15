@@ -68,12 +68,8 @@ header {
         font-family: $nunitosans;
         font-weight: bold;
         font-size: 20px;
-        margin-top: 40px;
         @media screen and (min-width: 992px) {
-            margin-top: 0;
-        }
-        @media screen and (min-width: 768px) {
-            margin-top: 10px;
+            margin-top: 30px;
         }
     }
     .banner-heading {
