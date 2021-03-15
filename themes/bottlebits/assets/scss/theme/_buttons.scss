@@ -44,20 +44,19 @@
 }
 .modal-button {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   font-family: $nunitosans;
-  height: max-content;
-  left: 0;
-  right: 0;
   color: #ffffff;
   font-family: $nunitosans;
   font-size: 20px;
   cursor: pointer;
   text-decoration: none !important;
-
   font-weight: 800;
+  width: 150px;
+  height: 45px;
+
 }
 .commonbtn-welcome {
   @media screen and (min-width: 992px) {

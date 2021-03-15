@@ -11,7 +11,7 @@ header {
     left: 10px;
     @media screen and (max-width: 900px) {
         height: 23px;
-        width: 115px
+        width: 115px;
     }
 }
 
@@ -25,7 +25,7 @@ header {
 }
 
 .form-heading {
-    color: #C7C7C6;
+    color: #c7c7c6;
     font-size: 33px;
     line-height: 45px;
 }
@@ -40,9 +40,9 @@ header {
 .banner {
     position: relative;
     &_text {
-       @media screen and (min-width: 992px) {
-        padding-top: 50px;
-       }
+        @media screen and (min-width: 768px) {
+            padding-top: 50px;
+        }
         position: absolute;
         top: 0;
         bottom: 0;
@@ -58,7 +58,7 @@ header {
         height: 45px;
         width: 150px;
         border-radius: 2.4px;
-        background-color: #D29300;
+        background-color: #d29300;
         line-height: 45px;
         text-align: center;
         color: #fff !important;
@@ -72,17 +72,19 @@ header {
         @media screen and (min-width: 992px) {
             margin-top: 0;
         }
-        
-        
+        @media screen and (min-width: 768px) {
+            margin-top: 10px;
+        }
     }
     .banner-heading {
         font-size: 36px;
         @media screen and (min-width: 768px) {
-            font-size: 45px;
-            line-height: 65px;
+            font-size: 40px;
         }
         @media screen and (min-width: 992px) {
             // font-size: 50px;
+
+            line-height: 65px;
         }
         @media screen and (min-width: 1400px) {
             font-size: 80px;
@@ -95,7 +97,7 @@ header {
 .about {
     padding-top: 50px;
     @media screen and (min-width: 992px) {
-    padding-top: 100px;
+        padding-top: 100px;
     }
     padding-bottom: 50px;
     background: url(https://i.ibb.co/QQxjG0d/graph.png);
@@ -103,7 +105,6 @@ header {
     background-position: bottom right;
     background-size: contain;
 }
-
 
 .pt-60 {
     @media screen and (min-width: 992px) {

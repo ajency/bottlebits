@@ -86,9 +86,13 @@
     }
 }
 
-.popup-fixed {
-    min-height: 680px;
+@media screen and (min-width: 992px) {
+    .popup-fixed {
+        min-height: 680px;
+    }
 }
+
+
 
 .radiosbtn {
     padding-left: 32.8px;
@@ -246,3 +250,7 @@
     right: 0;
 }
 
+.modal-button{
+    width: 150px;
+    height: 45px;
+}

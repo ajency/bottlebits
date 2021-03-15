@@ -7264,19 +7264,18 @@ a.text-error:hover, a.text-error:focus {
       line-height: 45px; } }
 .modal-button {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-family: "Nunito Sans", sans-serif;
-  height: max-content;
-  left: 0;
-  right: 0;
   color: #ffffff;
   font-family: "Nunito Sans", sans-serif;
   font-size: 20px;
   cursor: pointer;
   text-decoration: none !important;
-  font-weight: 800; }
+  font-weight: 800;
+  width: 150px;
+  height: 45px; }
 
 @media screen and (min-width: 992px) {
   .commonbtn-welcome {
@@ -7483,7 +7482,7 @@ header {
     .heading {
       line-height: 115px; } }
 .form-heading {
-  color: #C7C7C6;
+  color: #c7c7c6;
   font-size: 33px;
   line-height: 45px; }
 
@@ -7505,7 +7504,7 @@ header {
     height: max-content;
     text-align: center;
     width: 80%; }
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 768px) {
       .banner_text {
         padding-top: 50px; } }
   .banner_btn {
@@ -7513,7 +7512,7 @@ header {
     height: 45px;
     width: 150px;
     border-radius: 2.4px;
-    background-color: #D29300;
+    background-color: #d29300;
     line-height: 45px;
     text-align: center;
     color: #fff !important;
@@ -7527,11 +7526,16 @@ header {
     @media screen and (min-width: 992px) {
       .banner_btn {
         margin-top: 0; } }
+    @media screen and (min-width: 768px) {
+      .banner_btn {
+        margin-top: 10px; } }
   .banner .banner-heading {
     font-size: 36px; }
     @media screen and (min-width: 768px) {
       .banner .banner-heading {
-        font-size: 45px;
+        font-size: 40px; } }
+    @media screen and (min-width: 992px) {
+      .banner .banner-heading {
         line-height: 65px; } }
     @media screen and (min-width: 1400px) {
       .banner .banner-heading {
@@ -8090,8 +8094,9 @@ a {
     @media screen and (min-width: 992px) {
       .popup .qdesc {
         padding-left: 60.8px; } }
-.popup-fixed {
-  min-height: 680px; }
+@media screen and (min-width: 992px) {
+  .popup-fixed {
+    min-height: 680px; } }
 
 .radiosbtn {
   padding-left: 32.8px; }
@@ -8225,5 +8230,9 @@ a {
   margin: auto;
   bottom: -50px;
   right: 0; }
+
+.modal-button {
+  width: 150px;
+  height: 45px; }
 
 /*# sourceMappingURL=style.css.map */
