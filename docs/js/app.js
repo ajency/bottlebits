@@ -1,6 +1,12 @@
 $(document).ready(function () {
   rangeSlider(); 
 });
+$(document).ready(function () {
+  $( ".hide-modal" ).click(function() {
+    console.log("closed");
+    $('.modal').modal('hide');
+  });
+});
 
 $(window).resize(function () {
   $("#slider-range-max").slider("destroy");

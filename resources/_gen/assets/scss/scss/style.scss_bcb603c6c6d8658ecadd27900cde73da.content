@@ -8231,8 +8231,4 @@ a {
   bottom: -50px;
   right: 0; }
 
-.modal-button {
-  width: 150px;
-  height: 45px; }
-
 /*# sourceMappingURL=style.css.map */
