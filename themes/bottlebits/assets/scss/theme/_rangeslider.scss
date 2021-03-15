@@ -2,6 +2,9 @@
     margin-top: 45px;
     max-width: 430px;
     position: relative;
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        margin-left: 40px;
+    }
     .ui-slider {
         height: 8px;
         background-color: #9b785c;
@@ -51,7 +54,7 @@
             font-family: $fontNewYork;
             line-height: 38px;
             color: #262525;
-            &:first-child{
+            &:first-child {
                 @media (max-width: 767px) {
                     position: relative;
                     top: -5px;
