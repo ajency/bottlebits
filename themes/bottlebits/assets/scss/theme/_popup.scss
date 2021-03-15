@@ -1,6 +1,7 @@
 .popup {
     border-radius: 10px;
-    background: url(https://i.ibb.co/9q263K5/tex-Paper.png);
+    // background: url(https://i.ibb.co/9q263K5/tex-Paper.png);
+    background-image: url('../images/tex-Paper.png');
     display: flex;
     justify-content: center;
     @media screen and (min-width: 992px) {
@@ -151,7 +152,8 @@
     min-height: 38px;
     &::before {
         content: "";
-        background: url(https://i.ibb.co/N3hBdNX/drag.png);
+        // background: url(https://i.ibb.co/N3hBdNX/drag.png);
+        background: url('../img/drag.png');
         position: absolute;
         left: 5px;
         top: 0;

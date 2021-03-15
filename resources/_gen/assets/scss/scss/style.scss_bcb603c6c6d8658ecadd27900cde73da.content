@@ -7439,7 +7439,7 @@ form {
 
 .custom-row {
   box-shadow: 0 5px 43px 0 rgba(0, 0, 0, 0.66);
-  background-image: url(https://i.ibb.co/b2cR7ws/rsz-1tex-wood.png);
+  background-image: url("../images/tex-wood.png");
   background-position: center; }
 
 @media (min-width: 768px) {
@@ -7563,8 +7563,8 @@ header {
   scroll-behavior: smooth; }
 
 body {
-  background-image: url("https://i.ibb.co/x8CYGPc/rsz-tex-wood.png");
   background-position: center;
+  background-image: url("../images/tex-wood.png");
   padding: 0 !important;
   scroll-behavior: smooth; }
 
@@ -7874,7 +7874,10 @@ a {
 
 .bdrrad {
   border-radius: 8px; }
-
+  @media (min-width: 768px) {
+    .bdrrad {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; } }
 .text-decoration-underline {
   text-decoration: underline; }
 
@@ -8013,7 +8016,7 @@ a {
       width: 67px; } }
 .popup {
   border-radius: 10px;
-  background: url(https://i.ibb.co/9q263K5/tex-Paper.png);
+  background-image: url("../images/tex-Paper.png");
   display: flex;
   justify-content: center; }
   @media screen and (min-width: 992px) {
@@ -8146,7 +8149,7 @@ a {
   min-height: 38px; }
   #sortable li::before {
     content: "";
-    background: url(https://i.ibb.co/N3hBdNX/drag.png);
+    background: url("../img/drag.png");
     position: absolute;
     left: 5px;
     top: 0;
