@@ -7867,9 +7867,9 @@ a {
 .strk {
   color: #a74a00; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .marg-nega {
-    margin: -24px;
+    margin: -21px;
     margin-bottom: 20px; } }
 
 .bdrrad {
